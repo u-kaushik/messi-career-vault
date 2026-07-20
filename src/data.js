@@ -512,6 +512,61 @@ export const interviews = [
     description:
       "Two era-defining number 10s sit down to discuss admiration, Maradona, the shirt and the players who shaped them.",
   },
+  {
+    id: "apple-music-2025",
+    title: "Leo Messi: The Apple Music Interview",
+    year: 2025,
+    host: "Zane Lowe · Apple Music",
+    language: "English subtitles",
+    runtime: "23:21",
+    videoId: "VC-lJrNaQH4",
+    description:
+      "Messi reflects on family life, his career, Miami and the journey toward another MLS season.",
+  },
+  {
+    id: "tv-publica-2023",
+    title: "Leo Messi en Llave a la Eternidad",
+    year: 2023,
+    host: "Sofi Martínez · Televisión Pública",
+    language: "Español",
+    runtime: "46:45",
+    videoId: "6JYvS4EaVVo",
+    description:
+      "From painful Argentina defeats to the glory of Qatar, Messi retraces his entire national-team journey.",
+  },
+  {
+    id: "urbana-play-2023",
+    title: "Leo Messi mano a mano",
+    year: 2023,
+    host: "Andy Kusnetzoff · Urbana Play",
+    language: "Español",
+    runtime: "45:54",
+    videoId: "JpAd20of2Jk",
+    description:
+      "His first long conversation after Qatar: the final, family celebrations and finally becoming world champion.",
+  },
+  {
+    id: "ole-2021",
+    title: "Messi íntimo con Olé",
+    year: 2021,
+    host: "Olé",
+    language: "Español",
+    runtime: "45:21",
+    videoId: "RHqqPNzL0kk",
+    description:
+      "A personal Barcelona-era conversation about Rosario, Argentina, family, pressure and what makes him suffer.",
+  },
+  {
+    id: "infobae-2024",
+    title: "Messi íntimo",
+    year: 2024,
+    host: "Joaquín Álvarez · Infobae",
+    language: "Español",
+    runtime: "38:49",
+    videoId: "BpY3QPBt5HE",
+    description:
+      "A relaxed Miami sit-down about his grandmother, family routines, Argentina and why he never rewatched the final.",
+  },
 ];
 
 const amazon = (domain, query) =>
@@ -554,7 +609,8 @@ export const books = [
     year: 2018,
     language: "English",
     kind: "Essays · philosophy",
-    cover: null,
+    cover:
+      "https://images-na.ssl-images-amazon.com/images/P/1785314505.01.LZZZZZZZ.jpg",
     url: amazon("co.uk", "Lionel Messi and the Art of Living Andy West"),
   },
   {
@@ -564,18 +620,20 @@ export const books = [
     year: 2023,
     language: "Español",
     kind: "Biografía deportiva",
-    cover: null,
+    cover:
+      "https://acdn-us.mitiendanube.com/stores/004/088/117/products/690469-311c4b9da2cabca4a817283949508047-640-0.webp",
     url: amazon("es", "Messi el genio completo Ariel Senosiain"),
   },
   {
-    id: "borinsky-es",
+    id: "sottile-es",
     title: "Messi: El distinto",
-    author: "Diego Borinsky",
-    year: 2018,
+    author: "Marcelo Sottile",
+    year: 2013,
     language: "Español",
-    kind: "Historia oral · selección",
-    cover: null,
-    url: amazon("es", "Messi el distinto Diego Borinsky"),
+    kind: "Biografía · prólogo de Maradona",
+    cover:
+      "https://acdn-us.mitiendanube.com/stores/746/904/products/d_833729-mla48000097073_102021-o-cf5f17de4486df7f8b16353632348049-640-0.webp",
+    url: amazon("es", "Messi el distinto Marcelo Sottile 9789870725763"),
   },
 ];
 
