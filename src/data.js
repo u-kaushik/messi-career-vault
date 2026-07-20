@@ -586,8 +586,6 @@ export const podcasts = [
   },
 ];
 
-const amazon = (domain, query) =>
-  `https://www.amazon.${domain}/s?k=${encodeURIComponent(query)}`;
 export const books = [
   {
     id: "balague-en",
@@ -598,10 +596,7 @@ export const books = [
     kind: "Definitive biography",
     cover:
       "https://www.hachette.co.uk/wp-content/uploads/2023/04/hbg-title-messi-2-76.jpg",
-    url: amazon(
-      "co.uk",
-      "Messi definitive biography Guillem Balague 9781399619134",
-    ),
+    url: "https://www.amazon.co.uk/dp/1399619136",
   },
   {
     id: "caioli-en",
@@ -611,7 +606,7 @@ export const books = [
     language: "English",
     kind: "Biography",
     cover: "https://covers.openlibrary.org/b/id/11679411-L.jpg",
-    url: amazon("co.uk", "Messi Luca Caioli inside story"),
+    url: "https://www.amazon.co.uk/dp/1906850615",
   },
   {
     id: "faccio-en",
@@ -621,7 +616,7 @@ export const books = [
     language: "English",
     kind: "Literary portrait",
     cover: "https://covers.openlibrary.org/b/id/7318962-L.jpg",
-    url: amazon("co.uk", "Messi Leonardo Faccio 9780345802699"),
+    url: "https://www.amazon.co.uk/dp/0345802691",
   },
   {
     id: "art-living",
@@ -632,7 +627,7 @@ export const books = [
     kind: "Essays · philosophy",
     cover:
       "https://images-na.ssl-images-amazon.com/images/P/1785314505.01.LZZZZZZZ.jpg",
-    url: amazon("co.uk", "Lionel Messi and the Art of Living Andy West"),
+    url: "https://www.amazon.co.uk/dp/1785314505",
   },
   {
     id: "senosiain-es",
@@ -643,7 +638,7 @@ export const books = [
     kind: "Biografía deportiva",
     cover:
       "https://acdn-us.mitiendanube.com/stores/004/088/117/products/690469-311c4b9da2cabca4a817283949508047-640-0.webp",
-    url: amazon("es", "Messi el genio completo Ariel Senosiain"),
+    url: "https://www.amazon.es/dp/950021220X",
   },
   {
     id: "sottile-es",
@@ -654,7 +649,7 @@ export const books = [
     kind: "Biografía · prólogo de Maradona",
     cover:
       "https://acdn-us.mitiendanube.com/stores/746/904/products/d_833729-mla48000097073_102021-o-cf5f17de4486df7f8b16353632348049-640-0.webp",
-    url: amazon("es", "Messi el distinto Marcelo Sottile 9789870725763"),
+    url: "https://www.amazon.es/dp/9870725767",
   },
 ];
 
