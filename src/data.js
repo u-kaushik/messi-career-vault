@@ -579,8 +579,8 @@ export const podcasts = [
     year: 2024,
     language: "Arabic · Spanish",
     runtime: "1h 23m",
-    platform: "Apple TV / Shahid",
-    url: "https://tv.apple.com/gb/episode/episode-16/umc.cmc.4y9c22dg4p0lleh0r0aceq28m?showId=umc.cmc.6ifqmzo7i4unmx3weylbccycw",
+    platform: "MBC Shahid",
+    url: "https://shahid.mbc.net/en/player/episodes/Big-Time-Podcast-season-1-episode-16/id-1020938",
     description:
       "Jean Reno opens the episode; Messi joins the second segment to recount his journey from Rosario to global stardom.",
   },
@@ -596,8 +596,12 @@ export const books = [
     year: 2023,
     language: "English",
     kind: "Definitive biography",
-    cover: "https://covers.openlibrary.org/b/id/10786555-L.jpg",
-    url: amazon("co.uk", "Messi definitive biography Guillem Balague"),
+    cover:
+      "https://www.hachette.co.uk/wp-content/uploads/2023/04/hbg-title-messi-2-76.jpg",
+    url: amazon(
+      "co.uk",
+      "Messi definitive biography Guillem Balague 9781399619134",
+    ),
   },
   {
     id: "caioli-en",
