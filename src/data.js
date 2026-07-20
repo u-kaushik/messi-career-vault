@@ -513,17 +513,6 @@ export const interviews = [
       "Two era-defining number 10s sit down to discuss admiration, Maradona, the shirt and the players who shaped them.",
   },
   {
-    id: "apple-music-2025",
-    title: "Leo Messi: The Apple Music Interview",
-    year: 2025,
-    host: "Zane Lowe · Apple Music",
-    language: "English subtitles",
-    runtime: "23:21",
-    videoId: "VC-lJrNaQH4",
-    description:
-      "Messi reflects on family life, his career, Miami and the journey toward another MLS season.",
-  },
-  {
     id: "tv-publica-2023",
     title: "Leo Messi en Llave a la Eternidad",
     year: 2023,
@@ -566,6 +555,34 @@ export const interviews = [
     videoId: "BpY3QPBt5HE",
     description:
       "A relaxed Miami sit-down about his grandmother, family routines, Argentina and why he never rewatched the final.",
+  },
+];
+
+export const podcasts = [
+  {
+    id: "zane-lowe-2025",
+    title: "Leo Messi",
+    show: "The Zane Lowe Interview Series",
+    year: 2025,
+    language: "English subtitles",
+    runtime: "31m",
+    platform: "Apple Podcasts",
+    videoId: "VC-lJrNaQH4",
+    url: "https://podcasts.apple.com/gb/podcast/leo-messi/id1461515071?i=1000696717410",
+    description:
+      "Soccer’s GOAT opens up about his life on and off the pitch, family, Miami and the next stage of his career.",
+  },
+  {
+    id: "big-time-2024",
+    title: "Episode 16: Jean Reno & Lionel Messi",
+    show: "Big Time Podcast · Amr Adib & Assala",
+    year: 2024,
+    language: "Arabic · Spanish",
+    runtime: "1h 23m",
+    platform: "Apple TV / Shahid",
+    url: "https://tv.apple.com/gb/episode/episode-16/umc.cmc.4y9c22dg4p0lleh0r0aceq28m?showId=umc.cmc.6ifqmzo7i4unmx3weylbccycw",
+    description:
+      "Jean Reno opens the episode; Messi joins the second segment to recount his journey from Rosario to global stardom.",
   },
 ];
 

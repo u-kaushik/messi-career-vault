@@ -15,8 +15,16 @@ import {
   Mic2,
   BookOpen,
   Video,
+  Headphones,
 } from "lucide-react";
-import { seasons, films, interviews, books, honourLedger } from "./data";
+import {
+  seasons,
+  films,
+  interviews,
+  podcasts,
+  books,
+  honourLedger,
+} from "./data";
 import TrophyMark from "./TrophyMark";
 import "./style.css";
 import "./theme.css";
@@ -85,7 +93,8 @@ function App() {
     );
     return () => clearTimeout(timer);
   }, [watch, seen, profile, syncReady]);
-  const totalLibrary = films.length + interviews.length + books.length;
+  const totalLibrary =
+    films.length + interviews.length + podcasts.length + books.length;
   const watched = Object.values(watch).filter(Boolean).length;
   const toggle = (id) => setWatch((v) => ({ ...v, [id]: !v[id] }));
   return (
@@ -139,7 +148,7 @@ function App() {
             <p>
               {tab === "career"
                 ? "From La Masia to the roof of the world — explore every chapter of Leo's career."
-                : "Films, long-form conversations and books from around the world, all in one place."}
+                : "Films, long-form conversations, guest podcasts and books from around the world."}
             </p>
           </div>
           <div className="avatar">LM</div>
@@ -162,6 +171,7 @@ function App() {
             setModal={setModal}
             films={films}
             interviews={interviews}
+            podcasts={podcasts}
             books={books}
           />
         )}
@@ -498,6 +508,7 @@ function Library({
   setModal,
   films,
   interviews,
+  podcasts,
   books,
 }) {
   const [collection, setCollection] = useState("screen");
@@ -512,6 +523,9 @@ function Library({
   const foundInterviews = interviews.filter((i) =>
     matches(`${i.title} ${i.host} ${i.language} ${i.year}`),
   );
+  const foundPodcasts = podcasts.filter((p) =>
+    matches(`${p.title} ${p.show} ${p.language} ${p.platform} ${p.year}`),
+  );
   const foundBooks = books.filter(
     (b) =>
       (language === "All" || b.language === language) &&
@@ -520,6 +534,7 @@ function Library({
   const collections = [
     ["screen", "Films & series", films.length, Clapperboard],
     ["interviews", "Long interviews", interviews.length, Mic2],
+    ["podcasts", "Podcasts", podcasts.length, Headphones],
     ["books", "Books", books.length, BookOpen],
   ];
   const activeItems =
@@ -527,7 +542,9 @@ function Library({
       ? filtered
       : collection === "interviews"
         ? foundInterviews
-        : foundBooks;
+        : collection === "podcasts"
+          ? foundPodcasts
+          : foundBooks;
   const play = (id) => setPlaying((current) => (current === id ? null : id));
   return (
     <>
@@ -556,7 +573,9 @@ function Library({
                 ? "Search books, authors, languages…"
                 : collection === "interviews"
                   ? "Search interviews, hosts, years…"
-                  : "Search titles, countries, eras…"
+                  : collection === "podcasts"
+                    ? "Search podcasts, shows, platforms…"
+                    : "Search titles, countries, eras…"
             }
           />
           {query && (
@@ -599,14 +618,18 @@ function Library({
             ? "books"
             : collection === "interviews"
               ? "conversations"
-              : "stories"}
+              : collection === "podcasts"
+                ? "guest episodes"
+                : "stories"}
         </h2>
         <span>
           {collection === "screen"
             ? "IMDb ratings change over time · availability varies by country"
             : collection === "books"
               ? "Editions and Amazon availability vary by region"
-              : "Full-length original conversations · no press conferences or clip compilations"}
+              : collection === "podcasts"
+                ? "Verified guest appearances only · podcasts merely discussing Messi are excluded"
+                : "Full-length original conversations · no press conferences or clip compilations"}
         </span>
       </div>
       {collection === "screen" && (
@@ -732,6 +755,78 @@ function Library({
                 </div>
               </div>
               {playing === item.id && (
+                <Trailer
+                  videoId={item.videoId}
+                  title={item.title}
+                  close={() => setPlaying(null)}
+                />
+              )}
+            </article>
+          ))}
+        </section>
+      )}
+      {collection === "podcasts" && (
+        <section className="interview-grid podcast-grid">
+          {foundPodcasts.map((item) => (
+            <article
+              className={watch[`podcast:${item.id}`] ? "watched" : ""}
+              key={item.id}
+            >
+              {item.videoId ? (
+                <button
+                  className="video-thumb"
+                  onClick={() => play(item.id)}
+                  style={{
+                    backgroundImage: `linear-gradient(0deg,#07101dcc,transparent),url(https://i.ytimg.com/vi/${item.videoId}/hqdefault.jpg)`,
+                  }}
+                >
+                  <Headphones />
+                  <span>{item.runtime}</span>
+                </button>
+              ) : (
+                <a
+                  className="video-thumb podcast-art"
+                  href={item.url}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Headphones />
+                  <b>BIG TIME</b>
+                  <span>{item.runtime}</span>
+                </a>
+              )}
+              <div className="interview-copy">
+                <label>
+                  {item.year} · {item.language}
+                </label>
+                <h3>{item.title}</h3>
+                <strong>{item.show}</strong>
+                <p>{item.description}</p>
+                <div className="actions">
+                  {item.videoId ? (
+                    <button onClick={() => play(item.id)}>
+                      <Video /> {playing === item.id ? "Close" : "Watch here"}
+                    </button>
+                  ) : (
+                    <a
+                      className="podcast-link"
+                      href={item.url}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      Open on {item.platform} <ExternalLink />
+                    </a>
+                  )}
+                  <button
+                    className="tick"
+                    title="Mark listened"
+                    onClick={() => toggle(`podcast:${item.id}`)}
+                  >
+                    {watch[`podcast:${item.id}`] ? <Check /> : <span />}
+                  </button>
+                </div>
+              </div>
+              {playing === item.id && item.videoId && (
                 <Trailer
                   videoId={item.videoId}
                   title={item.title}
