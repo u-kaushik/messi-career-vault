@@ -501,6 +501,17 @@ export const interviews = [
     description:
       "A long-form conversation on Miami, Argentina, the World Cup and the closing chapters of his career.",
   },
+  {
+    id: "messi-zidane-2023",
+    title: "Messi × Zidane: The No. 10 Conversation",
+    year: 2023,
+    host: "Zinedine Zidane · MARCA / adidas",
+    language: "English subtitles",
+    runtime: "11:01",
+    videoId: "fISJvstEnK8",
+    description:
+      "Two era-defining number 10s sit down to discuss admiration, Maradona, the shirt and the players who shaped them.",
+  },
 ];
 
 const amazon = (domain, query) =>
@@ -547,16 +558,6 @@ export const books = [
     url: amazon("co.uk", "Lionel Messi and the Art of Living Andy West"),
   },
   {
-    id: "faccio-es",
-    title: "Messi — Edición actualizada",
-    author: "Leonardo Faccio",
-    year: 2023,
-    language: "Español",
-    kind: "Perfil biográfico",
-    cover: "https://covers.openlibrary.org/b/id/14250803-L.jpg",
-    url: amazon("es", "Messi edición actualizada Leonardo Faccio"),
-  },
-  {
     id: "senosiain-es",
     title: "Messi: El genio completo",
     author: "Ariel Senosiain",
@@ -575,36 +576,6 @@ export const books = [
     kind: "Historia oral · selección",
     cover: null,
     url: amazon("es", "Messi el distinto Diego Borinsky"),
-  },
-  {
-    id: "balague-fr",
-    title: "Messi — La biographie",
-    author: "Guillem Balagué",
-    year: 2022,
-    language: "Français",
-    kind: "Biographie",
-    cover: "https://covers.openlibrary.org/b/id/10786555-L.jpg",
-    url: amazon("fr", "Messi la biographie Guillem Balague"),
-  },
-  {
-    id: "balague-it",
-    title: "Messi — Nuova edizione aggiornata",
-    author: "Guillem Balagué",
-    year: 2023,
-    language: "Italiano",
-    kind: "Biografia",
-    cover: "https://covers.openlibrary.org/b/id/11679405-L.jpg",
-    url: amazon("it", "Messi nuova edizione aggiornata Guillem Balague"),
-  },
-  {
-    id: "caioli-pl",
-    title: "Messi. Historia chłopca, który stał się legendą",
-    author: "Luca Caioli",
-    year: 2024,
-    language: "Polski",
-    kind: "Biografia",
-    cover: "https://covers.openlibrary.org/b/id/13526837-L.jpg",
-    url: amazon("pl", "Messi Historia chłopca Luca Caioli"),
   },
 ];
 
