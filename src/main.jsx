@@ -350,6 +350,18 @@ function Honours({ season }) {
   );
 }
 
+const platformLogos = {
+  netflix:
+    "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+  disney:
+    "https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg",
+  apple:
+    "https://upload.wikimedia.org/wikipedia/commons/2/28/Apple_TV_Plus_Logo.svg",
+  prime: "https://upload.wikimedia.org/wikipedia/commons/f/f1/Prime_Video.png",
+  bbc: "https://upload.wikimedia.org/wikipedia/commons/e/ee/BBC_iPlayer_%282021%29.svg",
+  max: "https://upload.wikimedia.org/wikipedia/commons/3/37/Max_2025_logo.svg",
+};
+
 function PlatformMark({ name, withName = false }) {
   const key = name.includes("Netflix")
     ? "netflix"
@@ -366,27 +378,7 @@ function PlatformMark({ name, withName = false }) {
               : "rent";
   return (
     <span className={`platform-mark ${key}`} title={name} aria-label={name}>
-      {key === "netflix" ? (
-        <b>N</b>
-      ) : key === "disney" ? (
-        <b>
-          <i>Disney</i>+
-        </b>
-      ) : key === "apple" ? (
-        <b>●tv+</b>
-      ) : key === "prime" ? (
-        <b>prime⌣</b>
-      ) : key === "bbc" ? (
-        <b>
-          <i>B</i>
-          <i>B</i>
-          <i>C</i>
-        </b>
-      ) : key === "max" ? (
-        <b>max</b>
-      ) : (
-        <Play />
-      )}
+      {platformLogos[key] ? <img src={platformLogos[key]} alt="" /> : <Play />}
       {withName && <em>{name}</em>}
     </span>
   );
