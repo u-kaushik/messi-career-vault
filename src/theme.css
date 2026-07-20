@@ -1,7 +1,21 @@
 body {
   background:
-    radial-gradient(circle at 76% -5%, #123369 0, transparent 32%),
-    radial-gradient(circle at 100% 60%, #4b062633 0, transparent 30%), #060d20;
+    radial-gradient(
+      circle at 76% -5%,
+      #123369 0%,
+      #1029568c 24%,
+      transparent 68%
+    ),
+    radial-gradient(
+      circle at 100% 60%,
+      #4b06264d 0%,
+      #3b092b26 34%,
+      transparent 72%
+    ),
+    #060d20;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .account {
   display: flex;
@@ -37,8 +51,22 @@ body {
   place-items: center;
   padding: 24px;
   background:
-    radial-gradient(circle at 20% 0, #004d9855, transparent 34%),
-    radial-gradient(circle at 90% 90%, #a500443d, transparent 32%), #060d20;
+    radial-gradient(
+      circle at 20% 0,
+      #004d9866 0%,
+      #07366d33 32%,
+      transparent 72%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      #a5004452 0%,
+      #69063226 34%,
+      transparent 74%
+    ),
+    #060d20;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 .login-card {
   width: min(100%, 410px);
