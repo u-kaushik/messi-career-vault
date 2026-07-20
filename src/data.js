@@ -427,12 +427,26 @@ const mediaMeta = {
   "forgotten-tape": ["tt43610307", "6.5"],
   "on-side": ["tt35517757", "7.2"],
 };
+const trailerIds = {
+  "messi-2014": "Ny--3PqxQ1s",
+  "take-ball": "VfKls9Eo1ZI",
+  "barca-dreams": "jItH5QiEQ9c",
+  "this-is-football": "bMrZ-LaOqAY",
+  "road-qatar": "zkmxFvWu8Bc",
+  destiny: "hA7c_LeAeoU",
+  elijo: "-G5cvtQUV14",
+  muchachos: "OWmdZZsEfbA",
+  captains: "QvbQtARquR8",
+  america: "fqRm0TCDRw8",
+  rise: "VBItn7fx1EM",
+};
 export const films = filmCatalog.map((f) => {
   const [imdbId, imdbRating] = mediaMeta[f.id] || [];
   return {
     ...f,
     imdbId,
     imdbRating,
+    trailerId: trailerIds[f.id],
     imdbUrl: imdbId
       ? `https://www.imdb.com/title/${imdbId}/`
       : `https://www.imdb.com/find/?q=${encodeURIComponent(f.title)}`,
@@ -441,6 +455,158 @@ export const films = filmCatalog.map((f) => {
       : null,
   };
 });
+
+export const interviews = [
+  {
+    id: "olga-2023",
+    title: "Messi con Migue Granados",
+    year: 2023,
+    host: "Migue Granados · OLGA",
+    language: "Español",
+    runtime: "36:52",
+    videoId: "qYwlqx-JLok",
+    description:
+      "At home in Miami: family life, pressure, football and what comes after the game.",
+  },
+  {
+    id: "rac1-2019",
+    title: "La entrevista íntegra de RAC1",
+    year: 2019,
+    host: "RAC1 · Mundo Deportivo",
+    language: "Español",
+    runtime: "43:04",
+    videoId: "WYZq_etlGGE",
+    description:
+      "A rare, wide-ranging Barcelona-era conversation about the club, family and his future.",
+  },
+  {
+    id: "simplemente-2025",
+    title: "Leo Messi en Simplemente Fútbol",
+    year: 2025,
+    host: "Quique Wolff · Simplemente Fútbol",
+    language: "Español",
+    runtime: "57:55",
+    videoId: "bx242zV3_ME",
+    description:
+      "Nearly an hour reflecting on his career, teammates, Argentina and his relationship with football.",
+  },
+  {
+    id: "espn-2025",
+    title: "Lionel Messi — Full Interview",
+    year: 2025,
+    host: "ESPN FC",
+    language: "Español",
+    runtime: "38:19",
+    videoId: "D13yNc_dWvQ",
+    description:
+      "A long-form conversation on Miami, Argentina, the World Cup and the closing chapters of his career.",
+  },
+];
+
+const amazon = (domain, query) =>
+  `https://www.amazon.${domain}/s?k=${encodeURIComponent(query)}`;
+export const books = [
+  {
+    id: "balague-en",
+    title: "Messi: The Definitive Biography",
+    author: "Guillem Balagué",
+    year: 2023,
+    language: "English",
+    kind: "Definitive biography",
+    cover: "https://covers.openlibrary.org/b/id/10786555-L.jpg",
+    url: amazon("co.uk", "Messi definitive biography Guillem Balague"),
+  },
+  {
+    id: "caioli-en",
+    title: "Messi: The Inside Story of the Boy Who Became a Legend",
+    author: "Luca Caioli",
+    year: 2012,
+    language: "English",
+    kind: "Biography",
+    cover: "https://covers.openlibrary.org/b/id/11679411-L.jpg",
+    url: amazon("co.uk", "Messi Luca Caioli inside story"),
+  },
+  {
+    id: "faccio-en",
+    title: "Messi",
+    author: "Leonardo Faccio",
+    year: 2012,
+    language: "English",
+    kind: "Literary portrait",
+    cover: "https://covers.openlibrary.org/b/id/7318962-L.jpg",
+    url: amazon("co.uk", "Messi Leonardo Faccio 9780345802699"),
+  },
+  {
+    id: "art-living",
+    title: "Lionel Messi and the Art of Living",
+    author: "Andy West",
+    year: 2018,
+    language: "English",
+    kind: "Essays · philosophy",
+    cover: null,
+    url: amazon("co.uk", "Lionel Messi and the Art of Living Andy West"),
+  },
+  {
+    id: "faccio-es",
+    title: "Messi — Edición actualizada",
+    author: "Leonardo Faccio",
+    year: 2023,
+    language: "Español",
+    kind: "Perfil biográfico",
+    cover: "https://covers.openlibrary.org/b/id/14250803-L.jpg",
+    url: amazon("es", "Messi edición actualizada Leonardo Faccio"),
+  },
+  {
+    id: "senosiain-es",
+    title: "Messi: El genio completo",
+    author: "Ariel Senosiain",
+    year: 2023,
+    language: "Español",
+    kind: "Biografía deportiva",
+    cover: null,
+    url: amazon("es", "Messi el genio completo Ariel Senosiain"),
+  },
+  {
+    id: "borinsky-es",
+    title: "Messi: El distinto",
+    author: "Diego Borinsky",
+    year: 2018,
+    language: "Español",
+    kind: "Historia oral · selección",
+    cover: null,
+    url: amazon("es", "Messi el distinto Diego Borinsky"),
+  },
+  {
+    id: "balague-fr",
+    title: "Messi — La biographie",
+    author: "Guillem Balagué",
+    year: 2022,
+    language: "Français",
+    kind: "Biographie",
+    cover: "https://covers.openlibrary.org/b/id/10786555-L.jpg",
+    url: amazon("fr", "Messi la biographie Guillem Balague"),
+  },
+  {
+    id: "balague-it",
+    title: "Messi — Nuova edizione aggiornata",
+    author: "Guillem Balagué",
+    year: 2023,
+    language: "Italiano",
+    kind: "Biografia",
+    cover: "https://covers.openlibrary.org/b/id/11679405-L.jpg",
+    url: amazon("it", "Messi nuova edizione aggiornata Guillem Balague"),
+  },
+  {
+    id: "caioli-pl",
+    title: "Messi. Historia chłopca, który stał się legendą",
+    author: "Luca Caioli",
+    year: 2024,
+    language: "Polski",
+    kind: "Biografia",
+    cover: "https://covers.openlibrary.org/b/id/13526837-L.jpg",
+    url: amazon("pl", "Messi Historia chłopca Luca Caioli"),
+  },
+];
 
 // Major honours are assigned to the season in which they were won.
 // Individual lists intentionally favour recognised season/tournament awards over monthly prizes and XI selections.

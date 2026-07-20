@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import {
   Search,
@@ -12,13 +12,17 @@ import {
   X,
   ExternalLink,
   Star,
+  Mic2,
+  BookOpen,
+  Video,
 } from "lucide-react";
-import { seasons, films, honourLedger } from "./data";
+import { seasons, films, interviews, books, honourLedger } from "./data";
 import TrophyMark from "./TrophyMark";
 import "./style.css";
 import "./theme.css";
 import "./media.css";
 import "./trophies.css";
+import "./library.css";
 
 const STORE = "messi-vault-v1";
 const PROFILE = "messi-vault-profile";
@@ -81,18 +85,8 @@ function App() {
     );
     return () => clearTimeout(timer);
   }, [watch, seen, profile, syncReady]);
+  const totalLibrary = films.length + interviews.length + books.length;
   const watched = Object.values(watch).filter(Boolean).length;
-  const filtered = useMemo(
-    () =>
-      films.filter(
-        (f) =>
-          (type === "All" || f.type === type) &&
-          `${f.title} ${f.country} ${f.focus} ${f.platform}`
-            .toLowerCase()
-            .includes(query.toLowerCase()),
-      ),
-    [query, type],
-  );
   const toggle = (id) => setWatch((v) => ({ ...v, [id]: !v[id] }));
   return (
     <div className="app">
@@ -116,20 +110,20 @@ function App() {
             className={tab === "watch" ? "active" : ""}
             onClick={() => setTab("watch")}
           >
-            <Clapperboard /> Watch library <i>{films.length}</i>
+            <Clapperboard /> Library <i>{totalLibrary}</i>
           </button>
         </nav>
         <div className="side-card">
           <p>YOUR JOURNEY</p>
           <strong>
             {watched}
-            <small> / {films.length}</small>
+            <small> / {totalLibrary}</small>
           </strong>
-          <span>films watched</span>
+          <span>stories completed</span>
           <div className="bar">
-            <i style={{ width: `${(watched / films.length) * 100}%` }} />
+            <i style={{ width: `${(watched / totalLibrary) * 100}%` }} />
           </div>
-          <em>{Math.round((watched / films.length) * 100)}% complete</em>
+          <em>{Math.round((watched / totalLibrary) * 100)}% complete</em>
         </div>
         <blockquote>
           “You have to fight to reach your dream.”<small>— Lionel Messi</small>
@@ -140,12 +134,12 @@ function App() {
           <div>
             <span>THE COMPLETE JOURNEY</span>
             <h1>
-              {tab === "career" ? "Season by season." : "Watch the story."}
+              {tab === "career" ? "Season by season." : "Watch. Listen. Read."}
             </h1>
             <p>
               {tab === "career"
                 ? "From La Masia to the roof of the world — explore every chapter of Leo's career."
-                : "Films, documentaries and series from around the world, all in one place."}
+                : "Films, long-form conversations and books from around the world, all in one place."}
             </p>
           </div>
           <div className="avatar">LM</div>
@@ -159,7 +153,6 @@ function App() {
           />
         ) : (
           <Library
-            filtered={filtered}
             query={query}
             setQuery={setQuery}
             type={type}
@@ -167,6 +160,9 @@ function App() {
             watch={watch}
             toggle={toggle}
             setModal={setModal}
+            films={films}
+            interviews={interviews}
+            books={books}
           />
         )}
       </main>
@@ -493,7 +489,6 @@ function Career({ selected, setSelected, seen, setSeen }) {
 }
 
 function Library({
-  filtered,
   query,
   setQuery,
   type,
@@ -501,16 +496,68 @@ function Library({
   watch,
   toggle,
   setModal,
+  films,
+  interviews,
+  books,
 }) {
+  const [collection, setCollection] = useState("screen");
+  const [playing, setPlaying] = useState(null);
+  const [language, setLanguage] = useState("All");
+  const matches = (value) => value.toLowerCase().includes(query.toLowerCase());
+  const filtered = films.filter(
+    (f) =>
+      (type === "All" || f.type === type) &&
+      matches(`${f.title} ${f.country} ${f.focus} ${f.platform}`),
+  );
+  const foundInterviews = interviews.filter((i) =>
+    matches(`${i.title} ${i.host} ${i.language} ${i.year}`),
+  );
+  const foundBooks = books.filter(
+    (b) =>
+      (language === "All" || b.language === language) &&
+      matches(`${b.title} ${b.author} ${b.language} ${b.kind}`),
+  );
+  const collections = [
+    ["screen", "Films & series", films.length, Clapperboard],
+    ["interviews", "Long interviews", interviews.length, Mic2],
+    ["books", "Books", books.length, BookOpen],
+  ];
+  const activeItems =
+    collection === "screen"
+      ? filtered
+      : collection === "interviews"
+        ? foundInterviews
+        : foundBooks;
+  const play = (id) => setPlaying((current) => (current === id ? null : id));
   return (
     <>
+      <div className="collection-tabs">
+        {collections.map(([id, label, count, Icon]) => (
+          <button
+            key={id}
+            className={collection === id ? "active" : ""}
+            onClick={() => {
+              setCollection(id);
+              setPlaying(null);
+            }}
+          >
+            <Icon /> <span>{label}</span> <i>{count}</i>
+          </button>
+        ))}
+      </div>
       <div className="library-tools">
         <div className="search">
           <Search />
           <input
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search titles, countries, eras…"
+            placeholder={
+              collection === "books"
+                ? "Search books, authors, languages…"
+                : collection === "interviews"
+                  ? "Search interviews, hosts, years…"
+                  : "Search titles, countries, eras…"
+            }
           />
           {query && (
             <button onClick={() => setQuery("")}>
@@ -518,90 +565,236 @@ function Library({
             </button>
           )}
         </div>
-        <div className="chips">
-          {["All", "Film", "Docuseries", "Episode"].map((x) => (
-            <button
-              key={x}
-              className={type === x ? "active" : ""}
-              onClick={() => setType(x)}
-            >
-              {x}
-            </button>
-          ))}
-        </div>
+        {collection === "screen" && (
+          <div className="chips">
+            {["All", "Film", "Docuseries", "Episode"].map((x) => (
+              <button
+                key={x}
+                className={type === x ? "active" : ""}
+                onClick={() => setType(x)}
+              >
+                {x}
+              </button>
+            ))}
+          </div>
+        )}
+        {collection === "books" && (
+          <div className="chips">
+            {["All", ...new Set(books.map((b) => b.language))].map((x) => (
+              <button
+                key={x}
+                className={language === x ? "active" : ""}
+                onClick={() => setLanguage(x)}
+              >
+                {x}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
       <div className="library-head">
-        <h2>{filtered.length} stories</h2>
+        <h2>
+          {activeItems.length}{" "}
+          {collection === "books"
+            ? "books"
+            : collection === "interviews"
+              ? "conversations"
+              : "stories"}
+        </h2>
         <span>
-          IMDb ratings change over time · availability varies by country
+          {collection === "screen"
+            ? "IMDb ratings change over time · availability varies by country"
+            : collection === "books"
+              ? "Editions and Amazon availability vary by region"
+              : "Full-length original conversations · no press conferences or clip compilations"}
         </span>
       </div>
-      <section className="film-grid">
-        {filtered.map((f, i) => (
-          <article className={watch[f.id] ? "watched" : ""} key={f.id}>
-            <button
-              className={`poster ${f.poster ? "has-image" : ""}`}
-              style={
-                f.poster
-                  ? {
-                      backgroundImage: `linear-gradient(0deg,#08101ccc 0%,transparent 65%),url(${f.poster})`,
-                    }
-                  : undefined
-              }
-              onClick={() => setModal(f)}
-            >
-              <span>{String(i + 1).padStart(2, "0")}</span>
-              <Play />
-            </button>
-            <div className="film-copy">
-              <div className="film-kicker">
-                <label>
-                  {f.year} · {f.country}
-                </label>
-                <a
-                  className="imdb-rating"
-                  href={f.imdbUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  title="Open IMDb"
-                >
-                  <Star />
-                  {f.imdbRating || "NR"}
-                  <small>/10</small>
-                </a>
-              </div>
-              <h3>{f.title}</h3>
-              <p>{f.description}</p>
-              <div className="tags">
-                <span>{f.type}</span>
-                <span>{f.runtime}</span>
-                <PlatformMark name={f.platform} />
-              </div>
-              <div className="actions">
-                <button onClick={() => setModal(f)}>
-                  View details <ChevronRight />
-                </button>
-                <a
-                  className="imdb-link"
-                  href={f.imdbUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  IMDb <ExternalLink />
-                </a>
+      {collection === "screen" && (
+        <section className="film-grid">
+          {filtered.map((f, i) => (
+            <React.Fragment key={f.id}>
+              <article className={watch[f.id] ? "watched" : ""}>
                 <button
-                  className="tick"
-                  title="Mark watched"
-                  onClick={() => toggle(f.id)}
+                  className={`poster ${f.poster ? "has-image" : ""}`}
+                  style={
+                    f.poster
+                      ? {
+                          backgroundImage: `linear-gradient(0deg,#08101ccc 0%,transparent 65%),url(${f.poster})`,
+                        }
+                      : undefined
+                  }
+                  onClick={() => setModal(f)}
                 >
-                  {watch[f.id] ? <Check /> : <span />}
+                  <span>{String(i + 1).padStart(2, "0")}</span>
+                  <Play />
                 </button>
+                <div className="film-copy">
+                  <div className="film-kicker">
+                    <label>
+                      {f.year} · {f.country}
+                    </label>
+                    <a
+                      className="imdb-rating"
+                      href={f.imdbUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      title="Open IMDb"
+                    >
+                      <Star />
+                      {f.imdbRating || "NR"}
+                      <small>/10</small>
+                    </a>
+                  </div>
+                  <h3>{f.title}</h3>
+                  <p>{f.description}</p>
+                  <div className="tags">
+                    <span>{f.type}</span>
+                    <span>{f.runtime}</span>
+                    <PlatformMark name={f.platform} />
+                  </div>
+                  <div className="actions">
+                    {f.trailerId ? (
+                      <button
+                        className="trailer-button"
+                        onClick={() => play(f.id)}
+                      >
+                        <Video />{" "}
+                        {playing === f.id ? "Close trailer" : "Watch trailer"}
+                      </button>
+                    ) : (
+                      <button onClick={() => setModal(f)}>
+                        View details <ChevronRight />
+                      </button>
+                    )}
+                    <a
+                      className="imdb-link"
+                      href={f.imdbUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      IMDb <ExternalLink />
+                    </a>
+                    <button
+                      className="tick"
+                      title="Mark watched"
+                      onClick={() => toggle(f.id)}
+                    >
+                      {watch[f.id] ? <Check /> : <span />}
+                    </button>
+                  </div>
+                </div>
+              </article>
+              {playing === f.id && f.trailerId && (
+                <Trailer
+                  videoId={f.trailerId}
+                  title={`${f.title} trailer`}
+                  close={() => setPlaying(null)}
+                />
+              )}
+            </React.Fragment>
+          ))}
+        </section>
+      )}
+      {collection === "interviews" && (
+        <section className="interview-grid">
+          {foundInterviews.map((item) => (
+            <article
+              className={watch[`interview:${item.id}`] ? "watched" : ""}
+              key={item.id}
+            >
+              <button
+                className="video-thumb"
+                onClick={() => play(item.id)}
+                style={{
+                  backgroundImage: `linear-gradient(0deg,#07101dcc,transparent),url(https://i.ytimg.com/vi/${item.videoId}/hqdefault.jpg)`,
+                }}
+              >
+                <Play />
+                <span>{item.runtime}</span>
+              </button>
+              <div className="interview-copy">
+                <label>
+                  {item.year} · {item.language}
+                </label>
+                <h3>{item.title}</h3>
+                <strong>{item.host}</strong>
+                <p>{item.description}</p>
+                <div className="actions">
+                  <button onClick={() => play(item.id)}>
+                    <Video /> {playing === item.id ? "Close" : "Watch here"}
+                  </button>
+                  <button
+                    className="tick"
+                    onClick={() => toggle(`interview:${item.id}`)}
+                  >
+                    {watch[`interview:${item.id}`] ? <Check /> : <span />}
+                  </button>
+                </div>
               </div>
-            </div>
-          </article>
-        ))}
-      </section>
-      {!filtered.length && (
+              {playing === item.id && (
+                <Trailer
+                  videoId={item.videoId}
+                  title={item.title}
+                  close={() => setPlaying(null)}
+                />
+              )}
+            </article>
+          ))}
+        </section>
+      )}
+      {collection === "books" && (
+        <section className="book-grid">
+          {foundBooks.map((book) => (
+            <article
+              className={watch[`book:${book.id}`] ? "watched" : ""}
+              key={book.id}
+            >
+              <div
+                className={`book-cover ${book.cover ? "" : "fallback"}`}
+                style={
+                  book.cover
+                    ? { backgroundImage: `url(${book.cover})` }
+                    : undefined
+                }
+              >
+                {!book.cover && (
+                  <>
+                    <small>LIONEL</small>
+                    <b>MESSI</b>
+                    <span>10</span>
+                  </>
+                )}
+              </div>
+              <div className="book-copy">
+                <label>
+                  {book.language} · {book.year}
+                </label>
+                <h3>{book.title}</h3>
+                <strong>{book.author}</strong>
+                <p>{book.kind}</p>
+                <div className="actions">
+                  <a
+                    className="amazon-link"
+                    href={book.url}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Find on Amazon <ExternalLink />
+                  </a>
+                  <button
+                    className="tick"
+                    title="Mark read"
+                    onClick={() => toggle(`book:${book.id}`)}
+                  >
+                    {watch[`book:${book.id}`] ? <Check /> : <span />}
+                  </button>
+                </div>
+              </div>
+            </article>
+          ))}
+        </section>
+      )}
+      {!activeItems.length && (
         <div className="empty">
           <RotateCcw />
           <h2>No stories found</h2>
@@ -609,6 +802,7 @@ function Library({
             onClick={() => {
               setQuery("");
               setType("All");
+              setLanguage("All");
             }}
           >
             Clear filters
@@ -616,6 +810,26 @@ function Library({
         </div>
       )}
     </>
+  );
+}
+
+function Trailer({ videoId, title, close }) {
+  return (
+    <div className="trailer-panel">
+      <button
+        className="trailer-close"
+        onClick={close}
+        aria-label="Close video"
+      >
+        <X />
+      </button>
+      <iframe
+        src={`https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`}
+        title={title}
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
+      />
+    </div>
   );
 }
 
