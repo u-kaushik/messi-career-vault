@@ -7,9 +7,14 @@ A lightweight, Barça-themed dashboard for exploring Lionel Messi's career seaso
 - 23 career chapters with statistics, stories, team honours and individual awards
 - Distinct vector artwork for each trophy family
 - International media library with posters, IMDb ratings and viewing links
-- Watched and explored progress tracking
-- Tiny zero-dependency Node persistence API with automatic `localStorage` fallback
-- Responsive layout with no account or external database required
+- Account-based watched, read, listened and explored progress
+- Small Cloudflare Worker API with D1 persistence and cookie sessions
+- PBKDF2 password hashing; session tokens stay in secure HttpOnly cookies
+- Responsive layout
+
+## Live app
+
+[messi-career-vault.ukaushik37.workers.dev](https://messi-career-vault.ukaushik37.workers.dev)
 
 ## Run locally
 
@@ -17,22 +22,18 @@ A lightweight, Barça-themed dashboard for exploring Lionel Messi's career seaso
 git clone https://github.com/u-kaushik/messi-career-vault.git
 cd messi-career-vault
 npm install
-npm run build
 npm start
 ```
 
-Open [http://localhost:4173](http://localhost:4173).
-
-For frontend development, run `npm run dev` and open `http://localhost:5173`. Progress falls back to browser storage when the API is unavailable.
+Open the localhost address printed by Wrangler. The local D1 schema is created automatically.
 
 ## Persistence
 
-The server assigns no accounts and collects no personal details. Each browser creates a random profile identifier, stored locally, and syncs progress to `data/progress.json`. That file is ignored by Git. Delete it to reset all server-side profiles.
-
-Set `PORT` to run on another port:
+Production uses one D1 database bound to one Worker. Apply schema changes and deploy with:
 
 ```bash
-PORT=8080 npm start
+npm run db:apply
+npm run deploy
 ```
 
 ## Notes

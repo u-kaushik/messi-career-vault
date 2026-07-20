@@ -1,1 +1,24 @@
-{"name":"messi-career-vault","version":"1.0.0","private":false,"description":"A local-first Messi career and documentary tracker.","scripts":{"dev":"vite","build":"vite build","preview":"vite preview","start":"node server.mjs"},"dependencies":{"@vitejs/plugin-react":"latest","lucide-react":"latest","react":"latest","react-dom":"latest","vite":"latest"}}
+{
+  "name": "messi-career-vault",
+  "version": "1.0.0",
+  "private": false,
+  "description": "A lightweight Messi career and media tracker with account-based progress.",
+  "scripts": {
+    "dev": "npm run build && wrangler d1 execute messi-career-vault --local --file=./schema.sql && wrangler dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "npm run dev",
+    "deploy": "npm run build && wrangler deploy",
+    "db:apply": "wrangler d1 execute messi-career-vault --remote --file=./schema.sql"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "vite": "latest"
+  },
+  "devDependencies": {
+    "wrangler": "^4.112.0"
+  }
+}

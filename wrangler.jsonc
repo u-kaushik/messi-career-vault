@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "messi-career-vault",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-07-20",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/api/*"],
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "messi-career-vault",
+      "database_id": "73222ba1-175c-4313-9a27-27f552b696fb",
+    },
+  ],
+}

@@ -1,15 +1,306 @@
-body{background:radial-gradient(circle at 76% -5%,#123369 0,transparent 32%),radial-gradient(circle at 100% 60%,#4b062633 0,transparent 30%),#060d20}
-aside{background:linear-gradient(180deg,#08142d,#070c19);border-right-color:#00a7e722}
-.brand>span{color:white;background:linear-gradient(135deg,#00a7e7 0 48%,#a50044 48%);box-shadow:0 0 24px #00a7e733}
-.brand b,.side-card p,.section-head span,header>div>span{color:#00a7e7}
-nav button.active{background:linear-gradient(90deg,#00a7e718,#a5004418);box-shadow:inset 2px 0 #00a7e7}
-.bar i{background:linear-gradient(90deg,#00a7e7,#a50044)}
-blockquote{border-left-color:#a50044}
-.stats,.timeline,.chapter{background:#0c172b;border-color:#00a7e714}
-.stats svg,.honour svg{color:#edbb00}
-.season:hover,.season.active{background:linear-gradient(90deg,#102b50,#30102c)}
-.season.active{box-shadow:inset 3px 0 #00a7e7}
-.hero{background:linear-gradient(135deg,#004d98,#a50044)}
-.chapter-body>button,.film-copy label,.modal label,.poster>svg{color:#00a7e7;border-color:#00a7e7}
-.chapter-body>button.complete,.chips button.active,.modal-actions button{background:#00a7e7;border-color:#00a7e7}
-.honours-ledger{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.honour-group{border:1px solid #ffffff10;background:#091325;border-radius:12px;overflow:hidden}.honour-title{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;border-bottom:1px solid #ffffff0d;font:700 9px Manrope;letter-spacing:1.4px;color:#7887a2}.honour-title b{display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:#17253e;color:#00a7e7;font-size:9px}.honour-list{padding:5px}.honour-item{min-height:50px;display:flex;align-items:center;gap:10px;padding:7px 8px;border-radius:8px}.honour-item:hover{background:#ffffff06}.honour-item>span{font:600 11px/1.25 Manrope;color:#dce3ee}.honour-item small{display:block;font:600 8px DM Sans;color:#66758f;text-transform:uppercase;letter-spacing:1px;margin-bottom:3px}.trophy-mark{width:33px;height:33px;flex:0 0 33px;padding:5px;border-radius:9px;color:#edbb00;background:linear-gradient(145deg,#edbb001c,#a5004410)}.trophy-mark.ball,.trophy-mark.goldball{color:#f4cc45}.trophy-mark.boot,.trophy-mark.pichichi{color:#dcae31}.trophy-mark.ucl{color:#c4d8ff;background:#1a2e591f}.trophy-mark.world{color:#f1c65d}.trophy-mark.shield{color:#d6dae3}.trophy-mark.mvp,.trophy-mark.star{color:#00a7e7}.trophy-mark.leagues{color:#f27da7}.trophy-mark.mls{color:#e1e6ef}.no-honours{margin:0;padding:20px 14px;color:#53617a;font-size:10px;font-style:italic}@media(max-width:650px){.honours-ledger{grid-template-columns:1fr}}
+body {
+  background:
+    radial-gradient(circle at 76% -5%, #123369 0, transparent 32%),
+    radial-gradient(circle at 100% 60%, #4b062633 0, transparent 30%), #060d20;
+}
+.account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 10px;
+  border: 1px solid #ffffff14;
+  border-radius: 12px;
+  background: #0c172b;
+  color: #dce3ee;
+}
+.account > span {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00a7e7, #a50044);
+  font-weight: 900;
+}
+.account small {
+  max-width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.account svg {
+  width: 16px;
+  color: #71809a;
+}
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at 20% 0, #004d9855, transparent 34%),
+    radial-gradient(circle at 90% 90%, #a500443d, transparent 32%), #060d20;
+}
+.login-card {
+  width: min(100%, 410px);
+  padding: 42px;
+  border: 1px solid #ffffff17;
+  border-radius: 24px;
+  background: #0b1629e8;
+  box-shadow: 0 30px 90px #0009;
+}
+.login-mark {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin-bottom: 25px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #00a7e7 0 48%, #a50044 48%);
+  color: #fff;
+  font: 900 23px Manrope;
+}
+.login-card > span {
+  color: #00a7e7;
+  font: 800 10px Manrope;
+  letter-spacing: 0.18em;
+}
+.login-card h1 {
+  margin: 10px 0 8px;
+  color: #fff;
+  font-size: 34px;
+}
+.login-card > p {
+  margin: 0 0 28px;
+  color: #8190a4;
+}
+.login-card form {
+  display: grid;
+  gap: 9px;
+}
+.login-card label {
+  margin-top: 8px;
+  color: #9aa8bb;
+  font: 700 11px Manrope;
+}
+.login-card input {
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #ffffff18;
+  border-radius: 10px;
+  background: #07101d;
+  color: #fff;
+  font: 500 15px Manrope;
+  outline: none;
+}
+.login-card input:focus {
+  border-color: #00a7e7;
+}
+.login-card form > button {
+  height: 48px;
+  margin-top: 14px;
+  border: 0;
+  border-radius: 10px;
+  background: #00a7e7;
+  color: #03111c;
+  font:
+    900 14px Manrope,
+    sans-serif;
+}
+.login-card form > button:disabled {
+  opacity: 0.6;
+}
+.login-error {
+  padding: 10px;
+  border-radius: 8px;
+  background: #a5004429;
+  color: #ff9dbd;
+  font-size: 12px;
+}
+.login-switch {
+  display: block;
+  margin: 18px auto 0;
+  border: 0;
+  background: none;
+  color: #93a2b7;
+}
+.app-loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #060d20;
+  color: #fff;
+  font: 900 44px Manrope;
+}
+@media (max-width: 650px) {
+  .account small {
+    display: none;
+  }
+  .login-card {
+    padding: 30px 24px;
+  }
+}
+aside {
+  background: linear-gradient(180deg, #08142d, #070c19);
+  border-right-color: #00a7e722;
+}
+.brand > span {
+  color: white;
+  background: linear-gradient(135deg, #00a7e7 0 48%, #a50044 48%);
+  box-shadow: 0 0 24px #00a7e733;
+}
+.brand b,
+.side-card p,
+.section-head span,
+header > div > span {
+  color: #00a7e7;
+}
+nav button.active {
+  background: linear-gradient(90deg, #00a7e718, #a5004418);
+  box-shadow: inset 2px 0 #00a7e7;
+}
+.bar i {
+  background: linear-gradient(90deg, #00a7e7, #a50044);
+}
+blockquote {
+  border-left-color: #a50044;
+}
+.stats,
+.timeline,
+.chapter {
+  background: #0c172b;
+  border-color: #00a7e714;
+}
+.stats svg,
+.honour svg {
+  color: #edbb00;
+}
+.season:hover,
+.season.active {
+  background: linear-gradient(90deg, #102b50, #30102c);
+}
+.season.active {
+  box-shadow: inset 3px 0 #00a7e7;
+}
+.hero {
+  background: linear-gradient(135deg, #004d98, #a50044);
+}
+.chapter-body > button,
+.film-copy label,
+.modal label,
+.poster > svg {
+  color: #00a7e7;
+  border-color: #00a7e7;
+}
+.chapter-body > button.complete,
+.chips button.active,
+.modal-actions button {
+  background: #00a7e7;
+  border-color: #00a7e7;
+}
+.honours-ledger {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 20px;
+}
+.honour-group {
+  border: 1px solid #ffffff10;
+  background: #091325;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.honour-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border-bottom: 1px solid #ffffff0d;
+  font: 700 9px Manrope;
+  letter-spacing: 1.4px;
+  color: #7887a2;
+}
+.honour-title b {
+  display: grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #17253e;
+  color: #00a7e7;
+  font-size: 9px;
+}
+.honour-list {
+  padding: 5px;
+}
+.honour-item {
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 8px;
+  border-radius: 8px;
+}
+.honour-item:hover {
+  background: #ffffff06;
+}
+.honour-item > span {
+  font: 600 11px/1.25 Manrope;
+  color: #dce3ee;
+}
+.honour-item small {
+  display: block;
+  font: 600 8px DM Sans;
+  color: #66758f;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+}
+.trophy-mark {
+  width: 33px;
+  height: 33px;
+  flex: 0 0 33px;
+  padding: 5px;
+  border-radius: 9px;
+  color: #edbb00;
+  background: linear-gradient(145deg, #edbb001c, #a5004410);
+}
+.trophy-mark.ball,
+.trophy-mark.goldball {
+  color: #f4cc45;
+}
+.trophy-mark.boot,
+.trophy-mark.pichichi {
+  color: #dcae31;
+}
+.trophy-mark.ucl {
+  color: #c4d8ff;
+  background: #1a2e591f;
+}
+.trophy-mark.world {
+  color: #f1c65d;
+}
+.trophy-mark.shield {
+  color: #d6dae3;
+}
+.trophy-mark.mvp,
+.trophy-mark.star {
+  color: #00a7e7;
+}
+.trophy-mark.leagues {
+  color: #f27da7;
+}
+.trophy-mark.mls {
+  color: #e1e6ef;
+}
+.no-honours {
+  margin: 0;
+  padding: 20px 14px;
+  color: #53617a;
+  font-size: 10px;
+  font-style: italic;
+}
+@media (max-width: 650px) {
+  .honours-ledger {
+    grid-template-columns: 1fr;
+  }
+}

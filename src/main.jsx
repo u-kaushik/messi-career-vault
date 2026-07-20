@@ -16,6 +16,7 @@ import {
   BookOpen,
   Video,
   Headphones,
+  LogOut,
 } from "lucide-react";
 import {
   seasons,
@@ -33,36 +34,26 @@ import "./trophies.css";
 import "./library.css";
 
 const STORE = "messi-vault-v1";
-const PROFILE = "messi-vault-profile";
-const getState = () => {
+const getState = (userId) => {
   try {
-    return JSON.parse(localStorage.getItem(STORE)) || {};
+    return JSON.parse(localStorage.getItem(`${STORE}:${userId}`)) || {};
   } catch {
     return {};
   }
 };
-const getProfile = () => {
-  let id = localStorage.getItem(PROFILE);
-  if (!id) {
-    id = crypto.randomUUID();
-    localStorage.setItem(PROFILE, id);
-  }
-  return id;
-};
-
-function App() {
-  const [profile] = useState(getProfile);
+function App({ user, onLogout }) {
+  const storeKey = `${STORE}:${user.id}`;
   const [syncReady, setSyncReady] = useState(false);
   const [tab, setTab] = useState("career"),
     [selected, setSelected] = useState(seasons[18]),
-    [watch, setWatch] = useState(() => getState().watch || {}),
-    [seen, setSeen] = useState(() => getState().seen || {}),
+    [watch, setWatch] = useState(() => getState(user.id).watch || {}),
+    [seen, setSeen] = useState(() => getState(user.id).seen || {}),
     [query, setQuery] = useState(""),
     [type, setType] = useState("All"),
     [modal, setModal] = useState(null);
   useEffect(() => {
     let active = true;
-    fetch(`/api/progress/${profile}`)
+    fetch("/api/progress")
       .then((r) => {
         if (!r.ok) throw new Error();
         return r.json();
@@ -78,13 +69,13 @@ function App() {
     return () => {
       active = false;
     };
-  }, [profile]);
+  }, []);
   useEffect(() => {
-    localStorage.setItem(STORE, JSON.stringify({ watch, seen }));
+    localStorage.setItem(storeKey, JSON.stringify({ watch, seen }));
     if (!syncReady) return;
     const timer = setTimeout(
       () =>
-        fetch(`/api/progress/${profile}`, {
+        fetch("/api/progress", {
           method: "PUT",
           headers: { "content-type": "application/json" },
           body: JSON.stringify({ watch, seen }),
@@ -92,7 +83,7 @@ function App() {
       250,
     );
     return () => clearTimeout(timer);
-  }, [watch, seen, profile, syncReady]);
+  }, [watch, seen, syncReady, storeKey]);
   const totalLibrary =
     films.length + interviews.length + podcasts.length + books.length;
   const watched = Object.values(watch).filter(Boolean).length;
@@ -151,7 +142,11 @@ function App() {
                 : "Films, long-form conversations, guest podcasts and books from around the world."}
             </p>
           </div>
-          <div className="avatar">LM</div>
+          <button className="account" onClick={onLogout} title="Sign out">
+            <span>{user.email.slice(0, 1).toUpperCase()}</span>
+            <small>{user.email}</small>
+            <LogOut />
+          </button>
         </header>
         {tab === "career" ? (
           <Career
@@ -928,4 +923,103 @@ function Trailer({ videoId, title, close }) {
   );
 }
 
-createRoot(document.getElementById("root")).render(<App />);
+function Login({ onAuthenticated }) {
+  const [mode, setMode] = useState("login");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+  const [busy, setBusy] = useState(false);
+  async function submit(event) {
+    event.preventDefault();
+    setBusy(true);
+    setError("");
+    try {
+      const response = await fetch(`/api/auth/${mode}`, {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ email, password }),
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Could not sign in");
+      onAuthenticated(data.user);
+    } catch (failure) {
+      setError(failure.message);
+    } finally {
+      setBusy(false);
+    }
+  }
+  return (
+    <main className="login-page">
+      <section className="login-card">
+        <div className="login-mark">10</div>
+        <span>THE MESSI ARCHIVE</span>
+        <h1>{mode === "login" ? "Welcome back." : "Start your journey."}</h1>
+        <p>Your progress follows you across every device.</p>
+        <form onSubmit={submit}>
+          <label>Email</label>
+          <input
+            type="email"
+            autoComplete="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label>Password</label>
+          <input
+            type="password"
+            autoComplete={
+              mode === "login" ? "current-password" : "new-password"
+            }
+            minLength="8"
+            required
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          {error && <div className="login-error">{error}</div>}
+          <button disabled={busy}>
+            {busy
+              ? "One moment…"
+              : mode === "login"
+                ? "Sign in"
+                : "Create account"}
+          </button>
+        </form>
+        <button
+          className="login-switch"
+          onClick={() => {
+            setMode(mode === "login" ? "register" : "login");
+            setError("");
+          }}
+        >
+          {mode === "login"
+            ? "New here? Create an account"
+            : "Already registered? Sign in"}
+        </button>
+      </section>
+    </main>
+  );
+}
+
+function Root() {
+  const [user, setUser] = useState(undefined);
+  useEffect(() => {
+    fetch("/api/auth/me")
+      .then(async (response) =>
+        setUser(response.ok ? (await response.json()).user : null),
+      )
+      .catch(() => setUser(null));
+  }, []);
+  if (user === undefined) return <div className="app-loading">10</div>;
+  if (!user) return <Login onAuthenticated={setUser} />;
+  return (
+    <App
+      user={user}
+      onLogout={async () => {
+        await fetch("/api/auth/logout", { method: "POST" });
+        setUser(null);
+      }}
+    />
+  );
+}
+
+createRoot(document.getElementById("root")).render(<Root />);
