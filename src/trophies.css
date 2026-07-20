@@ -1,0 +1,41 @@
+.honour-item {
+  min-height: 68px;
+  gap: 13px;
+  padding: 8px 10px;
+}
+.trophy-mark {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 52px;
+  padding: 2px;
+  border-radius: 10px;
+  background: radial-gradient(circle at 50% 38%, #ffffff12, transparent 67%);
+  filter: drop-shadow(0 6px 5px #0009);
+  overflow: visible;
+}
+.trophy-mark.ucl,
+.trophy-mark.world,
+.trophy-mark.league,
+.trophy-mark.copa,
+.trophy-mark.supercup,
+.trophy-mark.clubworld,
+.trophy-mark.leagues,
+.trophy-mark.shield,
+.trophy-mark.medal,
+.trophy-mark.ball,
+.trophy-mark.goldball,
+.trophy-mark.boot,
+.trophy-mark.pichichi,
+.trophy-mark.mvp,
+.trophy-mark.star,
+.trophy-mark.assist,
+.trophy-mark.mls {
+  color: initial;
+}
+@media (max-width: 650px) {
+  .trophy-mark {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+  }
+}

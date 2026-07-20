@@ -1,0 +1,78 @@
+export const seasons = [
+['2004–05','Barcelona','The beginning','Debut at 17. First senior goal, assisted by Ronaldinho.',9,1,0,'La Liga'],
+['2005–06','Barcelona','European champion','First Champions League medal and the No. 19 shirt.',25,8,3,'Champions League'],
+['2006–07','Barcelona','A star arrives','A Clásico hat-trick and that Getafe goal.',36,17,3,'Spanish Super Cup'],
+['2007–08','Barcelona','The new number ten','Olympic gold followed; a changing of the guard at Barça.',40,16,13,'—'],
+['2008–09','Barcelona','The treble','Guardiola, Rome and a header no one saw coming.',51,38,17,'Treble'],
+['2009–10','Barcelona','First Ballon d’Or','A 47-goal season and the world’s best player crown.',53,47,12,'La Liga'],
+['2010–11','Barcelona','Peak Barcelona','Wembley brilliance in one of football’s greatest sides.',55,53,23,'Champions League'],
+['2011–12','Barcelona','The 73','A record-breaking club season; four goals in one UCL match.',60,73,29,'Copa del Rey'],
+['2012–13','Barcelona','91 in a year','A fourth straight Ballon d’Or and a 100-point league title.',50,60,15,'La Liga'],
+['2013–14','Barcelona','The difficult year','Injury interruptions and a World Cup final on the horizon.',46,41,14,'Spanish Super Cup'],
+['2014–15','Barcelona','MSN & the treble','That Bayern semi-final, Berlin, and a second treble.',57,58,27,'Treble'],
+['2015–16','Barcelona','Domestic double','A fifth Ballon d’Or and another league-and-cup double.',49,41,23,'La Liga · Copa del Rey'],
+['2016–17','Barcelona','500 at the Bernabéu','The shirt celebration became an instant icon.',52,54,20,'Copa del Rey'],
+['2017–18','Barcelona','Domestic dominance','Unbeaten almost all season; Golden Shoe number five.',54,45,18,'La Liga · Copa del Rey'],
+['2018–19','Barcelona','Captain','His first season as captain; the impossible Liverpool free-kick.',50,51,22,'La Liga'],
+['2019–20','Barcelona','The assist king','A record 21 league assists in a turbulent season.',44,31,27,'—'],
+['2020–21','Barcelona','The farewell season','A last Copa del Rey and finally, Copa América with Argentina.',47,38,14,'Copa del Rey · Copa América'],
+['2021–22','Paris Saint-Germain','Paris, year one','A new club after 21 years; league champion in France.',34,11,14,'Ligue 1'],
+['2022–23','Paris Saint-Germain','Immortal','Seven goals in Qatar, the World Cup, and an eighth Ballon d’Or.',41,21,20,'World Cup · Ligue 1'],
+['2023','Inter Miami','Miami magic','A debut free-kick and seven wins to the club’s first trophy.',14,11,5,'Leagues Cup'],
+['2024','Inter Miami','Record breakers','A record MLS regular season and the Supporters’ Shield.',25,23,13,'Supporters’ Shield'],
+['2025','Inter Miami','Champions of MLS','A Golden Boot season finished with Miami’s first MLS Cup.',null,null,null,'MLS Cup'],
+['2026','Inter Miami','Still writing it','At 39, the captain’s final chapters are being written in real time.',null,null,null,'In progress']
+].map((s,i)=>({id:i,season:s[0],club:s[1],title:s[2],story:s[3],apps:s[4],goals:s[5],assists:s[6],honours:s[7]}));
+
+const filmCatalog = [
+ {id:'messi-2014',title:'Messi',year:2014,type:'Film',country:'Spain',runtime:'1h 33m',platform:'Rent / buy',focus:'The origin story',description:'Álex de la Iglesia blends interviews, archive and dramatised childhood scenes.',url:'https://www.imdb.com/title/tt3538766/'},
+ {id:'take-ball',title:'Take the Ball, Pass the Ball',year:2018,type:'Film',country:'Spain',runtime:'1h 49m',platform:'Prime Video',focus:'Guardiola’s Barcelona',description:'The inside story of the side that changed football, with Messi at its centre.',url:'https://www.imdb.com/title/tt9135854/'},
+ {id:'barca-dreams',title:'Barça Dreams',year:2015,type:'Film',country:'Spain',runtime:'2h',platform:'Rent / buy',focus:'FC Barcelona',description:'A sweeping club history from Gamper to Cruyff, Guardiola and Messi.',url:'https://www.imdb.com/title/tt4937114/'},
+ {id:'this-is-football',title:'This Is Football — Redemption',year:2019,type:'Episode',country:'UK',runtime:'1h',platform:'Prime Video',focus:'Argentina',description:'Argentina’s bond with Messi, and the pain and hope behind the shirt.',url:'https://www.amazon.co.uk/This-Is-Football-Season-1/dp/B07VQCFJCL'},
+ {id:'becoming-leo',title:'Becoming: Lionel Messi',year:2020,type:'Episode',country:'USA',runtime:'24m',platform:'Disney+',focus:'Early life',description:'A compact portrait of the people and places that shaped him.',url:'https://www.disneyplus.com/'},
+ {id:'road-qatar',title:'Sean eternos: Campeones de América',year:2022,type:'Docuseries',country:'Argentina',runtime:'3 eps',platform:'Netflix',focus:'Copa América 2021',description:'Inside Argentina’s long-awaited triumph and Messi’s release at the Maracanã.',url:'https://www.netflix.com/title/81635936'},
+ {id:'destiny',title:'Lionel Messi: Destiny',year:2023,type:'Film',country:'UK',runtime:'59m',platform:'BBC iPlayer',focus:'World Cup 2022',description:'How Messi completed the one quest that had defined his international career.',url:'https://www.bbc.co.uk/iplayer/'},
+ {id:'elijo',title:'Elijo creer: El camino del campeón',year:2023,type:'Film',country:'Argentina',runtime:'1h 20m',platform:'Max',focus:'World Cup 2022',description:'The AFA’s official film of Argentina’s road through Qatar.',url:'https://www.imdb.com/title/tt30320457/'},
+ {id:'muchachos',title:'Muchachos, la película de la gente',year:2023,type:'Film',country:'Argentina',runtime:'1h 40m',platform:'Rent / buy',focus:'The supporters',description:'Argentina’s World Cup victory told through the people who lived every second.',url:'https://www.imdb.com/title/tt30423047/'},
+ {id:'captains',title:'Captains of the World',year:2023,type:'Docuseries',country:'UK',runtime:'6 eps',platform:'Netflix',focus:'World Cup 2022',description:'Behind the scenes in Qatar with Messi and the tournament’s other captains.',url:'https://www.netflix.com/title/81665981'},
+ {id:'america',title:'Messi Meets America',year:2023,type:'Docuseries',country:'USA',runtime:'6 eps',platform:'Apple TV+',focus:'Inter Miami',description:'All-access coverage of the arrival that transformed MLS overnight.',url:'https://tv.apple.com/show/messi-meets-america/umc.cmc.1jhe8q7x6s7y0mp12f2g9p98n'},
+ {id:'rise',title:"Messi’s World Cup: The Rise of a Legend",year:2024,type:'Docuseries',country:'USA / Argentina',runtime:'4 eps',platform:'Apple TV+',focus:'Argentina career',description:'Messi narrates five World Cups, from teenage debut to the summit in Qatar.',url:'https://tv.apple.com/gb/show/messis-world-cup-the-rise-of-a-legend/umc.cmc.6hpxli71tx1zy1mwz7tutj94h'},
+ {id:'together',title:'Together: Treble Winners',year:2024,type:'Docuseries',country:'USA',runtime:'6 eps',platform:'Apple TV+',focus:'Inter Miami',description:'The 2023 Leagues Cup run, with Messi joining mid-season and changing everything.',url:'https://tv.apple.com/'},
+ {id:'on-side',title:'On Side: Major League Soccer',year:2025,type:'Docuseries',country:'USA',runtime:'8 eps',platform:'Apple TV+',focus:'MLS 2024',description:'A league-wide all-access series featuring Messi’s first full Miami season.',url:'https://tv.apple.com/'}
+];
+
+const mediaMeta = {
+ 'messi-2014':['tt3538766','7.1'], 'take-ball':['tt9135854','7.9'], 'barca-dreams':['tt5001576','7.3'],
+ 'this-is-football':['tt9170224','8.0'], 'road-qatar':['tt23762464','7.9'], 'destiny':['tt27881351','7.7'],
+ 'elijo':['tt30342692','7.1'], 'muchachos':['tt30394627','8.1'], 'captains':['tt26218818','8.3'],
+ 'america':['tt29373357','7.0'], 'rise':['tt27972462','8.2'], 'together':['tt31579076','7.4'], 'on-side':['tt35517757','7.2']
+};
+export const films = filmCatalog.map(f=>{const [imdbId,imdbRating]=mediaMeta[f.id]||[];return {...f,imdbId,imdbRating,imdbUrl:imdbId?`https://www.imdb.com/title/${imdbId}/`:`https://www.imdb.com/find/?q=${encodeURIComponent(f.title)}`,poster:imdbId?`https://images.metahub.space/poster/small/${imdbId}/img`:null}});
+
+// Major honours are assigned to the season in which they were won.
+// Individual lists intentionally favour recognised season/tournament awards over monthly prizes and XI selections.
+export const honourLedger = {
+ '2004–05':{team:[['La Liga','league'],['FIFA U-20 World Cup','world']],individual:[['U-20 World Cup Golden Ball','goldball'],['U-20 World Cup Golden Boot','boot'],['Golden Boy','ball']]},
+ '2005–06':{team:[['La Liga','league'],['UEFA Champions League','ucl'],['Spanish Super Cup','supercup']],individual:[['FIFPRO Young Player','star']]},
+ '2006–07':{team:[['Spanish Super Cup','supercup']],individual:[['Bravo Award','ball'],['FIFPRO Young Player','star']]},
+ '2007–08':{team:[['Olympic Gold','medal']],individual:[['FIFPRO Young Player','star']]},
+ '2008–09':{team:[['La Liga','league'],['Copa del Rey','copa'],['UEFA Champions League','ucl']],individual:[["Ballon d’Or",'ball'],['FIFA World Player','star'],['UEFA Club Forward','star'],['UCL Top Scorer','boot'],['La Liga Best Player','star']]},
+ '2009–10':{team:[['La Liga','league'],['Spanish Super Cup','supercup'],['UEFA Super Cup','supercup'],['FIFA Club World Cup','clubworld']],individual:[["FIFA Ballon d’Or",'ball'],['European Golden Shoe','boot'],['Pichichi Trophy','pichichi'],['UCL Top Scorer','boot'],['Club World Cup Golden Ball','goldball']]},
+ '2010–11':{team:[['La Liga','league'],['Spanish Super Cup','supercup'],['UEFA Champions League','ucl']],individual:[["FIFA Ballon d’Or",'ball'],['UEFA Best Player in Europe','star'],['UCL Top Scorer','boot'],['La Liga Best Player','star']]},
+ '2011–12':{team:[['Copa del Rey','copa'],['Spanish Super Cup','supercup'],['UEFA Super Cup','supercup'],['FIFA Club World Cup','clubworld']],individual:[["FIFA Ballon d’Or",'ball'],['European Golden Shoe','boot'],['Pichichi Trophy','pichichi'],['UCL Top Scorer','boot'],['Club World Cup Golden Ball','goldball']]},
+ '2012–13':{team:[['La Liga','league']],individual:[['European Golden Shoe','boot'],['Pichichi Trophy','pichichi'],['La Liga Best Player','star']]},
+ '2013–14':{team:[['Spanish Super Cup','supercup']],individual:[['World Cup Golden Ball','goldball']]},
+ '2014–15':{team:[['La Liga','league'],['Copa del Rey','copa'],['UEFA Champions League','ucl']],individual:[["Ballon d’Or",'ball'],['UEFA Best Player in Europe','star'],['UCL Top Scorer','boot'],['La Liga Best Player','star']]},
+ '2015–16':{team:[['La Liga','league'],['Copa del Rey','copa'],['UEFA Super Cup','supercup'],['FIFA Club World Cup','clubworld']],individual:[['FIFA Club World Cup Final MVP','star']]},
+ '2016–17':{team:[['Copa del Rey','copa'],['Spanish Super Cup','supercup']],individual:[['European Golden Shoe','boot'],['Pichichi Trophy','pichichi']]},
+ '2017–18':{team:[['La Liga','league'],['Copa del Rey','copa']],individual:[['European Golden Shoe','boot'],['Pichichi Trophy','pichichi'],['La Liga Best Player','star']]},
+ '2018–19':{team:[['La Liga','league'],['Spanish Super Cup','supercup']],individual:[["Ballon d’Or",'ball'],['The Best FIFA Men’s Player','star'],['European Golden Shoe','boot'],['Pichichi Trophy','pichichi'],['UCL Top Scorer','boot'],['UEFA Forward of the Season','star']]},
+ '2019–20':{team:[],individual:[['Pichichi Trophy','pichichi'],['Laureus Sportsman of the Year','star'],['La Liga Top Assister','assist']]},
+ '2020–21':{team:[['Copa del Rey','copa'],['Copa América','copa']],individual:[["Ballon d’Or",'ball'],['Copa América Golden Ball','goldball'],['Copa América Golden Boot','boot'],['Pichichi Trophy','pichichi']]},
+ '2021–22':{team:[['Ligue 1','league'],['Finalissima','copa']],individual:[['Finalissima Player of the Match','star']]},
+ '2022–23':{team:[['FIFA World Cup','world'],['Ligue 1','league'],['Trophée des Champions','supercup']],individual:[["Ballon d’Or",'ball'],['The Best FIFA Men’s Player','star'],['World Cup Golden Ball','goldball'],['Laureus Sportsman of the Year','star']]},
+ '2023':{team:[['Leagues Cup','leagues']],individual:[['Leagues Cup Best Player','star'],['Leagues Cup Top Scorer','boot'],['TIME Athlete of the Year','star']]},
+ '2024':{team:[["Supporters’ Shield",'shield'],['Copa América','copa']],individual:[['Landon Donovan MLS MVP','mvp'],['MLS Best XI','star']]},
+ '2025':{team:[['MLS Cup','mls'],['Eastern Conference','shield']],individual:[['Landon Donovan MLS MVP','mvp'],['MLS Golden Boot','boot'],['MLS Cup MVP','mvp']]},
+ '2026':{team:[],individual:[]}
+};

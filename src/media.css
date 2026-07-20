@@ -1,0 +1,140 @@
+.poster.has-image {
+  background-size: cover;
+  background-position: center;
+}
+.poster.has-image:after {
+  display: none;
+}
+.film-kicker,
+.modal-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.imdb-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  color: #f5c518 !important;
+  text-decoration: none;
+  font: 700 11px Manrope;
+  white-space: nowrap;
+}
+.imdb-rating svg {
+  width: 12px;
+  height: 12px;
+  fill: #f5c518;
+}
+.imdb-rating small {
+  color: #7d8798;
+  font-size: 8px;
+}
+.imdb-link {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 12px;
+  color: #f5c518;
+  text-decoration: none;
+  font-size: 10px;
+}
+.imdb-link svg {
+  width: 11px;
+}
+.poster.big.has-image {
+  background-size: cover;
+  background-position: center 22%;
+  min-height: 240px;
+}
+.modal-heading h2 {
+  margin-right: auto;
+}
+.imdb-rating.large {
+  font-size: 16px;
+  background: #171d28;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.imdb-rating.large svg {
+  width: 16px;
+  height: 16px;
+}
+.modal-actions {
+  flex-wrap: wrap;
+}
+.platform-mark {
+  min-width: 27px;
+  height: 20px;
+  padding: 0 6px !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: 4px !important;
+  background: #202837 !important;
+  color: #fff !important;
+  font-style: normal;
+}
+.platform-mark b {
+  font: 800 10px/1 Manrope;
+}
+.platform-mark em {
+  font: 500 9px DM Sans;
+  color: #aeb7c5;
+  font-style: normal;
+}
+.platform-mark svg {
+  width: 11px;
+}
+.platform-mark.netflix {
+  background: #e50914 !important;
+  padding-inline: 8px !important;
+}
+.platform-mark.netflix b {
+  font-size: 14px;
+}
+.platform-mark.disney {
+  background: #102c78 !important;
+}
+.platform-mark.disney b {
+  font-size: 9px;
+}
+.platform-mark.disney i {
+  font-family: cursive;
+  font-style: normal;
+}
+.platform-mark.apple {
+  background: #f5f5f5 !important;
+  color: #111 !important;
+}
+.platform-mark.prime {
+  background: #087a9f !important;
+}
+.platform-mark.bbc {
+  background: #fff !important;
+}
+.platform-mark.bbc b {
+  display: flex;
+  gap: 1px;
+}
+.platform-mark.bbc i {
+  background: #111;
+  color: #fff;
+  padding: 2px;
+  font-style: normal;
+}
+.platform-mark.max {
+  background: #5146ff !important;
+}
+.platform-mark.max b {
+  font-size: 11px;
+  letter-spacing: -1px;
+}
+.platform-mark.rent {
+  background: #a50044 !important;
+}
+.meta .platform-mark {
+  height: 24px;
+  padding-inline: 8px !important;
+}
