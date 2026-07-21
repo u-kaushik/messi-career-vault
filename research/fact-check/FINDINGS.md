@@ -67,3 +67,11 @@ Resolved in the latest copy:
 2. The 2010 `FIFA Ballon d’Or`, 2009–10 `European Golden Shoe` and 2009–10 `Pichichi Trophy` are allocated to 2010–11 under the presentation-date rule.
 
 No factual blocker remains. The transfers, chronology, dates, scores, goal minutes/order/sequences, tactical descriptions, 47/53 total, 34 Liga goals, eight UCL goals, 99 points/record comparisons, both photos, official UEFA video and listed sources pass.
+
+## Unpublished 2010–11 draft
+
+The ledger contains **47 VERIFIED, 7 QUALIFIED, 0 UNRESOLVED and 1 REMOVE** decisions. Verdict: **HOLD**.
+
+Required correction: move `UEFA Best Player in Europe` and the 2010–11 `La Liga Best Player` award to 2011–12. They were presented on 25 August and 1 December 2011, after 2011–12 began, so their current placement violates the date-based rule.
+
+The post-World Cup/transfers context, Super Cup, league and 5–0 Clásico details, Ballon d'Or podium, Arsenal tie, Abidal timeline, four spring Clásicos, title/96 points, Wembley events/statistics, 53/55 total, 31 Liga and 12 UCL goals, record comparison, sources, photos, UEFA video and duplicate-media check otherwise pass.
