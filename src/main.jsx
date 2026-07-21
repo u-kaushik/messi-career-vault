@@ -448,7 +448,19 @@ function Career({ selected, setSelected, seen, setSeen }) {
               </i>
               <span className="season-copy">
                 <b className="season-year">{s.season}</b>
-                <small className="season-club">{s.club}</small>
+                <small className="season-club">
+                  <img
+                    src={
+                      s.club.startsWith("Barcelona")
+                        ? "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/120px-FC_Barcelona_%28crest%29.svg.png"
+                        : s.club.startsWith("Paris")
+                          ? "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/120px-Paris_Saint-Germain_F.C..svg.png"
+                          : "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Inter_Miami_CF_logo.svg/120px-Inter_Miami_CF_logo.svg.png"
+                    }
+                    alt=""
+                  />
+                  {s.club}
+                </small>
               </span>
               <ChevronRight />
             </button>

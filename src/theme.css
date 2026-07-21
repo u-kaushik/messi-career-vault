@@ -216,7 +216,7 @@ blockquote {
   box-shadow: inset 3px 0 #00a7e7;
 }
 .season {
-  min-height: 72px;
+  min-height: 104px;
   height: auto;
   display: grid;
   grid-template-columns: 30px minmax(0, 1fr) 20px;
@@ -229,10 +229,7 @@ blockquote {
 }
 .season-copy {
   min-width: 0;
-  display: grid;
-  grid-template-columns: 82px minmax(0, 1fr);
-  align-items: center;
-  column-gap: 18px;
+  display: block;
   text-align: left;
 }
 .season-year {
@@ -241,11 +238,21 @@ blockquote {
   letter-spacing: 0.01em;
 }
 .season-club {
-  margin-top: 0;
+  display: flex !important;
+  align-items: center;
+  gap: 8px;
+  margin-top: 9px;
   color: #7f8a9c;
   font-size: 11px;
   line-height: 1.3;
   white-space: normal;
+}
+.season-club img {
+  width: 18px;
+  height: 18px;
+  flex: 0 0 18px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 3px #0007);
 }
 .season > svg {
   display: block;
