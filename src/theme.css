@@ -198,6 +198,12 @@ blockquote {
   background: #0c172b;
   border-color: #00a7e714;
 }
+.career-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+.timeline {
+  max-height: none;
+}
 .stats svg,
 .honour svg {
   color: #edbb00;
