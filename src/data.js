@@ -272,14 +272,6 @@ export const seasonStories = {
         credit: "FC Barcelona archive",
         href: "https://www.fcbarcelona.com/en/football/first-team/news/4147765/20-years-since-leo-messis-fc-barcelona-debut",
       },
-      {
-        after: 7,
-        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2025/04/30/fb9e1f24-b1c2-463c-9f2b-aa89ca605d13/FCBarcelona-AlbaceteBalompi2-0LligaJornada342004-2005_pic_01-05-05webmessi01.jpg",
-        alt: "Lionel Messi celebrates his first official Barcelona goal against Albacete in May 2005",
-        caption: "One lob had been disallowed. Messi answered with another — his first official Barcelona goal, 1 May 2005.",
-        credit: "FC Barcelona archive",
-        href: "https://www.fcbarcelona.com/en/football/first-team/news/4256638/20-years-since-leo-messis-first-official-goal/featured",
-      },
     ],
     videos: [
       {
