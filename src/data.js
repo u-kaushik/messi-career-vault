@@ -681,6 +681,65 @@ export const seasonStories = {
       },
     ],
   },
+  "2012–13": {
+    title: "The season that would not wait",
+    dek: "A hundred-point league, ninety-one goals in a calendar year and a fourth Ballon d’Or — achieved while Barcelona learned that time, health and an old football order were moving beneath them.",
+    paragraphs: [
+      "The first morning without Pep Guardiola did not feel like a revolution. Tito Vilanova had stood beside him for four years, thin and watchful, sharing the training ground vocabulary and much of the footballing faith. Barcelona did not ask him to replace an era with a new one; they asked him to keep the ball moving. Jordi Alba returned from Valencia after helping Spain win the European Championship, Alex Song arrived from Arsenal, and David Villa came back from the fractured leg that had cost him eight months. The changes looked modest because continuity was the point. Yet the season would become a study in how quickly familiar things can alter: a team winning faster than ever, its coach fighting an illness beyond the touchline, and Messi carrying numbers into territory where comparison began to fail.",
+      "It started with five against Real Sociedad and Messi scoring twice inside sixteen minutes. Barcelona won their first six league matches, often with less control than Guardiola’s best side but with a startling appetite for escape. At Osasuna, Messi turned a deficit into victory with two late goals. At Sevilla, trailing 2–0 after forty-eight minutes, Cesc Fàbregas scored twice before Villa won it in stoppage time. The perfect start ended only when Real Madrid came to the Camp Nou on 7 October. Cristiano Ronaldo scored first; Messi replied after Pedro’s cross caused confusion in the Madrid area. In the second half Messi bent a free-kick over the wall, then Ronaldo ran onto Mesut Özil’s pass and made it 2–2. The draw left the two great rivals level on the night but already separated in the table. Madrid had built the previous championship on certainty. Vilanova’s Barcelona were building this one on refusal.",
+      "There had already been a small wound. Madrid took the Spanish Super Cup on away goals after Barcelona won the first leg 3–2 and lost the second 2–1. Messi scored in both matches, a penalty at home and a free-kick at the Bernabéu, but the trophy went white. It would be the only direct prize Madrid took from them that season. In the league Barcelona kept accumulating victories: nine goals in a delirious evening at Deportivo, five at Rayo, four against Athletic and Atlético. At the halfway point they had won eighteen matches and drawn one, gathering 55 points from 57. The figures suggested machinery. The matches revealed something more human—defensive vulnerability, late recoveries, and a forward whose presence made almost every imperfection survivable.",
+      "Messi’s year had begun in the previous chapter, but its arithmetic reached a kind of fever in this one. On 9 December at the Benito Villamarín, he exchanged passes with Iniesta and rolled his first goal beyond Adrián. A few minutes later he met another Iniesta pass and drove in the second. They were his 85th and 86th goals of 2012, carrying him beyond Gerd Müller’s forty-year calendar record. Betis struck the woodwork and made the night perilous, but Barcelona won 2–1. Messi continued to score until the year closed at Valladolid. The final total was 91: seventy-nine for Barcelona, twelve for Argentina. It was not a season statistic, nor a trophy, and calendar years are arbitrary containers. Still, the number captured the strange relentlessness of watching him then. Week after week, in different shirts and countries, the same low centre of gravity entered the same impossible space and left with another goal.",
+      "On 19 December, the club announced that Vilanova’s cancer had returned. He underwent surgery and later travelled to New York for treatment, with Jordi Roura taking charge in his absence. Football’s usual language—form, pressure, crisis—suddenly seemed indecently small. The squad kept winning, partly because the league lead was already enormous and partly because routine became a form of loyalty. On 7 January Messi travelled to Zurich in a black dinner jacket covered with white polka dots and received a fourth consecutive Ballon d’Or, something no man had done. Ronaldo finished second, Iniesta third. The trophy acknowledged the 91 goals, but the image carried another truth: at twenty-five, Messi had already exhausted the established sequence of greatness. There was no former winner left to equal. Only totals to extend.",
+      "The domestic campaign did not remain untouched. Barcelona lost their first league match at Real Sociedad in January after leading 2–0. Real Madrid then eliminated them from the Copa del Rey semi-final, drawing 1–1 at the Bernabéu before winning 3–1 at the Camp Nou with Cristiano Ronaldo scoring twice. Four days later Madrid beat them again in the league. The results exposed a side that could still overwhelm most of Spain but had become easier for the strongest opponents to run through. Carles Puyol’s body was increasingly unreliable; pressing arrived a fraction later; opponents found the space behind the full-backs. Messi could repair matches, not abolish structural time.",
+      "Europe supplied both the season’s grandest recovery and its starkest warning. Milan won the first leg of the Champions League round of 16 by 2–0 at San Siro, compact and disciplined while Barcelona passed around the edges. No team in the competition’s modern era had overturned that deficit without an away goal. On 12 March the Camp Nou seemed to understand that patience alone would not be enough. Five minutes in, Messi played a tight exchange with Xavi amid a thicket of white shirts and, with almost no backlift, sent the ball into the top corner. M’Baye Niang later struck the post when one Milan goal would have transformed the tie. Almost immediately Messi took Iniesta’s pass and drove through Philippe Mexès’s legs to make it level before half-time. Villa curled in the third; Jordi Alba ran the length of the field for the fourth. Barcelona had not merely survived. For ninety minutes they recovered the old velocity of thought.",
+      "By then Messi was pursuing a different record across the league. Beginning with two goals against Mallorca in November, he scored in consecutive appearances against every other side in La Liga. Osasuna conceded four; Granada, Rayo, Zaragoza, Levante, Athletic, Betis and Atlético all followed. On 30 March at Celta Vigo he completed the circle: nineteen opponents in succession, thirty goals across the run. The achievement sounds mechanical until one considers its demand. Every defence knew where the danger would gather. Every week brought a different block, surface and temperament. None could interrupt the sequence. Messi was no longer simply the best player in a championship; he had become its recurring event.",
+      "That afternoon in Vigo also brought unease. Four days later, against Paris Saint-Germain at the Parc des Princes, Dani Alves curved a pass with the outside of his right boot and Messi struck across Salvatore Sirigu to give Barcelona the lead. Before half-time he felt his right hamstring and did not return. The match finished 2–2. For the second leg he sat among the substitutes, not fully fit, while PSG played with increasing confidence and Javier Pastore put them ahead. Messi entered in the 62nd minute. Nine minutes later his dart infield began the move that Villa laid back for Pedro’s equaliser. Barcelona advanced on away goals. The rescue enhanced the mythology, but it also advertised the dependence. A team constructed around collective command had needed the sight of one injured player to remember itself.",
+      "He was still short of health when Barcelona went to Munich on 23 April. Bayern were not. Jupp Heynckes’s side had youth, size, speed and a ferocious sense that the European game was turning towards them. Thomas Müller headed the first, Mario Gomez added the second, Arjen Robben curled the third and Müller completed a 4–0 defeat—the heaviest Barcelona had suffered in Europe away from home. Messi remained on the pitch but could not accelerate away from anyone. In the return, with the tie effectively gone and his hamstring still troubling him, he stayed on the bench. Bayern won 3–0 at the Camp Nou, 7–0 on aggregate. The score did not invalidate Barcelona’s football. It announced that its physical and tactical protections needed renewal.",
+      "The league, however, had been theirs almost from the opening weekend. Madrid’s draw at Espanyol on 11 May confirmed Barcelona as champions before they played. The following day at Atlético, Messi started but left in the second half when the hamstring failed again; Barcelona recovered to win 2–1. He did not appear in the final three matches. His league season ended at 46 goals from 32 appearances, comfortably enough for another Pichichi and European Golden Shoe. The team went on to reach 100 points, matching the Spanish record Madrid had set a year earlier, with 32 victories, 115 goals and a fifteen-point winning margin. They had led after every round and scored in every league match. It was not the most admired Barcelona of the age. It was, by the table, the most ruthlessly productive.",
+      "That distinction matters. The 2012–13 title is sometimes reduced to an afterglow—Guardiola’s inheritance administered by his former assistant, Messi’s genius covering the cracks until Bayern exposed them. It deserves more tenderness than that. Vilanova guided the side through a season in which his own health removed him for weeks, then returned to finish the work. Roura and the staff preserved calm. Abidal came back after a liver transplant and played again. The players carried private fear through public expectation and still assembled one hundred points. Their football was not always as pure, but purity is an easy demand from those who do not have to live the year.",
+      "For Messi, the season marked the summit of uninterrupted abundance and the first serious warning from his body since the injuries of his youth. He broke Müller’s record, won a fourth Ballon d’Or, scored against an entire league in sequence and produced 46 goals in a championship he played only thirty-two times. Then the hamstring tightened in Paris and the rhythm fractured. Against Bayern, the player who had made every contest feel reversible could not summon the burst that usually changed its geometry. Barcelona ended with one great trophy and several historical numbers, yet with Europe asking a question the league table could not answer. They had proved they could keep winning without Guardiola. The next task was harder: to renew the world he had left before time renewed it for them.",
+    ],
+    sources: [
+      ["FC Barcelona: 2012–13 annual report", "https://media4.fcbarcelona.com/media/asset_publics/resources/000/069/797/original/MEMORIA_CLUB_12_13_CASTELLANO_baixa.v1381154186.pdf"],
+      ["FC Barcelona: the 100-point league season", "https://www.fcbarcelona.com/en/football/first-team/news/1139075/all-fc-barcelonas-201213-league-records"],
+      ["FC Barcelona: Messi’s 91-goal calendar year", "https://www.fcbarcelona.com/en/football/first-team/news/1670444/-91-/featured"],
+      ["FC Barcelona: Vilanova’s illness and return", "https://www.fcbarcelona.com/en/football/first-team/news/1138426/tito-vilanova-will-not-continue-at-fc-barcelona"],
+      ["FC Barcelona: Messi’s fourth Ballon d’Or", "https://www.fcbarcelona.com/en/news/1059758/messi-strikes-gold-for-fourth-time"],
+      ["FC Barcelona: nineteen consecutive Liga opponents", "https://www.fcbarcelona.com/en/football/first-team/news/1143701/leo-messis-record-breaking-run-continues-becomes-first-player-to-score-against-19-opponents-consecutively"],
+      ["UEFA: Barcelona overturn Milan’s first-leg lead", "https://www.uefa.com/uefachampionsleague/news/0207-0e9ef7f90314-76c24b4228c7-1000--breathtaking-barcelona-blow-milan-away/"],
+      ["UEFA: Messi’s injury in Paris", "https://www.uefa.com/uefachampionsleague/news/0254-0d7efeb970b6-f4b4d12b829c-1000/"],
+      ["UEFA: Messi returns against Paris", "https://www.uefa.com/uefachampionsleague/news/025a-0ea90c4f08d5-2d3407c95279-1000--pedro-puts-barcelona-into-record-sixth-semi-final/"],
+      ["UEFA: Bayern defeat Barcelona in Munich", "https://www.uefa.com/uefachampionsleague/news/0208-0e9f5abbb5ab-d58b184d897b-1000/"],
+    ],
+    photos: [
+      {
+        after: 4,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2019/02/22/355ee341-82a4-4f1f-89f8-7988c6bab5e3/iaVDaKrH.jpg",
+        alt: "Lionel Messi holds his fourth consecutive Ballon d’Or in Zurich",
+        caption: "Beyond precedent — Messi receives a fourth consecutive Ballon d’Or in Zurich, 7 January 2013.",
+        credit: "FC Barcelona",
+        href: "https://www.fcbarcelona.com/en/news/1059758/messi-strikes-gold-for-fourth-time",
+      },
+      {
+        after: 6,
+        src: "https://editorial.uefa.com/resources/0207-0e9ef7f8fc6e-40dc1ce44205-1000/celebrations_fc_barcelona_.jpeg",
+        alt: "Lionel Messi and Barcelona players celebrate their Champions League comeback against AC Milan",
+        caption: "The old velocity returns — Barcelona overturn Milan’s two-goal lead at the Camp Nou, 12 March 2013.",
+        credit: "Getty Images via UEFA",
+        href: "https://www.uefa.com/uefachampionsleague/news/0207-0e9ef7f90314-76c24b4228c7-1000--breathtaking-barcelona-blow-milan-away/",
+      },
+    ],
+    videos: [
+      {
+        after: 6,
+        youtubeId: "k2muVhlj-DE",
+        title: "Barcelona’s comeback against Milan",
+        caption: "Two early Messi goals turn fear into momentum on one of the Camp Nou’s great European nights.",
+        credit: "Prime Video Sport",
+        href: "https://www.youtube.com/watch?v=k2muVhlj-DE",
+      },
+    ],
+  },
 };
 
 const filmCatalog = [
@@ -1186,14 +1245,16 @@ export const honourLedger = {
     individual: [
       ["2011–12 European Golden Shoe", "boot"],
       ["2011–12 Pichichi Trophy", "pichichi"],
-      ["European Golden Shoe", "boot"],
-      ["Pichichi Trophy", "pichichi"],
-      ["La Liga Best Player", "star"],
     ],
   },
   "2013–14": {
     team: [["Spanish Super Cup", "supercup"]],
-    individual: [["World Cup Golden Ball", "goldball"]],
+    individual: [
+      ["2012–13 European Golden Shoe", "boot"],
+      ["2012–13 Pichichi Trophy", "pichichi"],
+      ["2012–13 La Liga Best Player", "star"],
+      ["World Cup Golden Ball", "goldball"],
+    ],
   },
   "2014–15": {
     team: [
