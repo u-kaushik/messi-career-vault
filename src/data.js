@@ -392,6 +392,63 @@ export const seasonStories = {
       },
     ],
   },
+  "2007–08": {
+    title: "The space he inherited",
+    dek: "Sixteen goals, a recurring tear, an Old Trafford farewell and the Beijing summer in which Messi stepped out of a fading Barcelona age carrying gold.",
+    paragraphs: [
+      "Thierry Henry arrived in Barcelona in June 2007 with the aura of a man who had already completed one footballing life. He was Arsenal’s record scorer, a World Cup winner and the most glamorous addition imaginable to an attack that already contained Ronaldinho, Samuel Eto’o and Lionel Messi. The shorthand was irresistible: the Fantastic Four. It appeared less a forward line than an argument against competitive balance. Yet great collections of players are not always great teams, and Barcelona were attempting to add another room to a house whose foundations had begun to move. The league lost on head-to-head record, the collapse at Getafe, the habits gathering around Ronaldinho and Deco—none had disappeared during the summer. Frank Rijkaard’s side were richer in names than they had been a year earlier and poorer in certainty.",
+      "Messi returned wearing 19 and no longer required an introduction. The Clásico hat-trick and the Getafe run had changed the terms. At twenty, he was not the academy boy granted minutes beside the stars; he was the player the Camp Nou watched when a match tightened. Barcelona began the league with a goalless draw at Racing Santander, but September offered the first sustained evidence of the new hierarchy. Against Lyon in Europe, Messi’s cross-shot forced François Clerc’s own goal and he later finished a flowing move with his right foot in a 3–0 win. Three nights later Sevilla came to the Camp Nou. Messi broke a scoreless match with a controlled volley from Henry’s clipped pass, then added a penalty soon afterwards. The stadium’s fiftieth anniversary belonged to its youngest headline act.",
+      "There was still exhilaration in the old team. Ronaldinho could bend a match from a standing start, Eto’o remained ferocious when fit, Xavi and Andrés Iniesta were becoming the game’s most elegant shared intelligence, and the teenagers Bojan Krkić and Giovani dos Santos made the future appear unusually crowded. But the balance was fragile. Henry was learning the left side while carrying the memory of back trouble; Eto’o missed the early months after a thigh injury; Ronaldinho’s form and conditioning became public argument. Messi supplied the cleanest line through the noise. He scored away to Stuttgart in October, found six Champions League goals across the campaign, and played with the urgent, slaloming directness that made Barcelona look young whenever the rest of the side looked tired.",
+      "That directness also exposed the body required to sustain it. On 15 December at Valencia, during a 3–0 league win, Messi tore the biceps femoris in his left thigh. UEFA’s prognosis was approximately four weeks out, removing him from the final match before Christmas, the Clásico at the Camp Nou. Madrid won 1–0 through Júlio Baptista. Without Messi, Barcelona possessed the ball but little incision; the defeat left them seven points behind the leaders. He returned in January, carefully at first, and by 20 February at Celtic Park looked liberated again. Celtic twice led in the Champions League round of 16. Messi twice equalised, the second a beautifully delayed exchange with Ronaldinho, before Henry’s curling finish completed a 3–2 victory. It was one of the season’s clearest glimpses of what this team had once been and what Messi might still make it.",
+      "The return leg on 4 March lasted thirty-eight minutes for him. Chasing the ball in a sprint, Messi suffered another tear in his left thigh. There was no opponent to blame and no challenge to replay. He stopped, covered his face and left the pitch in tears, supported by a member of Barcelona’s staff. UEFA recorded a six-week absence. The injury took both Champions League quarter-finals against Schalke and the decisive Copa del Rey semi-final away to Valencia from him. Barcelona edged past Schalke without conceding, but Valencia won 3–2 at Mestalla and reached the cup final. By the time Messi could return, the league challenge had also begun to loosen beyond repair.",
+      "Barcelona treated the recovery cautiously, understandably so: this was another muscular failure in a player whose acceleration asked extreme questions of his hamstrings. Messi came back on 12 April as a substitute against Recreativo and was ready to start eleven days later when Manchester United visited the Camp Nou. The European Cup had become Barcelona’s remaining route to salvation. Cristiano Ronaldo missed an early penalty, United retreated, and Barcelona spent the evening circling a defence marshalled by Rio Ferdinand. Messi’s bursts provided the electricity, but no finish. The first leg ended 0–0, a score that carried both possibility and menace to Manchester.",
+      "Old Trafford on 29 April felt like an ending before anyone had officially announced one. Paul Scholes struck after fourteen minutes, punishing a loose clearance from Gianluca Zambrotta with a shot that swerved beyond Víctor Valdés from distance. Barcelona then needed one goal to reach the final. Again the ball searched for Messi. He moved inside Wes Brown, drew a save from Edwin van der Sar, escaped Scholes near the byline and kept returning to the dense red wall. Yet United defended the penalty area with the concentration Barcelona had misplaced across their domestic season. Henry and Bojan came from the bench. The equaliser did not. Messi had been the visitor most capable of altering the night, but capability and outcome had separated. United won the tie 1–0 and went on to become European champions.",
+      "Eight days later Barcelona walked into the Santiago Bernabéu and formed a guard of honour for the newly crowned Spanish champions. The ritual was sporting; the symbolism was merciless. Madrid then won 4–1. Raúl, Arjen Robben, Gonzalo Higuaín and Ruud van Nistelrooy scored before Henry’s late consolation. Messi played the full match and kept trying to carry the ball through the humiliation, but the contrast could not be softened. Two years earlier Ronaldinho had received applause in this stadium after making Madrid look obsolete. Now he was absent, his Barcelona career effectively over, while the younger Argentine ran inside a team whose era had reached its visible end. Rijkaard’s departure was confirmed, and Pep Guardiola—one season into his coaching life with Barcelona B—was chosen to replace him.",
+      "Barcelona finished third, eighteen points behind Madrid and ten behind Villarreal. They had won no trophy. Messi’s club totals—40 appearances and 16 goals in all competitions—were achieved despite the two left-thigh injuries, and no Barcelona player scored more often in Europe. Statistics alone cannot convey the handover. Ronaldinho was still the owner of the number 10, still the face printed across the previous age, but Messi had become the team’s emotional weather. When he accelerated, belief returned. When he broke down, the season appeared to break with him. The inheritance was not ceremonial. It arrived as responsibility inside a declining side.",
+      "Then came a summer argument that would end in joy. Barcelona contested FIFA’s instruction to release Messi for the Beijing Olympic tournament because the club faced a Champions League qualifier. On 6 August the Court of Arbitration for Sport upheld Barcelona’s appeal, finding no legal obligation to release under-23 players because the Olympics were not on FIFA’s international calendar. The ruling gave the club the right to recall him. After Guardiola spoke with Messi, who made clear that he wanted to remain in Beijing, Barcelona chose not to exercise it. In China, Messi scored against Côte d’Ivoire, then opened the quarter-final against the Netherlands and helped create Ángel Di María’s extra-time winner. Argentina overwhelmed Brazil 3–0 in the semi-final. Against Nigeria at the Bird’s Nest on 23 August, Messi’s pass released Di María in the 58th minute; the winger’s lifted finish supplied the only goal and Argentina’s second successive Olympic title.",
+      "The medal belonged to the summer after the club season, but it completes its meaning. Barcelona’s year had ended with an old order exhausted, a manager departing and its greatest recent star on the way to Milan. Messi left that atmosphere, joined friends from his own generation and won. Photographs from Beijing show him beside Sergio Agüero, gold at his chest, the expression unburdened. By then Ronaldinho’s number had become available. Messi wore 10 for the first time in a July friendly at Hibernian; the assignment became official on 3 August. He would return from China to Guardiola, to the number and to a team about to be remade around the qualities that the failed season had exposed most clearly. The space was no longer merely open. It was his.",
+    ],
+    sources: [
+      ["FC Barcelona: 2007–08 annual report", "https://www.fcbarcelona.com/fcbarcelona/document/2025/05/22/86dc0457-85b8-4b73-8122-8de9d022c516/MEM_CLUB_CAS_2007_08.pdf"],
+      ["FC Barcelona: Messi’s 2007–08 goals and appearances", "https://www.fcbarcelona.com/en/football/first-team/news/1125678/messi-scores-40-goals-for-the-fifth-consecutive-season"],
+      ["UEFA: Messi drives Barça past Lyon", "https://www.uefa.com/uefachampionsleague/news/0254-0d7bbe7788b2-f68e315e5f01-1000/"],
+      ["UEFA: Messi scores twice at Celtic", "https://www.uefa.com/uefachampionsleague/news/01ca-0e6f0853ff29-9a41dd45c9e4-1000--two-for-messi-as-barca-see-off-celtic/"],
+      ["UEFA: Messi ruled out for six weeks", "https://www.uefa.com/uefachampionsleague/news/01cb-0e6f19d58408-1c237a5b29f1-1000--barca-to-miss-messi-for-last-eight-games/"],
+      ["UEFA: Scholes sends United through", "https://www.uefa.com/uefachampionsleague/news/0254-0d7bd506230e-59183c065910-1000--scholes-goal-sends-united-to-moscow/"],
+      ["FC Barcelona: Messi inherits the number 10", "https://www.fcbarcelona.com/en/news/792899/a-decade-of-messi-as-barcas-no10"],
+      ["FIFA: Messi and Argentina win Olympic gold", "https://inside.fifa.com/en/tournaments/mens/mensolympic/beijing2008/news/messi-and-argentina-grab-gold-in-beijing"],
+      ["CAS: FC Barcelona v FIFA Olympic release award", "https://jurisprudence.tas-cas.org/Shared%20Documents/1622%2C%201623%2C%201624.pdf"],
+      ["Europa Press: Barcelona permits Messi to remain in Beijing", "https://www.europapress.es/deportes/olimpiadas-00169/noticia-barcelona-no-reclamara-messi-podra-seguir-participando-juegos-olimpicos-20080807153714.html"],
+    ],
+    photos: [
+      {
+        after: 4,
+        src: "https://editorial.uefa.com/resources/01cb-0e6f19d5757d-cf26d67a5020-1000/lionel_messi_is_helped_off_the_pitch_on_tuesday.jpeg",
+        alt: "An injured Lionel Messi leaves the pitch in tears with a Barcelona staff member against Celtic",
+        caption: "The same left thigh fails again against Celtic — Camp Nou, 4 March 2008.",
+        credit: "Getty Images via UEFA",
+        href: "https://www.uefa.com/uefachampionsleague/news/01cb-0e6f19d58408-1c237a5b29f1-1000--barca-to-miss-messi-for-last-eight-games/",
+      },
+      {
+        after: 9,
+        src: "https://digitalhub.fifa.com/m/18051ba2593d3919/webimage-o3k4mtza5lr7sozoefdx-jpg.png",
+        alt: "Lionel Messi and Sergio Agüero celebrate with their Beijing 2008 Olympic gold medals",
+        caption: "A different ending to the summer — Messi and Agüero with Olympic gold in Beijing, 23 August 2008.",
+        credit: "FIFA archive",
+        href: "https://inside.fifa.com/en/tournaments/mens/mensolympic/beijing2008/news/messi-and-argentina-grab-gold-in-beijing",
+      },
+    ],
+    videos: [
+      {
+        after: 9,
+        youtubeId: "Dqevl3w0_6s",
+        title: "Lionel Messi at the Beijing Olympics",
+        caption: "The goals, carries and final pass behind Messi’s Beijing gold.",
+        credit: "Olympic Games",
+        href: "https://www.youtube.com/watch?v=Dqevl3w0_6s",
+      },
+    ],
+  },
 };
 
 const filmCatalog = [
@@ -836,7 +893,7 @@ export const honourLedger = {
     ],
   },
   "2007–08": {
-    team: [["Olympic Gold", "medal"]],
+    team: [],
     individual: [["FIFPRO Young Player", "star"]],
   },
   "2008–09": {
@@ -844,6 +901,7 @@ export const honourLedger = {
       ["La Liga", "league"],
       ["Copa del Rey", "copa"],
       ["UEFA Champions League", "ucl"],
+      ["Olympic Gold", "medal"],
     ],
     individual: [
       ["Ballon d’Or", "ball"],
