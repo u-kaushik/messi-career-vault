@@ -18,6 +18,8 @@ import {
   Headphones,
   LogOut,
   Newspaper,
+  Users,
+  Download,
 } from "lucide-react";
 import {
   seasons,
@@ -91,6 +93,7 @@ function App({ user, onLogout }) {
   const totalLibrary =
     films.length + interviews.length + podcasts.length + books.length;
   const watched = Object.values(watch).filter(Boolean).length;
+  const isAdmin = user.email === "ukaushik37@gmail.com";
   const toggle = (id) => setWatch((v) => ({ ...v, [id]: !v[id] }));
   const libraryNav = [
     ["screen", "Films", films.length, Clapperboard],
@@ -135,6 +138,7 @@ function App({ user, onLogout }) {
               <Icon /> {label} <i>{count}</i>
             </button>
           ))}
+          {isAdmin && <button className={tab === "admin" ? "active" : ""} onClick={() => setTab("admin")}><Users /> Admin</button>}
         </nav>
         <div className="journey-pulse" title="Your library progress">
           <span>{watched}</span>
@@ -155,14 +159,14 @@ function App({ user, onLogout }) {
                 ? "Season by season."
                 : tab === "articles"
                   ? "The long reads."
-                  : "Watch. Listen. Read."}
+                : tab === "admin" ? "Your readership." : "Watch. Listen. Read."}
             </h1>
             <p>
               {tab === "career"
                 ? "Every season as a complete archive — the story, honours, films, conversations and books in one place."
                 : tab === "articles"
                   ? "Original, researched season stories from the first steps at Barça to the final chapters."
-                  : "Films, long-form conversations, guest podcasts and books from around the world."}
+                  : tab === "admin" ? "A private view of the readers following Floodlight Editions." : "Films, long-form conversations, guest podcasts and books from around the world."}
             </p>
           </div>
         </section>
@@ -176,6 +180,8 @@ function App({ user, onLogout }) {
           />
         ) : tab === "articles" ? (
           <Articles />
+        ) : tab === "admin" && isAdmin ? (
+          <AdminSubscribers />
         ) : (
           <Library
             query={query}
@@ -262,6 +268,27 @@ function App({ user, onLogout }) {
       )}
     </div>
   );
+}
+
+function AdminSubscribers() {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState("");
+  useEffect(() => {
+    fetch("/api/admin/subscribers")
+      .then(async (response) => {
+        const body = await response.json();
+        if (!response.ok) throw new Error(body.error || "Could not load subscribers");
+        setData(body);
+      })
+      .catch((failure) => setError(failure.message));
+  }, []);
+  return <section className="admin-subscribers">
+    <header><div><span>FLOODLIGHT EDITIONS</span><h2>{data ? data.total : "—"} subscribers</h2><p>Your private manuscript and publishing audience.</p></div><a href="/api/admin/subscribers.csv"><Download /> Export CSV</a></header>
+    {error && <div className="admin-empty">{error}</div>}
+    {!data && !error && <div className="admin-empty">Loading readership…</div>}
+    {data && <div className="subscriber-table"><div className="subscriber-row table-head"><span>Email</span><span>Source</span><span>Joined</span><span>Status</span></div>{data.subscribers.map((subscriber) => <div className="subscriber-row" key={subscriber.email}><strong>{subscriber.email}</strong><span>{subscriber.source}</span><time>{new Date(subscriber.created_at).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</time><i>{subscriber.status}</i></div>)}</div>}
+    {data?.total === 0 && <div className="admin-empty"><Users /><b>Your first readers will appear here.</b><span>Every footer signup is saved automatically.</span></div>}
+  </section>;
 }
 
 function LegacyTrophyMark({ type }) {

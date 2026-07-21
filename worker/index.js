@@ -55,6 +55,12 @@ async function readBody(request) {
 }
 const sessionCookie = (token, maxAge = 60 * 60 * 24 * 30) =>
   `messi_session=${token}; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=${maxAge}`;
+const ADMIN_EMAIL = "ukaushik37@gmail.com";
+const csvCell = (value) => {
+  let text = String(value ?? "");
+  if (/^[=+\-@]/.test(text)) text = `'${text}`;
+  return `"${text.replaceAll('"', '""')}"`;
+};
 
 export default {
   async fetch(request, env) {
@@ -175,6 +181,35 @@ export default {
           .bind(email, String(body.source || "site-footer").slice(0, 80), now, now)
           .run();
         return json({ ok: true });
+      }
+      if (url.pathname.startsWith("/api/admin/subscribers")) {
+        const user = await currentUser(request, env);
+        if (!user || user.email !== ADMIN_EMAIL)
+          return json({ error: "Forbidden" }, 403);
+        if (request.method !== "GET") return json({ error: "Not found" }, 404);
+        const { results } = await env.DB.prepare(
+          "SELECT email, source, status, created_at, updated_at FROM subscribers ORDER BY created_at DESC",
+        ).all();
+        if (url.pathname.endsWith(".csv")) {
+          const rows = [
+            ["email", "source", "status", "joined_at", "updated_at"],
+            ...results.map((row) => [
+              row.email,
+              row.source,
+              row.status,
+              new Date(row.created_at).toISOString(),
+              new Date(row.updated_at).toISOString(),
+            ]),
+          ];
+          return new Response(rows.map((row) => row.map(csvCell).join(",")).join("\n"), {
+            headers: {
+              "content-type": "text/csv; charset=utf-8",
+              "content-disposition": "attachment; filename=floodlight-subscribers.csv",
+              "cache-control": "no-store",
+            },
+          });
+        }
+        return json({ subscribers: results, total: results.length });
       }
       return json({ error: "Not found" }, 404);
     } catch (error) {
