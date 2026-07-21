@@ -387,6 +387,26 @@ function PlatformMark({ name, withName = false }) {
 
 function Career({ selected, setSelected, seen, setSeen }) {
   const idx = seasons.indexOf(selected);
+  const clubKey = selected.club.startsWith("Barcelona")
+    ? "barca"
+    : selected.club.startsWith("Paris")
+      ? "paris"
+      : "miami";
+  const clubDetails = {
+    barca: {
+      name: "FC Barcelona",
+      badge: "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/120px-FC_Barcelona_%28crest%29.svg.png",
+    },
+    paris: {
+      name: "Paris Saint-Germain",
+      badge: "https://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Paris_Saint-Germain_F.C..svg/120px-Paris_Saint-Germain_F.C..svg.png",
+    },
+    miami: {
+      name: "Inter Miami CF",
+      badge: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Inter_Miami_CF_logo.svg/120px-Inter_Miami_CF_logo.svg.png",
+    },
+  }[clubKey];
+  const shirtNumber = clubKey === "paris" ? 30 : clubKey === "miami" ? 10 : idx < 2 ? 30 : idx < 4 ? 19 : 10;
   return (
     <>
       <section className="stats">
@@ -427,9 +447,9 @@ function Career({ selected, setSelected, seen, setSeen }) {
               <i className={seen[s.id] ? "seen" : ""}>
                 {seen[s.id] ? <Check /> : i + 1}
               </i>
-              <span>
-                <b>{s.season}</b>
-                <small>{s.club}</small>
+              <span className="season-copy">
+                <b className="season-year">{s.season}</b>
+                <small className="season-club">{s.club}</small>
               </span>
               <ChevronRight />
             </button>
@@ -437,13 +457,20 @@ function Career({ selected, setSelected, seen, setSeen }) {
         </section>
         <section className="chapter">
           <div
-            className={`hero ${selected.club.startsWith("Barcelona") ? "barca" : selected.club.startsWith("Paris") ? "paris" : "miami"}`}
+            className={`hero ${clubKey}`}
           >
-            <span>{selected.season}</span>
-            <div>
+            <span className="season-watermark">{selected.season}</span>
+            <div className="hero-copy">
               <small>CHAPTER {String(idx + 1).padStart(2, "0")}</small>
               <h2>{selected.title}</h2>
               <p>{selected.club}</p>
+            </div>
+            <div className="club-kit">
+              <img src={clubDetails.badge} alt={`${clubDetails.name} badge`} />
+              <div className={`messi-shirt ${clubKey}`} aria-label={`Messi number ${shirtNumber} shirt`}>
+                <span>MESSI</span>
+                <b>{shirtNumber}</b>
+              </div>
             </div>
           </div>
           <div className="chapter-body">
