@@ -87,3 +87,15 @@ Resolved in the latest copy:
 3. The Club World Cup final is now correctly dated **eight days** after the 10 December Clásico.
 
 The transfers, Super Cups, league/Madrid chronology, Club World Cup result, Ballon d'Or, Leverkusen five-goal record, César recalculation, April Chelsea/Madrid sequence, Guardiola departure/14 trophies, Copa final, 73/60 and competition breakdown, photos, official UEFA video and duplicate-media check otherwise pass.
+
+## Unpublished 2012–13 draft
+
+The final ledger contains **58 VERIFIED, 3 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
+
+Resolved in the latest copy:
+
+1. The 7 October Clásico now correctly orders Ronaldo, Messi from the Pedro-cross sequence, Messi's free-kick, then Ronaldo from Özil.
+2. Vilanova's relapse announcement is exactly dated **19 December 2012**; surgery followed on 20 December.
+3. The disambiguated `2012–13 European Golden Shoe`, `2012–13 Pichichi Trophy` and `2012–13 La Liga Best Player` are allocated to 2013–14 under the presentation-date rule.
+
+The transfers/returns, opening results, Super Cup, 55/57 start, Betis/Müller/91-goal arithmetic, illness-treatment sequence otherwise, Ballon d'Or, domestic defeats, Milan comeback, 19-opponent run, PSG/Bayern ties, title clinch, Messi 46/32, team 100/32/115/15 records, source URLs, photos, Prime Video Sport film, duplication and editorial-firewall check otherwise pass.
