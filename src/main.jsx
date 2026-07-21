@@ -17,6 +17,7 @@ import {
   Video,
   Headphones,
   LogOut,
+  Newspaper,
 } from "lucide-react";
 import {
   seasons,
@@ -118,6 +119,12 @@ function App({ user, onLogout }) {
           >
             <CalendarDays /> Timeline
           </button>
+          <button
+            className={tab === "articles" ? "active" : ""}
+            onClick={() => setTab("articles")}
+          >
+            <Newspaper /> Articles <i>{Object.keys(seasonStories).length}</i>
+          </button>
           {libraryNav.map(([id, label, count, Icon]) => (
             <button
               key={id}
@@ -143,12 +150,18 @@ function App({ user, onLogout }) {
           <div>
             <span>THE COMPLETE JOURNEY</span>
             <h1>
-              {tab === "career" ? "Season by season." : "Watch. Listen. Read."}
+              {tab === "career"
+                ? "Season by season."
+                : tab === "articles"
+                  ? "The long reads."
+                  : "Watch. Listen. Read."}
             </h1>
             <p>
               {tab === "career"
-                ? "From La Masia to the roof of the world — explore every chapter of Leo's career."
-                : "Films, long-form conversations, guest podcasts and books from around the world."}
+                ? "Every season as a complete archive — the story, honours, films, conversations and books in one place."
+                : tab === "articles"
+                  ? "Original, researched season stories from the first steps at Barça to the final chapters."
+                  : "Films, long-form conversations, guest podcasts and books from around the world."}
             </p>
           </div>
         </section>
@@ -158,7 +171,10 @@ function App({ user, onLogout }) {
             setSelected={setSelected}
             seen={seen}
             setSeen={setSeen}
+            setModal={setModal}
           />
+        ) : tab === "articles" ? (
+          <Articles />
         ) : (
           <Library
             query={query}
@@ -390,7 +406,71 @@ function PlatformMark({ name, withName = false }) {
   );
 }
 
-function Career({ selected, setSelected, seen, setSeen }) {
+const readingMinutes = (story) =>
+  Math.max(1, Math.ceil([story.dek, ...story.paragraphs].join(" ").trim().split(/\s+/).length / 220));
+
+function LongRead({ story, season }) {
+  if (!story) return null;
+  return (
+    <details className="season-essay" id={`long-read-${season.replace(/[^0-9]/g, "-")}`}>
+      <summary>
+        <span><small>THE LONG READ · {season}</small><b>{story.title}</b></span>
+        <em>{readingMinutes(story)} min read</em><ChevronRight />
+      </summary>
+      <article>
+        <p className="essay-dek">{story.dek}</p>
+        {story.paragraphs.map((paragraph, i) => {
+          const photo = story.photos?.find((item) => item.after === i);
+          const video = story.videos?.find((item) => item.after === i);
+          return <React.Fragment key={i}>
+            <p>{paragraph}</p>
+            {photo && <figure><img src={photo.src} alt={photo.alt} loading="lazy" /><figcaption><span>{photo.caption}</span><a href={photo.href} target="_blank" rel="noreferrer">Photo: {photo.credit} <ExternalLink /></a></figcaption></figure>}
+            {video && <figure className="essay-video"><div><iframe src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?rel=0`} title={video.title} loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /></div><figcaption><span>{video.caption}</span><a href={video.href} target="_blank" rel="noreferrer">Video: {video.credit} <ExternalLink /></a></figcaption></figure>}
+          </React.Fragment>;
+        })}
+        <footer><span>RESEARCH SOURCES</span>{story.sources.map(([label, url]) => <a key={url} href={url} target="_blank" rel="noreferrer">{label} <ExternalLink /></a>)}</footer>
+      </article>
+    </details>
+  );
+}
+
+function Articles() {
+  return <section className="articles-page">
+    <div className="articles-heading"><span>{Object.keys(seasonStories).length} PUBLISHED</span><h2>A career, told properly.</h2><p>Original, researched and chronological long-form football writing.</p></div>
+    {Object.entries(seasonStories).map(([season, story]) => <div className="article-volume" key={season}>
+      <div className="article-volume-cover" style={{ backgroundImage: `linear-gradient(90deg,#07122520,#071225e8),url(${story.photos?.[0]?.src || ""})` }}>
+        <span>{season}</span><small>{readingMinutes(story)} MIN READ</small><h3>{story.title}</h3><p>{story.dek}</p>
+      </div>
+      <LongRead story={story} season={season} />
+    </div>)}
+  </section>;
+}
+
+function SeasonArchive({ season, setModal }) {
+  const year = Number(season.season.slice(0, 4));
+  const story = seasonStories[season.season];
+  const groups = [
+    ["Films & series", films.filter((item) => Number(item.year) === year), "screen"],
+    ["Interviews", interviews.filter((item) => Number(item.year) === year), "interview"],
+    ["Podcasts", podcasts.filter((item) => Number(item.year) === year), "podcast"],
+    ["Books", books.filter((item) => Number(item.year) === year), "book"],
+  ].filter(([, items]) => items.length);
+  const total = (story ? 1 : 0) + groups.reduce((sum, [, items]) => sum + items.length, 0);
+  return <section className="season-archive">
+    <div className="season-archive-head"><div><span>SEASON ARCHIVE</span><h3>Everything from {season.season}</h3></div><small>{total} {total === 1 ? "piece" : "pieces"}</small></div>
+    <div className="archive-links">
+      {story && <a className="archive-link article-link" href={`#long-read-${season.season.replace(/[^0-9]/g, "-")}`}><Newspaper /><span><small>ARTICLE · {readingMinutes(story)} MIN</small><b>{story.title}</b></span><ChevronRight /></a>}
+      {groups.flatMap(([label, items, kind]) => items.map((item) => {
+        const href = kind === "interview" ? `https://www.youtube.com/watch?v=${item.videoId}` : item.url;
+        const content = <>{item.poster || item.cover ? <img src={item.poster || item.cover} alt="" /> : kind === "screen" ? <Clapperboard /> : kind === "interview" ? <Mic2 /> : kind === "podcast" ? <Headphones /> : <BookOpen />}<span><small>{label} · {item.year}</small><b>{item.title}</b></span><ChevronRight /></>;
+        return kind === "screen" ? <button className="archive-link" key={item.id} onClick={() => setModal(item)}>{content}</button> : <a className="archive-link" key={item.id} href={href} target="_blank" rel="noreferrer">{content}</a>;
+      }))}
+      {!total && <p className="archive-empty">Nothing published for this season yet—the archive will grow as each chapter is researched.</p>}
+    </div>
+  </section>;
+}
+
+function Career({ selected, setSelected, seen, setSeen, setModal }) {
   const idx = seasons.indexOf(selected);
   const clubKey = selected.club.startsWith("Barcelona")
     ? "barca"
@@ -503,9 +583,10 @@ function Career({ selected, setSelected, seen, setSeen }) {
                 </div>
               </div>
             )}
+            <SeasonArchive season={selected} setModal={setModal} />
             <Honours season={selected.season} />
             {seasonStories[selected.season] && (
-              <details className="season-essay">
+              <details className="season-essay" id={`long-read-${selected.season.replace(/[^0-9]/g, "-")}`}>
                 <summary>
                   <span>
                     <small>THE LONG READ</small>

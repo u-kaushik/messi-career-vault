@@ -765,3 +765,74 @@ main {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+.season-archive {
+  margin: 22px 0;
+  padding: 18px;
+  border: 1px solid #00a7e71f;
+  border-radius: 13px;
+  background: #081427;
+}
+.season-archive-head {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+.season-archive-head span,
+.articles-heading > span {
+  color: #00a7e7;
+  font: 800 9px Manrope;
+  letter-spacing: 1.5px;
+}
+.season-archive-head h3 { margin: 5px 0 0; font: 700 18px Manrope; }
+.season-archive-head > small { color: #6f7e93; font-size: 10px; }
+.archive-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.archive-link {
+  min-width: 0;
+  min-height: 66px;
+  display: grid;
+  grid-template-columns: 38px minmax(0, 1fr) 16px;
+  align-items: center;
+  gap: 11px;
+  padding: 9px 11px;
+  border: 1px solid #ffffff0d;
+  border-radius: 9px;
+  background: #0d1b30;
+  color: #dce3ec;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+.archive-link:hover { border-color: #00a7e74d; background: #10223b; }
+.archive-link > img { width: 38px; height: 48px; border-radius: 4px; object-fit: cover; }
+.archive-link > svg:first-child { width: 20px; color: #00a7e7; }
+.archive-link > svg:last-child { width: 14px; color: #607089; }
+.archive-link span { min-width: 0; }
+.archive-link small { display: block; margin-bottom: 4px; color: #718197; font: 700 8px Manrope; letter-spacing: .7px; text-transform: uppercase; }
+.archive-link b { display: block; overflow: hidden; color: #e3e8ef; font: 700 12px/1.25 Manrope; text-overflow: ellipsis; white-space: nowrap; }
+.article-link { background: linear-gradient(120deg, #102b4a, #25142c); }
+.archive-empty { grid-column: 1/-1; margin: 0; padding: 16px; color: #66758c; font-size: 11px; }
+.articles-page { max-width: 1120px; margin: 0 auto; }
+.articles-heading { margin-bottom: 25px; }
+.articles-heading h2 { margin: 7px 0; font: 800 clamp(26px, 4vw, 42px)/1 Manrope; }
+.articles-heading p { margin: 0; color: #8491a4; }
+.article-volume { margin-bottom: 26px; border: 1px solid #00a7e719; border-radius: 16px; background: #091529; overflow: hidden; }
+.article-volume-cover {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: clamp(24px, 5vw, 52px);
+  background-position: center 25%;
+  background-size: cover;
+}
+.article-volume-cover > span { color: #52ddff; font: 800 12px Manrope; letter-spacing: 1px; }
+.article-volume-cover > small { margin-top: 8px; color: #98a5b7; font: 700 9px Manrope; letter-spacing: 1.2px; }
+.article-volume-cover h3 { margin: 9px 0 8px; font: 800 clamp(34px, 6vw, 64px)/.95 Manrope; letter-spacing: -2px; }
+.article-volume-cover p { max-width: 680px; margin: 0; color: #d2d8e1; font: 500 16px/1.5 Manrope; }
+.article-volume > .season-essay { margin: 0; border: 0; border-radius: 0; }
+@media (max-width: 650px) {
+  .archive-links { grid-template-columns: minmax(0, 1fr); }
+  .article-volume-cover { min-height: 250px; }
+}
