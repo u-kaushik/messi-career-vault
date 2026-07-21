@@ -17,3 +17,13 @@ CREATE TABLE IF NOT EXISTS progress (
   seen TEXT NOT NULL DEFAULT '{}',
   updated_at INTEGER NOT NULL
 );
+CREATE TABLE IF NOT EXISTS subscribers (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  email TEXT NOT NULL UNIQUE,
+  source TEXT NOT NULL DEFAULT 'site-footer',
+  consent_version TEXT NOT NULL DEFAULT 'newsletter-v1',
+  status TEXT NOT NULL DEFAULT 'subscribed',
+  created_at INTEGER NOT NULL,
+  updated_at INTEGER NOT NULL
+);
+CREATE INDEX IF NOT EXISTS subscribers_status ON subscribers(status);

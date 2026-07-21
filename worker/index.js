@@ -162,6 +162,20 @@ export default {
           return json({ ok: true });
         }
       }
+      if (url.pathname === "/api/subscribe" && request.method === "POST") {
+        const body = await readBody(request);
+        if (body.company) return json({ ok: true });
+        const email = String(body.email || "").trim().toLowerCase();
+        if (!/^\S+@\S+\.\S+$/.test(email))
+          return json({ error: "Enter a valid email address" }, 400);
+        const now = Date.now();
+        await env.DB.prepare(
+          "INSERT INTO subscribers (email, source, consent_version, status, created_at, updated_at) VALUES (?, ?, 'newsletter-v1', 'subscribed', ?, ?) ON CONFLICT(email) DO UPDATE SET status='subscribed', source=excluded.source, consent_version=excluded.consent_version, updated_at=excluded.updated_at",
+        )
+          .bind(email, String(body.source || "site-footer").slice(0, 80), now, now)
+          .run();
+        return json({ ok: true });
+      }
       return json({ error: "Not found" }, 404);
     } catch (error) {
       return json({ error: error.message || "Server error" }, 500);

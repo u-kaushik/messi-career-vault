@@ -193,6 +193,7 @@ function App({ user, onLogout }) {
           />
         )}
       </main>
+      <SiteFooter source="app" />
       {modal && (
         <div className="overlay" onClick={() => setModal(null)}>
           <div className="modal" onClick={(e) => e.stopPropagation()}>
@@ -1137,6 +1138,7 @@ function Login({ onAuthenticated }) {
     }
   }
   return (
+    <div className="public-shell">
     <main className="login-page">
       <section className="login-card">
         <div className="login-mark">10</div>
@@ -1185,10 +1187,101 @@ function Login({ onAuthenticated }) {
         </button>
       </section>
     </main>
+    <SiteFooter source="login" />
+    </div>
   );
 }
 
+const legalCopy = {
+  privacy: {
+    title: "Privacy notice",
+    intro: "A plain account of what we collect, why we collect it and the choices you have.",
+    sections: [
+      ["Who we are", <>The Messi Archive is published by Floodlight Editions, an independent editorial project operated by Utkarsh Kaushik. Privacy enquiries and deletion requests can be sent to <a href="mailto:ukaushik37@gmail.com">ukaushik37@gmail.com</a>.</>],
+      ["What we collect", "When you create an account, we store your email address, a cryptographically hashed and salted password, authentication sessions, and the films, books, interviews, podcasts and seasons you mark as completed. If you join the mailing list, we store your email address, consent record, signup source and subscription status."],
+      ["Why we use it", "We use account data to provide sign-in and synchronise your archive progress. We use mailing-list data only to send editorial news, new chapters and occasional publishing updates that you asked to receive. We do not sell personal data."],
+      ["Storage and retention", "The service is hosted using Cloudflare. Login sessions expire after 30 days. Account and progress records remain while your account is active; subscriber records remain until you unsubscribe or ask us to delete them."],
+      ["Your choices and rights", "You may ask for access, correction, deletion or a copy of your personal data, and may withdraw newsletter consent at any time. You may also complain to the UK Information Commissioner’s Office. Contact us using the address above."],
+      ["Third-party media", "The archive links to and embeds services such as YouTube, IMDb, Amazon and streaming platforms. Opening or playing third-party media may allow that provider to process data under its own privacy policy."],
+    ],
+  },
+  terms: {
+    title: "Terms of use",
+    intro: "The simple rules for using The Messi Archive.",
+    sections: [
+      ["The service", "The Messi Archive is an independent research, writing and media-discovery project. It is not affiliated with Lionel Messi, his representatives, FC Barcelona, Paris Saint-Germain, Inter Miami, the AFA, FIFA, UEFA or any other club or governing body."],
+      ["Accounts", "Keep your sign-in details secure and provide accurate information. You are responsible for activity on your account. We may suspend access used to disrupt, scrape, attack or misuse the service."],
+      ["Editorial material", "Original writing, site design and software are protected by copyright. You may link to articles and quote short passages with clear attribution. Reproduction, republication or commercial use requires written permission."],
+      ["Third-party rights", "Club badges, trademarks, photographs, book covers, platform marks, trailers and linked material belong to their respective owners. Their appearance is for identification, criticism, review and archival context and does not imply endorsement."],
+      ["Accuracy and availability", "We research the archive carefully, but cannot promise that every statistic, availability link or third-party listing will remain complete or current. The service may change or occasionally be unavailable."],
+      ["Contact", <>Questions, corrections and rights requests may be sent to <a href="mailto:ukaushik37@gmail.com">ukaushik37@gmail.com</a>.</>],
+    ],
+  },
+  cookies: {
+    title: "Cookie notice",
+    intro: "No advertising cookies, no analytics cookies and no unnecessary banner.",
+    sections: [
+      ["Essential session cookie", <><code>messi_session</code> keeps you securely signed in. It is HttpOnly, Secure and SameSite=Lax, and expires after 30 days. It is essential to the account service and cannot be switched off while you are signed in.</>],
+      ["Device storage", "The app keeps a local copy of your viewing and reading progress in your browser so the interface remains responsive and can recover gracefully if the connection drops. Signed-in progress is also synchronised with your account."],
+      ["Embedded services", "YouTube videos use the privacy-enhanced youtube-nocookie.com domain. A third-party provider may still store information when you choose to play or open its content. External destinations apply their own cookie policies."],
+      ["Future changes", "If we introduce analytics, advertising or any non-essential cookies, we will update this notice and ask for consent before placing them."],
+    ],
+  },
+};
+
+function NewsletterForm({ source }) {
+  const [email, setEmail] = useState("");
+  const [state, setState] = useState("idle");
+  const [message, setMessage] = useState("");
+  async function subscribe(event) {
+    event.preventDefault();
+    setState("busy");
+    setMessage("");
+    const form = new FormData(event.currentTarget);
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ email, source, company: form.get("company") }),
+      });
+      const data = await response.json();
+      if (!response.ok) throw new Error(data.error || "Could not subscribe");
+      setState("done");
+      setMessage("You’re on the list. Welcome to Floodlight Editions.");
+      setEmail("");
+    } catch (error) {
+      setState("error");
+      setMessage(error.message);
+    }
+  }
+  return (
+    <form className="newsletter-form" onSubmit={subscribe}>
+      <label htmlFor={`newsletter-${source}`}>The next chapter, when it is ready.</label>
+      <div><input id={`newsletter-${source}`} type="email" required placeholder="Email address" value={email} onChange={(event) => setEmail(event.target.value)} /><button disabled={state === "busy"}>{state === "busy" ? "Joining…" : "Join the list"}</button></div>
+      <input className="field-trap" name="company" tabIndex="-1" autoComplete="off" aria-hidden="true" />
+      <small>New long reads, archive releases and the road to the manuscript. Unsubscribe at any time.</small>
+      {message && <p className={state === "error" ? "form-error" : "form-success"} role="status">{message}</p>}
+    </form>
+  );
+}
+
+function SiteFooter({ source = "site" }) {
+  return (
+    <footer className="site-footer">
+      <div className="footer-editorial"><span>FLOODLIGHT EDITIONS</span><h2>Football lives,<br />told season by season.</h2><p>Independent, researched football writing with the patience of a book and the memory of an archive.</p></div>
+      <NewsletterForm source={source} />
+      <div className="footer-base"><p><b>The Messi Archive</b> is an independent editorial project and is not affiliated with Lionel Messi or any club or governing body.</p><nav aria-label="Legal"><a href="/privacy">Privacy</a><a href="/terms">Terms</a><a href="/cookies">Cookies</a><a href="mailto:ukaushik37@gmail.com">Contact</a></nav><small>© 2026 Floodlight Editions. All rights reserved. Third-party marks and media remain the property of their respective owners.</small></div>
+    </footer>
+  );
+}
+
+function LegalPage({ page }) {
+  const content = legalCopy[page];
+  return <div className="legal-page"><header><a className="legal-brand" href="/"><span>FLOODLIGHT EDITIONS</span><b>THE MESSI ARCHIVE</b></a><a href="/">Back to the archive</a></header><main><span>LAST UPDATED · 21 JULY 2026</span><h1>{content.title}</h1><p className="legal-intro">{content.intro}</p>{content.sections.map(([title, body]) => <section key={title}><h2>{title}</h2><p>{body}</p></section>)}</main><SiteFooter source={`legal-${page}`} /></div>;
+}
+
 function Root() {
+  const legalRoute = window.location.pathname.match(/^\/(privacy|terms|cookies)\/?$/)?.[1];
   const [user, setUser] = useState(undefined);
   useEffect(() => {
     fetch("/api/auth/me")
@@ -1197,6 +1290,7 @@ function Root() {
       )
       .catch(() => setUser(null));
   }, []);
+  if (legalRoute) return <LegalPage page={legalRoute} />;
   if (user === undefined) return <div className="app-loading">10</div>;
   if (!user) return <Login onAuthenticated={setUser} />;
   return (
