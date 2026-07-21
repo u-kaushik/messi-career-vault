@@ -2,7 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { seasonStories } from "../src/data.js";
 
-const origin = "https://messi-career-vault.ukaushik37.workers.dev";
+const origin = "https://messi-archive.ukaushik37.workers.dev";
 const escapeHtml = (value = "") => String(value)
   .replaceAll("&", "&amp;")
   .replaceAll("<", "&lt;")

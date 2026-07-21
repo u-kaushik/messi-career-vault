@@ -14,7 +14,7 @@ A lightweight, Barça-themed dashboard for exploring Lionel Messi's career seaso
 
 ## Live app
 
-[messi-career-vault.ukaushik37.workers.dev](https://messi-career-vault.ukaushik37.workers.dev)
+[messi-archive.ukaushik37.workers.dev](https://messi-archive.ukaushik37.workers.dev)
 
 ## Run locally
 
