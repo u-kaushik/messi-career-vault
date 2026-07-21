@@ -59,11 +59,11 @@ No factual blocker remains. The dates, scores, goal order/timings, false-nine ac
 
 ## Unpublished 2009–10 draft
 
-The ledger contains **43 VERIFIED, 5 QUALIFIED, 0 UNRESOLVED and 2 REMOVE** decisions. Verdict: **HOLD**.
+The final ledger contains **45 VERIFIED, 5 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
 
-Required corrections:
+Resolved in the latest copy:
 
-1. Eto'o did not open the 2006 Paris final; Sol Campbell did. Change “goals had opened the finals in Rome and Paris” to “had scored in the finals…” or “had opened Barça's scoring…”.
-2. Under the date rule, move the 2010 `FIFA Ballon d’Or`, 2009–10 `European Golden Shoe` and 2009–10 `Pichichi Trophy` to 2010–11 because they were presented after that season began. The other current 2009–10 team/individual allocations pass.
+1. Eto'o's goals are now correctly described as helping win the Rome and Paris finals.
+2. The 2010 `FIFA Ballon d’Or`, 2009–10 `European Golden Shoe` and 2009–10 `Pichichi Trophy` are allocated to 2010–11 under the presentation-date rule.
 
-The transfers, chronology, dates, scores, goal minutes/order/sequences, tactical descriptions, 47/53 total, 34 Liga goals, eight UCL goals, 99 points/record comparisons, both photos, official UEFA video and listed sources otherwise pass.
+No factual blocker remains. The transfers, chronology, dates, scores, goal minutes/order/sequences, tactical descriptions, 47/53 total, 34 Liga goals, eight UCL goals, 99 points/record comparisons, both photos, official UEFA video and listed sources pass.
