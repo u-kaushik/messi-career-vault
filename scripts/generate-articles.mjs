@@ -41,9 +41,9 @@ for (const [season, story] of Object.entries(seasonStories)) {
 <header class="bar"><a class="brand" href="/">THE MESSI <b>ARCHIVE</b></a><nav class="actions"><a href="/">BACK TO THE ARCHIVE</a><a class="reader" href="https://wise.readwise.io/save?url=${encodeURIComponent(canonical)}">SAVE TO READWISE</a></nav></header>
 <main><header><span class="eyebrow">Chapter ${String(Object.keys(seasonStories).indexOf(season) + 1).padStart(2, "0")} · <time>${escapeHtml(season)}</time></span><h1>${escapeHtml(story.title)}</h1><p class="dek">${escapeHtml(story.dek)}</p><div class="meta"><span>${minutes(story)} minute read</span><span>By The Messi Archive</span></div></header>
 <article>${body}<aside class="sources"><h2>RESEARCH SOURCES</h2><ul>${sources}</ul></aside><div class="end"><strong>Keep this chapter with you.</strong><a href="https://wise.readwise.io/save?url=${encodeURIComponent(canonical)}">SAVE THIS ARTICLE TO READER</a></div></article></main></body></html>`;
-  const directory = resolve("dist", path.slice(1));
+  const directory = resolve("dist", "articles", season.replace("–", "-"));
   await mkdir(directory, { recursive: true });
-  await writeFile(resolve(directory, "index.html"), document);
+  await writeFile(resolve(directory, `${slug(story.title)}.html`), document);
 }
 
 console.log(`Generated ${Object.keys(seasonStories).length} standalone article pages.`);

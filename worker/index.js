@@ -60,8 +60,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname.startsWith("/articles/") && !url.pathname.includes(".")) {
-      if (!url.pathname.endsWith("/")) url.pathname += "/";
-      url.pathname += "index.html";
+      url.pathname = `${url.pathname.replace(/\/$/, "")}.html`;
       return env.ASSETS.fetch(new Request(url, request));
     }
     if (!url.pathname.startsWith("/api/")) return env.ASSETS.fetch(request);
