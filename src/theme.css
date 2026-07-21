@@ -199,10 +199,10 @@ blockquote {
   border-color: #00a7e714;
 }
 .career-grid {
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: 380px minmax(0, 1fr);
 }
 .timeline {
-  max-height: none;
+  max-height: 700px;
 }
 .stats svg,
 .honour svg {
@@ -229,6 +229,10 @@ blockquote {
 }
 .season-copy {
   min-width: 0;
+  display: grid;
+  grid-template-columns: 82px minmax(0, 1fr);
+  align-items: center;
+  column-gap: 18px;
   text-align: left;
 }
 .season-year {
@@ -237,7 +241,7 @@ blockquote {
   letter-spacing: 0.01em;
 }
 .season-club {
-  margin-top: 6px;
+  margin-top: 0;
   color: #7f8a9c;
   font-size: 11px;
   line-height: 1.3;
@@ -286,6 +290,10 @@ blockquote {
 .hero-club img { width: 26px; height: 26px; object-fit: contain; filter: drop-shadow(0 3px 5px #0007); }
 @media (max-width: 600px) {
   .season-watermark { letter-spacing: -2px; }
+}
+@media (max-width: 900px) {
+  .career-grid { grid-template-columns: minmax(0, 1fr); }
+  .timeline { max-height: 360px; }
 }
 .hero {
   background: linear-gradient(135deg, #004d98, #a50044);
