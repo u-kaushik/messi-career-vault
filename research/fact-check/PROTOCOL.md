@@ -34,6 +34,13 @@ Confidence is `HIGH`, `MEDIUM` or `LOW`; it measures evidence strength, not edit
 7. Resolve every URL and list repeated exact media URLs. A source URL reused as its media `href` is not a duplicated asset.
 8. Record issues in the season ledger and summarize only consequential findings. Corrections happen in a separate editorial pass.
 
+## Editorial firewall
+
+- Evidence belongs in the ledger and source notes, not in the narrative voice. Avoid constructions such as “UEFA states”, “records show”, “the photograph proves” or “the footage shows” when the underlying event can be narrated directly.
+- Name a governing body, publication, photograph or film in the prose only when its institutional action, contemporary framing or visual object is itself part of the story.
+- Translate verified evidence into natural chronology and observed action. Keep attribution unobtrusive in the source list, caption or linked credit.
+- Before publication, search the chapter for evidentiary throat-clearing (`according to`, `records show`, `reported`, `the image shows`, governing-body attribution) and rewrite any phrase that makes the article sound like its audit ledger.
+
 ## Season boundary and statistics rules
 
 - European club seasons run from the first official club fixture through the last official club fixture, unless the page explicitly uses another convention.
