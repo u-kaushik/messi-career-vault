@@ -70,8 +70,8 @@ No factual blocker remains. The transfers, chronology, dates, scores, goal minut
 
 ## Unpublished 2010–11 draft
 
-The ledger contains **47 VERIFIED, 7 QUALIFIED, 0 UNRESOLVED and 1 REMOVE** decisions. Verdict: **HOLD**.
+The final ledger contains **48 VERIFIED, 7 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
 
-Required correction: move `UEFA Best Player in Europe` and the 2010–11 `La Liga Best Player` award to 2011–12. They were presented on 25 August and 1 December 2011, after 2011–12 began, so their current placement violates the date-based rule.
+Resolved in the latest copy: `UEFA Best Player in Europe` and the 2010–11 `La Liga Best Player` award are allocated to 2011–12. They were presented on 25 August and 1 December 2011, after 2011–12 began, so this placement follows the date-based rule.
 
 The post-World Cup/transfers context, Super Cup, league and 5–0 Clásico details, Ballon d'Or podium, Arsenal tie, Abidal timeline, four spring Clásicos, title/96 points, Wembley events/statistics, 53/55 total, 31 Liga and 12 UCL goals, record comparison, sources, photos, UEFA video and duplicate-media check otherwise pass.
