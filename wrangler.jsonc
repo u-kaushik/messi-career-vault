@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "messi-archive",
+  "name": "messi-career-vault",
   "main": "worker/index.js",
   "compatibility_date": "2026-07-20",
   "assets": {
