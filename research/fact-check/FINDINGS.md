@@ -75,3 +75,15 @@ The final ledger contains **48 VERIFIED, 7 QUALIFIED, 0 UNRESOLVED and 0 REMOVE*
 Resolved in the latest copy: `UEFA Best Player in Europe` and the 2010–11 `La Liga Best Player` award are allocated to 2011–12. They were presented on 25 August and 1 December 2011, after 2011–12 began, so this placement follows the date-based rule.
 
 The post-World Cup/transfers context, Super Cup, league and 5–0 Clásico details, Ballon d'Or podium, Arsenal tie, Abidal timeline, four spring Clásicos, title/96 points, Wembley events/statistics, 53/55 total, 31 Liga and 12 UCL goals, record comparison, sources, photos, UEFA video and duplicate-media check otherwise pass.
+
+## Unpublished 2011–12 draft
+
+The final ledger contains **52 VERIFIED, 5 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
+
+Resolved in the latest copy:
+
+1. The season-card summary now says **five** goals against Leverkusen.
+2. The disambiguated `2011–12 European Golden Shoe` and `2011–12 Pichichi Trophy` are allocated to 2012–13, when they were presented.
+3. The Club World Cup final is now correctly dated **eight days** after the 10 December Clásico.
+
+The transfers, Super Cups, league/Madrid chronology, Club World Cup result, Ballon d'Or, Leverkusen five-goal record, César recalculation, April Chelsea/Madrid sequence, Guardiola departure/14 trophies, Copa final, 73/60 and competition breakdown, photos, official UEFA video and duplicate-media check otherwise pass.
