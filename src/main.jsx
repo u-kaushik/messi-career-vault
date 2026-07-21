@@ -51,6 +51,7 @@ function App({ user, onLogout }) {
     [seen, setSeen] = useState(() => getState(user.id).seen || {}),
     [query, setQuery] = useState(""),
     [type, setType] = useState("All"),
+    [collection, setCollection] = useState("screen"),
     [modal, setModal] = useState(null);
   useEffect(() => {
     let active = true;
@@ -89,9 +90,19 @@ function App({ user, onLogout }) {
     films.length + interviews.length + podcasts.length + books.length;
   const watched = Object.values(watch).filter(Boolean).length;
   const toggle = (id) => setWatch((v) => ({ ...v, [id]: !v[id] }));
+  const libraryNav = [
+    ["screen", "Films", films.length, Clapperboard],
+    ["interviews", "Interviews", interviews.length, Mic2],
+    ["podcasts", "Podcasts", podcasts.length, Headphones],
+    ["books", "Books", books.length, BookOpen],
+  ];
+  const openCollection = (id) => {
+    setTab("watch");
+    setCollection(id);
+  };
   return (
     <div className="app">
-      <aside>
+      <header className="topbar">
         <div className="brand">
           <span>10</span>
           <div>
@@ -100,38 +111,35 @@ function App({ user, onLogout }) {
             <b>ARCHIVE</b>
           </div>
         </div>
-        <nav>
+        <nav className="primary-nav" aria-label="Main navigation">
           <button
             className={tab === "career" ? "active" : ""}
             onClick={() => setTab("career")}
           >
-            <CalendarDays /> Career timeline
+            <CalendarDays /> Timeline
           </button>
-          <button
-            className={tab === "watch" ? "active" : ""}
-            onClick={() => setTab("watch")}
-          >
-            <Clapperboard /> Library <i>{totalLibrary}</i>
-          </button>
+          {libraryNav.map(([id, label, count, Icon]) => (
+            <button
+              key={id}
+              className={tab === "watch" && collection === id ? "active" : ""}
+              onClick={() => openCollection(id)}
+            >
+              <Icon /> {label} <i>{count}</i>
+            </button>
+          ))}
         </nav>
-        <div className="side-card">
-          <p>YOUR JOURNEY</p>
-          <strong>
-            {watched}
-            <small> / {totalLibrary}</small>
-          </strong>
-          <span>stories completed</span>
-          <div className="bar">
-            <i style={{ width: `${(watched / totalLibrary) * 100}%` }} />
-          </div>
-          <em>{Math.round((watched / totalLibrary) * 100)}% complete</em>
+        <div className="journey-pulse" title="Your library progress">
+          <span>{watched}</span>
+          <small>/{totalLibrary} watched</small>
         </div>
-        <blockquote>
-          “You have to fight to reach your dream.”<small>— Lionel Messi</small>
-        </blockquote>
-      </aside>
+        <button className="account" onClick={onLogout} title="Sign out">
+          <span>{user.email.slice(0, 1).toUpperCase()}</span>
+          <small>{user.email}</small>
+          <LogOut />
+        </button>
+      </header>
       <main>
-        <header>
+        <section className="page-intro">
           <div>
             <span>THE COMPLETE JOURNEY</span>
             <h1>
@@ -143,12 +151,7 @@ function App({ user, onLogout }) {
                 : "Films, long-form conversations, guest podcasts and books from around the world."}
             </p>
           </div>
-          <button className="account" onClick={onLogout} title="Sign out">
-            <span>{user.email.slice(0, 1).toUpperCase()}</span>
-            <small>{user.email}</small>
-            <LogOut />
-          </button>
-        </header>
+        </section>
         {tab === "career" ? (
           <Career
             selected={selected}
@@ -169,6 +172,7 @@ function App({ user, onLogout }) {
             interviews={interviews}
             podcasts={podcasts}
             books={books}
+            collection={collection}
           />
         )}
       </main>
@@ -507,14 +511,45 @@ function Career({ selected, setSelected, seen, setSeen }) {
                     <small>THE LONG READ</small>
                     <b>{seasonStories[selected.season].title}</b>
                   </span>
-                  <em>Read the full season story</em>
+                  <em>
+                    {Math.max(
+                      1,
+                      Math.ceil(
+                        [
+                          seasonStories[selected.season].dek,
+                          ...seasonStories[selected.season].paragraphs,
+                        ]
+                          .join(" ")
+                          .trim()
+                          .split(/\s+/).length / 220,
+                      ),
+                    )} min read
+                  </em>
                   <ChevronRight />
                 </summary>
                 <article>
                   <p className="essay-dek">{seasonStories[selected.season].dek}</p>
-                  {seasonStories[selected.season].paragraphs.map((paragraph, i) => (
-                    <p key={i}>{paragraph}</p>
-                  ))}
+                  {seasonStories[selected.season].paragraphs.map((paragraph, i) => {
+                    const photo = seasonStories[selected.season].photos?.find(
+                      (item) => item.after === i,
+                    );
+                    return (
+                      <React.Fragment key={i}>
+                        <p>{paragraph}</p>
+                        {photo && (
+                          <figure>
+                            <img src={photo.src} alt={photo.alt} loading="lazy" />
+                            <figcaption>
+                              <span>{photo.caption}</span>
+                              <a href={photo.href} target="_blank" rel="noreferrer">
+                                Photo: {photo.credit} <ExternalLink />
+                              </a>
+                            </figcaption>
+                          </figure>
+                        )}
+                      </React.Fragment>
+                    );
+                  })}
                   <footer>
                     <span>RESEARCH SOURCES</span>
                     {seasonStories[selected.season].sources.map(([label, url]) => (
@@ -566,10 +601,11 @@ function Library({
   interviews,
   podcasts,
   books,
+  collection,
 }) {
-  const [collection, setCollection] = useState("screen");
   const [playing, setPlaying] = useState(null);
   const [language, setLanguage] = useState("All");
+  useEffect(() => setPlaying(null), [collection]);
   const matches = (value) => value.toLowerCase().includes(query.toLowerCase());
   const filtered = films.filter(
     (f) =>
@@ -587,12 +623,6 @@ function Library({
       (language === "All" || b.language === language) &&
       matches(`${b.title} ${b.author} ${b.language} ${b.kind}`),
   );
-  const collections = [
-    ["screen", "Films & series", films.length, Clapperboard],
-    ["interviews", "Long interviews", interviews.length, Mic2],
-    ["podcasts", "Podcasts", podcasts.length, Headphones],
-    ["books", "Books", books.length, BookOpen],
-  ];
   const activeItems =
     collection === "screen"
       ? filtered
@@ -604,20 +634,6 @@ function Library({
   const play = (id) => setPlaying((current) => (current === id ? null : id));
   return (
     <>
-      <div className="collection-tabs">
-        {collections.map(([id, label, count, Icon]) => (
-          <button
-            key={id}
-            className={collection === id ? "active" : ""}
-            onClick={() => {
-              setCollection(id);
-              setPlaying(null);
-            }}
-          >
-            <Icon /> <span>{label}</span> <i>{count}</i>
-          </button>
-        ))}
-      </div>
       <div className="library-tools">
         <div className="search">
           <Search />

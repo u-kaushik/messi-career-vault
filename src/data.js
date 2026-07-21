@@ -263,6 +263,24 @@ export const seasonStories = {
       ["FC Barcelona: the first official goal", "https://www.fcbarcelona.com/en/football/first-team/news/4256638/20-years-since-leo-messis-first-official-goal/featured"],
       ["UEFA: Barcelona’s 2004–05 title", "https://www.uefa.com/news-media/news/01a9-0e6cc71410f2-1f8842b7df25-1000--team-ethic-fires-barca-to-glory/"],
     ],
+    photos: [
+      {
+        after: 2,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2024/10/12/9251c732-0b4a-4d08-b980-fe7f486fb972/2004-10-16-MESSI-06.JPG",
+        alt: "Seventeen-year-old Lionel Messi in Barcelona's 2004–05 shirt during his official debut against Espanyol",
+        caption: "The first official steps — Messi enters the Barcelona derby at Montjuïc, 16 October 2004.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/football/first-team/news/4147765/20-years-since-leo-messis-fc-barcelona-debut",
+      },
+      {
+        after: 7,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2025/04/30/fb9e1f24-b1c2-463c-9f2b-aa89ca605d13/FCBarcelona-AlbaceteBalompi2-0LligaJornada342004-2005_pic_01-05-05webmessi01.jpg",
+        alt: "Lionel Messi celebrates his first official Barcelona goal against Albacete in May 2005",
+        caption: "One lob had been disallowed. Messi answered with another — his first official Barcelona goal, 1 May 2005.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/football/first-team/news/4256638/20-years-since-leo-messis-first-official-goal/featured",
+      },
+    ],
   },
 };
 
