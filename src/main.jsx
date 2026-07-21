@@ -406,7 +406,6 @@ function Career({ selected, setSelected, seen, setSeen }) {
       badge: "https://upload.wikimedia.org/wikipedia/en/thumb/5/5c/Inter_Miami_CF_logo.svg/120px-Inter_Miami_CF_logo.svg.png",
     },
   }[clubKey];
-  const shirtNumber = clubKey === "paris" ? 30 : clubKey === "miami" ? 10 : idx < 2 ? 30 : idx < 4 ? 19 : 10;
   return (
     <>
       <section className="stats">
@@ -463,14 +462,10 @@ function Career({ selected, setSelected, seen, setSeen }) {
             <div className="hero-copy">
               <small>CHAPTER {String(idx + 1).padStart(2, "0")}</small>
               <h2>{selected.title}</h2>
-              <p>{selected.club}</p>
-            </div>
-            <div className="club-kit">
-              <img src={clubDetails.badge} alt={`${clubDetails.name} badge`} />
-              <div className={`messi-shirt ${clubKey}`} aria-label={`Messi number ${shirtNumber} shirt`}>
-                <span>MESSI</span>
-                <b>{shirtNumber}</b>
-              </div>
+              <p className="hero-club">
+                <img src={clubDetails.badge} alt={`${clubDetails.name} badge`} />
+                {selected.club}
+              </p>
             </div>
           </div>
           <div className="chapter-body">

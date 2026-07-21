@@ -246,8 +246,7 @@ blockquote {
   color: #657186;
 }
 .hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) auto;
+  display: block;
   align-items: end;
 }
 .hero:after {
@@ -270,79 +269,16 @@ blockquote {
   writing-mode: initial;
 }
 .hero-copy {
-  position: relative;
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 28px;
   z-index: 2;
-  max-width: 68%;
-  align-self: end;
+  max-width: 100%;
 }
-.club-kit {
-  position: absolute;
-  z-index: 2;
-  right: 34px;
-  top: 24px;
-  bottom: 22px;
-  width: 170px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-.club-kit > img {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 58px;
-  height: 58px;
-  object-fit: contain;
-  filter: drop-shadow(0 6px 10px #0006);
-}
-.messi-shirt {
-  position: relative;
-  width: 126px;
-  height: 132px;
-  padding-top: 36px;
-  text-align: center;
-  color: #fff;
-  filter: drop-shadow(0 12px 15px #0006);
-  clip-path: polygon(19% 0, 36% 10%, 64% 10%, 81% 0, 100% 18%, 87% 39%, 77% 31%, 77% 100%, 23% 100%, 23% 31%, 13% 39%, 0 18%);
-}
-.messi-shirt:after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  box-shadow: inset 0 0 0 1px #ffffff25;
-}
-.messi-shirt.barca {
-  background: repeating-linear-gradient(90deg, #004d98 0 18px, #a50044 18px 36px);
-}
-.messi-shirt.paris {
-  background: linear-gradient(90deg, #071b45 0 39%, #fff 39% 43%, #d7193f 43% 57%, #fff 57% 61%, #071b45 61%);
-}
-.messi-shirt.miami {
-  color: #171b2c;
-  background: #f4a9c1;
-}
-.messi-shirt span,
-.messi-shirt b {
-  position: relative;
-  z-index: 1;
-  display: block;
-  text-shadow: 0 2px 4px #0008;
-}
-.messi-shirt span {
-  font: 800 12px Manrope;
-  letter-spacing: 1.6px;
-}
-.messi-shirt b {
-  margin-top: 3px;
-  font: 900 48px/1 Manrope;
-}
+.hero-club { display: flex; align-items: center; gap: 9px; }
+.hero-club img { width: 26px; height: 26px; object-fit: contain; filter: drop-shadow(0 3px 5px #0007); }
 @media (max-width: 600px) {
-  .club-kit { right: 14px; width: 112px; }
-  .club-kit > img { width: 44px; height: 44px; }
-  .messi-shirt { width: 92px; height: 104px; padding-top: 30px; }
-  .messi-shirt span { font-size: 9px; }
-  .messi-shirt b { font-size: 36px; }
-  .hero-copy { max-width: 62%; }
   .season-watermark { letter-spacing: -2px; }
 }
 .hero {
