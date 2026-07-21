@@ -371,7 +371,7 @@ blockquote {
   min-height: 78px;
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: clamp(10px, 1.4vw, 22px);
   margin: 0;
   padding: 13px clamp(18px, 3vw, 48px);
   border-bottom: 1px solid #00a7e71f;
@@ -381,6 +381,7 @@ blockquote {
 .topbar .brand { flex: 0 0 auto; }
 .topbar .brand > span { width: 42px; height: 42px; }
 .primary-nav {
+  flex: 1 1 auto;
   min-width: 0;
   display: flex;
   align-items: center;
@@ -421,7 +422,7 @@ blockquote {
   font-style: normal;
 }
 .journey-pulse {
-  margin-left: auto;
+  margin-left: 0;
   display: flex;
   align-items: baseline;
   gap: 4px;
@@ -502,17 +503,26 @@ main {
   height: 100%;
   border: 0;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1550px) {
   .journey-pulse { display: none; }
-  .topbar { gap: 14px; }
+}
+@media (max-width: 1380px) {
+  .topbar .account small { display: none; }
+  .topbar .account { padding-inline: 8px; }
   .primary-nav button { padding-inline: 10px; }
+}
+@media (max-width: 1120px) {
+  .topbar .brand > div { display: none; }
+  .topbar { gap: 14px; }
+  .primary-nav button { padding-inline: 9px; }
+  .primary-nav button i { display: none; }
 }
 @media (max-width: 900px) {
   .topbar { flex-wrap: wrap; padding-block: 12px 9px; }
   .topbar .brand { margin-right: auto; }
   .topbar .account small { display: none; }
   .primary-nav { order: 3; width: 100%; }
-  .primary-nav button { flex: 1 0 auto; justify-content: center; }
+  .primary-nav button { flex: 0 0 auto; justify-content: center; }
   main { padding-top: 28px; }
   .career-grid { grid-template-columns: minmax(0, 1fr); }
 }
@@ -523,6 +533,13 @@ main {
   .page-intro { margin-bottom: 26px; }
   .season-essay figcaption { display: block; }
   .season-essay figcaption a { margin-top: 7px; }
+}
+@media (max-width: 430px) {
+  .topbar { padding-inline: 14px; }
+  .topbar .brand > span { width: 38px; height: 38px; }
+  .primary-nav { margin-inline: -14px; padding-inline: 14px; }
+  .primary-nav button { height: 40px; padding-inline: 9px; }
+  .primary-nav svg { width: 15px; }
 }
 .season-essay {
   margin-top: 20px;
