@@ -4,15 +4,16 @@ Audit date: 2026-07-21. Audited revision: `10477d7`. No publication code was edi
 
 ## Decision summary
 
-Across the three published ledgers (88 entries): **62 VERIFIED, 15 QUALIFIED, 4 UNRESOLVED, 7 REMOVE**. The long reads are broadly reliable on match chronology, scores, stages and major injuries, but seven claims should not remain as published facts.
+Across the three published ledgers (88 entries): **63 VERIFIED, 17 QUALIFIED, 3 UNRESOLVED, 5 REMOVE**. The long reads are broadly reliable on match chronology, scores, stages and major injuries, but five claims should not remain as published facts.
 
 ## Priority corrections for a separate editorial pass
 
-1. **2006–07 vest account is contradicted by its own image.** The embedded photograph visibly shows a hand-drawn `19`, not `TÍO`. Remove/correct the prose, alt and caption. The claimed uncle/godfather explanation is only supported by a 2026 retrospective and remains unresolved.
-2. **Ronaldinho was not the reigning Ballon d'Or holder on 10 March 2007.** Fabio Cannavaro won the 2006 award. Recast as the 2005 winner or remove “reigning.”
-3. **The Panathinaikos goal description invents a header.** UEFA describes Messi dinking the goalkeeper and finishing the loose ball; available evidence does not show a headed finish.
-4. **Stamford Bridge age is off by one day.** On 22 February 2006, Messi was 18 years, 7 months, 29 days by standard elapsed-date calculation, not 28 days. Dropping day precision is safest.
-5. **Honours are seasonally misfiled.** The July 2005 U-20 World Cup/Golden Ball/Golden Boot and December 2005 Golden Boy do not belong under 2004–05 according to the repo's own “season in which won” convention.
+1. **Ronaldinho was not the reigning Ballon d'Or holder on 10 March 2007.** Fabio Cannavaro won the 2006 award. Recast as the 2005 winner or remove “reigning.”
+2. **The Panathinaikos goal description invents a header.** UEFA describes Messi dinking the goalkeeper and finishing the loose ball; available evidence does not show a headed finish.
+3. **Stamford Bridge age is off by one day.** On 22 February 2006, Messi was 18 years, 7 months, 29 days by standard elapsed-date calculation, not 28 days. Dropping day precision is safest.
+4. **Honours are seasonally misfiled.** The July 2005 U-20 World Cup/Golden Ball/Golden Boot and December 2005 Golden Boy do not belong under 2004–05 according to the repo's own “season in which won” convention.
+
+Correction to the Fact Desk's earlier finding: full-resolution reinspection confirms that the 2006–07 vest reads outlined `TÍO`, not `19`. The visual claim is verified. The separate family explanation is qualified: Mundo Deportivo's 2026 retrospective explicitly reproduces Messi's account that the goals were for his uncle/godfather after the uncle's father died the previous day, but the open evidence remains a later secondary presentation rather than the original 2007 interview page.
 
 ## Qualification and sourcing issues
 
@@ -43,4 +44,4 @@ Resolved in the latest copy:
 2. Olympic gold is assigned to 2008–09 under the repo's “season in which won” rule.
 3. The evidence link is correctly attributed to Europa Press.
 
-No factual blocker remains. As an optional precision edit, the 15 December injury could be called a left biceps-femoris tear with an approximately four-week prognosis. The six-goal UCL total, CAS account, 40 appearances/16 goals, two left-thigh injury episodes, Old Trafford sequence, Rijkaard/Guardiola transition, Olympic match sequence, 89,102 final attendance, 58th-minute final pass, number-10 dates and all three draft media items pass.
+No factual blocker remains. Injury precision: UEFA's contemporaneous 15 December report diagnoses a **tear of the left biceps femoris** and says about four weeks; the draft's “strained the muscle in his left thigh” and “four to five weeks” are broadly true but less exact, so remain `QUALIFIED`, not erroneous. For 4 March, UEFA confirms another torn muscle in the left thigh during a sprint and six weeks out, but does not establish that the exact same structure re-tore; “same left thigh” is supported, while “same tear” is best read as shorthand. The six-goal UCL total, CAS account, 40 appearances/16 goals, Old Trafford sequence, Rijkaard/Guardiola transition, Olympic match sequence, 89,102 final attendance, 58th-minute final pass, number-10 dates and all three draft media items pass.
