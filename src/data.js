@@ -311,11 +311,11 @@ export const seasonStories = {
     photos: [
       {
         after: 1,
-        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2020/03/16/934e9d7f-d89c-484d-833b-810d47b43787/WhatsApp-Image-2020-03-16-at-15.11.33.jpeg",
-        alt: "Lionel Messi carries the ball against Juventus in the 2005 Joan Gamper Trophy",
-        caption: "The night Capello asked about him — Messi faces Juventus in the Joan Gamper Trophy, Camp Nou, 24 August 2005.",
-        credit: "FC Barcelona archive",
-        href: "https://www.fcbarcelona.com/en/football/first-team/noticias/1645854/revive-el-barca-juventus-del-2005/featured",
+        src: "https://estaticos-cdn.prensaiberica.es/clip/47325e52-ba91-4ff7-8be2-4db80b713790_16-9-discover-aspect-ratio_default_0.jpg",
+        alt: "Lionel Messi evades Patrick Vieira during Barcelona's 2005 Joan Gamper Trophy match against Juventus",
+        caption: "The night Capello asked about him — Messi escapes Patrick Vieira at the Camp Nou, 24 August 2005.",
+        credit: "SPORT",
+        href: "https://www.sport.es/es/noticias/45-aniversario/gamper-2005-eclosion-messi-107222621",
       },
       {
         after: 6,
