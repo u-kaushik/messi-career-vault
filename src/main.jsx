@@ -25,6 +25,7 @@ import {
   podcasts,
   books,
   honourLedger,
+  seasonStories,
 } from "./data";
 import TrophyMark from "./TrophyMark";
 import "./style.css";
@@ -499,6 +500,32 @@ function Career({ selected, setSelected, seen, setSeen }) {
               </div>
             )}
             <Honours season={selected.season} />
+            {seasonStories[selected.season] && (
+              <details className="season-essay">
+                <summary>
+                  <span>
+                    <small>THE LONG READ</small>
+                    <b>{seasonStories[selected.season].title}</b>
+                  </span>
+                  <em>Read the full season story</em>
+                  <ChevronRight />
+                </summary>
+                <article>
+                  <p className="essay-dek">{seasonStories[selected.season].dek}</p>
+                  {seasonStories[selected.season].paragraphs.map((paragraph, i) => (
+                    <p key={i}>{paragraph}</p>
+                  ))}
+                  <footer>
+                    <span>RESEARCH SOURCES</span>
+                    {seasonStories[selected.season].sources.map(([label, url]) => (
+                      <a key={url} href={url} target="_blank" rel="noreferrer">
+                        {label} <ExternalLink />
+                      </a>
+                    ))}
+                  </footer>
+                </article>
+              </details>
+            )}
             <button
               className={seen[selected.id] ? "complete" : ""}
               onClick={() =>
