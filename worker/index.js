@@ -59,6 +59,11 @@ const sessionCookie = (token, maxAge = 60 * 60 * 24 * 30) =>
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
+    if (url.pathname.startsWith("/articles/") && !url.pathname.includes(".")) {
+      if (!url.pathname.endsWith("/")) url.pathname += "/";
+      url.pathname += "index.html";
+      return env.ASSETS.fetch(new Request(url, request));
+    }
     if (!url.pathname.startsWith("/api/")) return env.ASSETS.fetch(request);
     try {
       if (url.pathname === "/api/auth/me" && request.method === "GET") {

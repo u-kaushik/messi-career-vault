@@ -5,7 +5,7 @@
   "description": "A lightweight Messi career and media tracker with account-based progress.",
   "scripts": {
     "dev": "npm run build && wrangler d1 execute messi-career-vault --local --file=./schema.sql && wrangler dev",
-    "build": "vite build",
+    "build": "vite build && node scripts/generate-articles.mjs",
     "preview": "vite preview",
     "start": "npm run dev",
     "deploy": "npm run build && wrangler deploy",

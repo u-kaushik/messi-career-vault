@@ -409,6 +409,12 @@ function PlatformMark({ name, withName = false }) {
 const readingMinutes = (story) =>
   Math.max(1, Math.ceil([story.dek, ...story.paragraphs].join(" ").trim().split(/\s+/).length / 220));
 
+const articlePath = (season, story) =>
+  `/articles/${season.replace("–", "-")}/${story.title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "")}/`;
+
 function LongRead({ story, season }) {
   if (!story) return null;
   return (
@@ -438,9 +444,10 @@ function Articles() {
   return <section className="articles-page">
     <div className="articles-heading"><span>{Object.keys(seasonStories).length} PUBLISHED</span><h2>A career, told properly.</h2><p>Original, researched and chronological long-form football writing.</p></div>
     {Object.entries(seasonStories).map(([season, story]) => <div className="article-volume" key={season}>
-      <div className="article-volume-cover" style={{ backgroundImage: `linear-gradient(90deg,#07122520,#071225e8),url(${story.photos?.[0]?.src || ""})` }}>
+      <a className="article-volume-cover" href={articlePath(season, story)} style={{ backgroundImage: `linear-gradient(90deg,#07122520,#071225e8),url(${story.photos?.[0]?.src || ""})` }} aria-label={`Read ${story.title}`}>
         <span>{season}</span><small>{readingMinutes(story)} MIN READ</small><h3>{story.title}</h3><p>{story.dek}</p>
-      </div>
+        <b className="article-open">READ THE CHAPTER <ChevronRight /></b>
+      </a>
       <LongRead story={story} season={season} />
     </div>)}
   </section>;
@@ -459,7 +466,7 @@ function SeasonArchive({ season, setModal }) {
   return <section className="season-archive">
     <div className="season-archive-head"><div><span>SEASON ARCHIVE</span><h3>Everything from {season.season}</h3></div><small>{total} {total === 1 ? "piece" : "pieces"}</small></div>
     <div className="archive-links">
-      {story && <a className="archive-link article-link" href={`#long-read-${season.season.replace(/[^0-9]/g, "-")}`}><Newspaper /><span><small>ARTICLE · {readingMinutes(story)} MIN</small><b>{story.title}</b></span><ChevronRight /></a>}
+      {story && <a className="archive-link article-link" href={articlePath(season.season, story)}><Newspaper /><span><small>ARTICLE · {readingMinutes(story)} MIN</small><b>{story.title}</b></span><ChevronRight /></a>}
       {groups.flatMap(([label, items, kind]) => items.map((item) => {
         const href = kind === "interview" ? `https://www.youtube.com/watch?v=${item.videoId}` : item.url;
         const content = <>{item.poster || item.cover ? <img src={item.poster || item.cover} alt="" /> : kind === "screen" ? <Clapperboard /> : kind === "interview" ? <Mic2 /> : kind === "podcast" ? <Headphones /> : <BookOpen />}<span><small>{label} · {item.year}</small><b>{item.title}</b></span><ChevronRight /></>;
