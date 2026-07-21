@@ -449,6 +449,62 @@ export const seasonStories = {
       },
     ],
   },
+  "2008–09": {
+    title: "Everything becomes possible",
+    dek: "A new number, a new manager and the season Barcelona rebuilt football around Messi — from Beijing gold to the Bernabéu, Stamford Bridge and one impossible leap in Rome.",
+    paragraphs: [
+      "Lionel Messi returned from Beijing with a gold medal, a new shirt number and a club waiting to discover whether renewal could be made to look like revolution. The summer had cleared the stage around him. Ronaldinho and Deco were gone. Frank Rijkaard, the manager who had introduced him to senior football, had gone too. Pep Guardiola arrived from Barcelona B with one year of coaching behind him and an idea of the club so exacting that it reached from the geometry of possession to the punctuality of breakfast. Messi was twenty-one. The number 10, worn in a July friendly and assigned officially while he was still at the Olympics, no longer felt like an inheritance laid upon a young man. It looked like the proper name of his place in the team.",
+      "Guardiola’s first league match ended in defeat at Numancia on 31 August. The next brought a 1–1 home draw with Racing Santander. Two games, one point: thin evidence for a project that would later be made to seem inevitable. Nothing about it was. Guardiola had told Ronaldinho and Deco they were not part of his plans, had publicly questioned whether Samuel Eto’o would stay, and was asking an accomplished but undisciplined side to recover the ball with the appetite of boys trying to earn a contract. The football depended upon collective obedience. Messi’s liberty would be created by everybody else accepting responsibility for the space around him.",
+      "The response came quickly and then with gathering force. Sporting Gijón were beaten 6–1, Real Betis 3–2 and Espanyol 2–1. At Shakhtar Donetsk on 1 October, Barcelona trailed until Messi came from the bench and scored twice in the final minutes, the second deep into stoppage time. It was not yet the serene machine of memory. There were awkward evenings, defensive risks and a manager learning the scale of his own demands. But there was also a new physical rhythm: lose the ball, chase it; win it, spread the pitch; find Messi on the right and let the move acquire danger. Xavi conducted from midfield, Andrés Iniesta joined the passing angles, Dani Alves charged beyond Messi, while Eto’o attacked the spaces opened inside. Barça were not merely keeping the ball. They were using it to compress the opposition’s world.",
+      "By December they had become irresistible. Valencia lost 4–0 at the Camp Nou. A week later Real Madrid arrived beneath rain and pressure, trying to halt a team that had scored freely across the autumn. Iker Casillas saved Eto’o’s penalty and Juande Ramos’s side defended deep enough to make the match feel briefly stubborn. Then, in the 83rd minute, Eto’o forced the ball in from a corner. In stoppage time Messi exchanged passes with Thierry Henry and lifted his finish over Casillas before Fabio Cannavaro slid into the post in a vain attempt to clear it. Barcelona won 2–0. The goal was less spectacular than Getafe and less furious than his Clásico hat-trick, but it carried a new authority: Messi was no longer interrupting the rivalry with youth. He was helping govern it.",
+      "Winter demonstrated the range of the transformation. On 6 January at Atlético Madrid in the Copa del Rey, Messi scored all three in a 3–1 victory and left the Vicente Calderón to applause from sections of the home support. On 1 February at Racing, Guardiola sent him on with Barcelona behind. Messi equalised, then struck the winner in the 80th minute with a right-foot volley after his first effort hit the post. It was Barcelona’s 5,000th goal in La Liga. History had selected an unusually appropriate author, although the finish itself was gloriously untidy: post, rebound, weaker foot, a landmark reached through improvisation rather than ceremony.",
+      "Europe sharpened the argument. Lyon were overcome in the last 16, and Bayern Munich arrived at the Camp Nou for the quarter-final on 8 April. The first half remains one of those passages of football that alters the memory of time. Messi scored twice, Eto’o and Henry once each; Bayern went in four down. For the first, Eto’o slipped the ball into Messi’s path and the left foot found the far corner. For the second, Messi darted across his marker to meet Henry’s low delivery. He also made Eto’o’s goal. Forty-five minutes contained the season in miniature: pressure regained possession, possession drew defenders, movement destroyed their reference points. Barcelona did not appear hurried. Bayern did.",
+      "The fullest expression came at the Bernabéu on 2 May. Madrid had drawn to within four points and the title race had recovered a pulse. Guardiola made the decision that would become one of the defining tactical images of the age: Messi began nominally on the right but moved into the centre, dropping away from the centre-backs to receive between defence and midfield. Eto’o pulled wide, Henry attacked the vacated channels, and Madrid could not decide who should follow whom. Gonzalo Higuaín scored first; Barcelona replied six times. Messi made it 3–1 after Xavi robbed Lassana Diarra, then added the fifth from another Xavi pass. Henry scored twice, Carles Puyol and Gerard Piqué once each. The scoreboard read Real Madrid 2, Barcelona 6. It was not simply a victory at the home of the reigning champions. It was a tactical revelation performed in public.",
+      "Four nights later, beauty met resistance at Stamford Bridge. Chelsea had held Barcelona 0–0 at the Camp Nou and Michael Essien’s astonishing ninth-minute volley placed them ahead in the second leg. Guardiola’s side struggled against a powerful, compact defence; Éric Abidal was sent off in the 66th minute, and the night narrowed towards elimination. Refereeing arguments would cling to the tie, but inside the chaos Barcelona still required one clean action. In the 93rd minute, Alves sent another ball into the area and Essien’s attempted clearance fell to Messi. He controlled near the edge of the box, drew blue shirts and rolled the ball square. Iniesta struck first time into the top corner. Barcelona’s first shot on target had arrived at the last possible moment. Messi did not score the goal, but he supplied its final breath of composure.",
+      "The trophies now came almost too quickly to absorb. Athletic Club led the Copa del Rey final in Valencia on 13 May before Yaya Touré drove Barcelona level. Messi put them ahead after Eto’o’s shot was saved, following in to finish the rebound; Bojan and Xavi completed a 4–1 victory. Three days later, Madrid’s defeat at Villarreal confirmed Barcelona as league champions without Guardiola’s side taking the field. Two trophies had been secured. The third required Manchester United, the holders, in Rome.",
+      "The Champions League final on 27 May began with United surging forward and Cristiano Ronaldo testing Víctor Valdés. Then, after ten minutes, Iniesta carried the ball through midfield and found Eto’o, who slipped inside Nemanja Vidić and beat Edwin van der Sar at the near post. The match changed ownership. Xavi and Iniesta began to move United around the Stadio Olimpico, while Messi drifted beyond the reach of their midfield. In the 70th minute Xavi looked up from the right and curled a cross towards a space occupied by the smallest forward among the defenders. Messi rose, hung and headed across Van der Sar. His boot came loose in the movement. He landed, ran behind the goal with it in his hand and kissed it as Europe understood the joke: the left foot had made him famous, but the goal that crowned Barcelona had come from his head.",
+      "Barcelona won 2–0 and became the first Spanish club to complete the league, cup and European Cup treble. Messi finished the campaign with 38 goals in 51 club appearances and led the Champions League with nine. Those totals announce greatness, yet they do not fully explain the season. The deeper change was structural. Guardiola had built a demanding collective in which Messi’s imagination could become repeatable rather than occasional; Messi, in turn, gave Guardiola’s principles an attacking force no diagram could guarantee. The boy who had once entered beside Ronaldinho was now the reference point of the best team in Europe. By the end, everything that had appeared precarious in August—the novice coach, the cleared dressing room, the abandoned habits—looked like destiny. It was not destiny. It was work made beautiful, and for one season football seemed to contain no upper limit at all.",
+    ],
+    sources: [
+      ["FC Barcelona: 2008–09 annual report", "https://media1.fcbarcelona.com/media/asset_publics/resources/000/006/571/original/MEMORIA_CLUB_CAST_08-09.v1321548661.pdf"],
+      ["FC Barcelona: Messi receives the number 10", "https://www.fcbarcelona.com/en/news/792899/a-decade-of-messi-as-barcas-no10"],
+      ["FC Barcelona: Messi scores Barça’s 5,000th league goal", "https://www.fcbarcelona.com/en/football/first-team/news/3873453/15-years-since-barcas-5000th-goal-in-laliga-scored-by-leo-messi"],
+      ["UEFA: Barcelona overwhelm Bayern", "https://www.uefa.com/uefachampionsleague/news/01d8-0e7133148a4f-a7499db3c5a4-1000--barca-brilliance-turns-tables-on-bayern/"],
+      ["FC Barcelona: Real Madrid 2–6 Barcelona", "https://players.fcbarcelona.com/en/match/25531-real-madrid-barcelona"],
+      ["UEFA: Iniesta’s late goal at Chelsea", "https://www.uefa.com/uefachampionsleague/news/01d9-0e72254a5b3a-23a74c5aeec1-1000/"],
+      ["FC Barcelona: 2009 Copa del Rey final", "https://www.fcbarcelona.com/en/barca-play/videos/4526720/final-copa-del-rei-2009-athletic-club-fcb"],
+      ["UEFA: Barcelona defeat Manchester United in Rome", "https://www.uefa.com/uefachampionsleague/news/01d9-0e723dd3eb57-c7e9dd3389f1-1000--stylish-barcelona-take-united-s-crown/?iv=true"],
+      ["FC Barcelona: Messi’s Rome celebration", "https://www.fcbarcelona.com/en/news/1649933"],
+    ],
+    photos: [
+      {
+        after: 5,
+        src: "https://editorial.uefa.com/resources/01d8-0e7133148ddb-0587e5ec5262-1000/lionel_messi_shows_his_delight_after_scoring_his_second_and_barcelona_s_third.jpeg",
+        alt: "Lionel Messi celebrates scoring his second goal against Bayern Munich at the Camp Nou",
+        caption: "Bayern engulfed — Messi celebrates his second goal of a four-goal first half, 8 April 2009.",
+        credit: "Getty Images via UEFA",
+        href: "https://www.uefa.com/uefachampionsleague/news/01d8-0e7133148a4f-a7499db3c5a4-1000--barca-brilliance-turns-tables-on-bayern/",
+      },
+      {
+        after: 9,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2020/03/29/43ff2577-a903-4a50-be1b-89cef8e87518/27-05-09-MESSI-ALEGRIA-02.jpg",
+        alt: "Lionel Messi kisses his boot after scoring in the 2009 Champions League final",
+        caption: "The header, then the left boot — Messi celebrates Barcelona’s second goal in Rome, 27 May 2009.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/news/1649933",
+      },
+    ],
+    videos: [
+      {
+        after: 6,
+        youtubeId: "1HZLAPyjW6w",
+        title: "Real Madrid 2–6 Barcelona",
+        caption: "The central role made visible: Messi, Henry and Xavi dismantle Madrid at the Bernabéu.",
+        credit: "FC Barcelona",
+        href: "https://www.youtube.com/watch?v=1HZLAPyjW6w",
+      },
+    ],
+  },
 };
 
 const filmCatalog = [
@@ -903,13 +959,7 @@ export const honourLedger = {
       ["UEFA Champions League", "ucl"],
       ["Olympic Gold", "medal"],
     ],
-    individual: [
-      ["Ballon d’Or", "ball"],
-      ["FIFA World Player", "star"],
-      ["UEFA Club Forward", "star"],
-      ["UCL Top Scorer", "boot"],
-      ["La Liga Best Player", "star"],
-    ],
+    individual: [["UCL Top Scorer", "boot"]],
   },
   "2009–10": {
     team: [
@@ -919,6 +969,10 @@ export const honourLedger = {
       ["FIFA Club World Cup", "clubworld"],
     ],
     individual: [
+      ["Ballon d’Or", "ball"],
+      ["FIFA World Player", "star"],
+      ["UEFA Club Forward", "star"],
+      ["La Liga Best Player", "star"],
       ["FIFA Ballon d’Or", "ball"],
       ["European Golden Shoe", "boot"],
       ["Pichichi Trophy", "pichichi"],
