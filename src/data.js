@@ -281,6 +281,16 @@ export const seasonStories = {
         href: "https://www.fcbarcelona.com/en/football/first-team/news/4256638/20-years-since-leo-messis-first-official-goal/featured",
       },
     ],
+    videos: [
+      {
+        after: 7,
+        youtubeId: "j9ihJMqZGD0",
+        title: "Messi's first official goal for FC Barcelona",
+        caption: "Watch the move twice: the first lob ruled out, then Ronaldinho and Messi composing it all over again.",
+        credit: "FC Barcelona",
+        href: "https://www.youtube.com/watch?v=j9ihJMqZGD0",
+      },
+    ],
   },
 };
 

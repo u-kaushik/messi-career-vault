@@ -533,6 +533,9 @@ function Career({ selected, setSelected, seen, setSeen }) {
                     const photo = seasonStories[selected.season].photos?.find(
                       (item) => item.after === i,
                     );
+                    const video = seasonStories[selected.season].videos?.find(
+                      (item) => item.after === i,
+                    );
                     return (
                       <React.Fragment key={i}>
                         <p>{paragraph}</p>
@@ -543,6 +546,25 @@ function Career({ selected, setSelected, seen, setSeen }) {
                               <span>{photo.caption}</span>
                               <a href={photo.href} target="_blank" rel="noreferrer">
                                 Photo: {photo.credit} <ExternalLink />
+                              </a>
+                            </figcaption>
+                          </figure>
+                        )}
+                        {video && (
+                          <figure className="essay-video">
+                            <div>
+                              <iframe
+                                src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?rel=0`}
+                                title={video.title}
+                                loading="lazy"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                              />
+                            </div>
+                            <figcaption>
+                              <span>{video.caption}</span>
+                              <a href={video.href} target="_blank" rel="noreferrer">
+                                Video: {video.credit} <ExternalLink />
                               </a>
                             </figcaption>
                           </figure>
