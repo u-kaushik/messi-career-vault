@@ -440,7 +440,7 @@ function Career({ selected, setSelected, seen, setSeen }) {
           {seasons.map((s, i) => (
             <button
               key={s.id}
-              className={selected.id === s.id ? "season active" : ""}
+              className={`season${selected.id === s.id ? " active" : ""}`}
               onClick={() => setSelected(s)}
             >
               <i className={seen[s.id] ? "seen" : ""}>

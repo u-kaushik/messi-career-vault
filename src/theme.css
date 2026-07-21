@@ -216,12 +216,20 @@ blockquote {
   box-shadow: inset 3px 0 #00a7e7;
 }
 .season {
+  width: 100%;
   min-height: 104px;
   height: auto;
   display: grid;
   grid-template-columns: 30px minmax(0, 1fr) 20px;
+  align-items: center;
   column-gap: 14px;
   padding: 9px 18px;
+  border: 0;
+  border-top: 1px solid #ffffff0c;
+  border-radius: 0;
+  background: transparent;
+  color: #c9ced7;
+  appearance: none;
 }
 .season i {
   width: 30px;
@@ -296,6 +304,22 @@ blockquote {
 .hero-club { display: flex; align-items: center; gap: 9px; }
 .hero-club img { width: 26px; height: 26px; object-fit: contain; filter: drop-shadow(0 3px 5px #0007); }
 @media (max-width: 600px) {
+  .season {
+    min-height: 92px;
+    grid-template-columns: 30px minmax(0, 1fr) 18px;
+    column-gap: 12px;
+    padding: 10px 14px;
+  }
+  .season-year { font-size: 15px; }
+  .season-club { font-size: 11px; }
+  .section-head { padding: 20px 16px 14px; }
+  .section-head h2 { font-size: 18px; }
+  .section-head > small { font-size: 10px; }
+  .hero-copy { left: 20px; right: 20px; bottom: 22px; }
+  .hero h2 { overflow-wrap: anywhere; }
+  .chapter-body { padding: 22px 18px; }
+  .lead { font-size: 16px; }
+  .honours-ledger { grid-template-columns: minmax(0, 1fr); }
   .season-watermark { letter-spacing: -2px; }
 }
 @media (max-width: 900px) {
