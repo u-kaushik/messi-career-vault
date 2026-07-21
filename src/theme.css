@@ -17,6 +17,20 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+:root {
+  scrollbar-color: #00a7e7 #071427;
+}
+*::-webkit-scrollbar-track {
+  background: #071427;
+}
+*::-webkit-scrollbar-thumb {
+  border-color: #071427;
+  background: linear-gradient(180deg, #52ddff, #00a7e7);
+  box-shadow: 0 0 8px #00a7e766;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #52ddff;
+}
 .account {
   display: flex;
   align-items: center;
@@ -217,13 +231,13 @@ blockquote {
 }
 .season {
   width: 100%;
-  min-height: 104px;
+  min-height: 82px;
   height: auto;
   display: grid;
   grid-template-columns: 30px minmax(0, 1fr) 20px;
   align-items: center;
   column-gap: 14px;
-  padding: 9px 18px;
+  padding: 8px 18px;
   border: 0;
   border-top: 1px solid #ffffff0c;
   border-radius: 0;
@@ -347,7 +361,7 @@ blockquote {
 }
 @media (max-width: 600px) {
   .season {
-    min-height: 92px;
+    min-height: 78px;
     grid-template-columns: 30px minmax(0, 1fr) 18px;
     column-gap: 12px;
     padding: 10px 14px;
