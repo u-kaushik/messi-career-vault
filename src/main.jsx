@@ -44,15 +44,16 @@ const getState = (userId) => {
   }
 };
 function App({ user, onLogout }) {
+  const initialView = new URLSearchParams(window.location.search).get("view");
   const storeKey = `${STORE}:${user.id}`;
   const [syncReady, setSyncReady] = useState(false);
-  const [tab, setTab] = useState("career"),
+  const [tab, setTab] = useState(initialView === "articles" ? "articles" : ["films", "interviews", "podcasts", "books"].includes(initialView) ? "watch" : "career"),
     [selected, setSelected] = useState(seasons[18]),
     [watch, setWatch] = useState(() => getState(user.id).watch || {}),
     [seen, setSeen] = useState(() => getState(user.id).seen || {}),
     [query, setQuery] = useState(""),
     [type, setType] = useState("All"),
-    [collection, setCollection] = useState("screen"),
+    [collection, setCollection] = useState(initialView === "films" ? "screen" : ["interviews", "podcasts", "books"].includes(initialView) ? initialView : "screen"),
     [modal, setModal] = useState(null);
   useEffect(() => {
     let active = true;
