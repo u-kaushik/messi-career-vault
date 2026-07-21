@@ -48,11 +48,11 @@ No factual blocker remains. Injury precision: UEFA's contemporaneous 15 December
 
 ## Unpublished 2008–09 draft
 
-The ledger contains **37 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 2 REMOVE** decisions. Verdict: **HOLD**.
+The final ledger contains **39 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
 
-Required corrections:
+Resolved in the latest copy:
 
-1. Chelsea buildup: UEFA/video support Essien's failed clearance reaching Messi, not the asserted “Eto'o helped it towards Messi.” Remove the claimed Eto'o touch.
-2. Honour allocation: under the repo's date-based “season in which won” rule, `Ballon d’Or`, `FIFA World Player`, `UEFA Club Forward`, and `La Liga Best Player` were received after 2009–10 began and belong in 2009–10. Keep `UCL Top Scorer` in 2008–09.
+1. Chelsea buildup now says Essien's attempted clearance fell to Messi, matching UEFA/video evidence.
+2. `Ballon d’Or`, `FIFA World Player`, `UEFA Club Forward`, and `La Liga Best Player` are allocated to 2009–10 under the date rule; `UCL Top Scorer` remains in 2008–09.
 
-The dates, scores, goal order/timings, false-nine account, appearance/goal totals, nine UCL goals, team honours including Olympic gold, both photos, official 2–6 video and other listed sources pass. No exact media asset is duplicated across audited seasons.
+No factual blocker remains. The dates, scores, goal order/timings, false-nine account, appearance/goal totals, nine UCL goals, team honours including Olympic gold, both photos, official 2–6 video and other listed sources pass. No exact media asset is duplicated across audited seasons.
