@@ -35,12 +35,12 @@ Official club, UEFA and FIFA records support the debut chronology, Palamós and 
 
 ## Unpublished 2007–08 draft
 
-The separate draft ledger contains **34 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 3 REMOVE** decisions. It reflects the final working-copy state observed after the draft changed during the audit. Verdict: **NO-PUBLISH pending correction**.
+The final draft ledger contains **37 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. It reflects the latest working-copy state after the follow-up correction audit. Verdict: **PUBLISH on factual grounds**.
 
-Blocking corrections:
+Resolved in the latest copy:
 
-1. His Sevilla goals are recorded at 73' and 80', not five minutes apart.
-2. Olympic gold was won on 23 August 2008 and belongs in 2008–09 under the repo's “season in which won” rule, not 2007–08.
-3. The source labelled Reuters links to an Europa Press article; fix the attribution.
+1. The disputed five-minute Sevilla interval is replaced with “soon afterwards.”
+2. Olympic gold is assigned to 2008–09 under the repo's “season in which won” rule.
+3. The evidence link is correctly attributed to Europa Press.
 
-Also tighten the 15 December injury to a left biceps-femoris tear with an approximately four-week prognosis. The corrected six-goal UCL total and CAS account now pass, as do the 40 appearances/16 goals, two left-thigh injury episodes, Old Trafford sequence, Rijkaard/Guardiola transition, Olympic match sequence, 89,102 final attendance, 58th-minute final pass, number-10 dates and all three draft media items.
+No factual blocker remains. As an optional precision edit, the 15 December injury could be called a left biceps-femoris tear with an approximately four-week prognosis. The six-goal UCL total, CAS account, 40 appearances/16 goals, two left-thigh injury episodes, Old Trafford sequence, Rijkaard/Guardiola transition, Olympic match sequence, 89,102 final attendance, 58th-minute final pass, number-10 dates and all three draft media items pass.
