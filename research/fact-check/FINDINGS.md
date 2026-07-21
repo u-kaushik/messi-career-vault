@@ -56,3 +56,14 @@ Resolved in the latest copy:
 2. `Ballon d’Or`, `FIFA World Player`, `UEFA Club Forward`, and `La Liga Best Player` are allocated to 2009–10 under the date rule; `UCL Top Scorer` remains in 2008–09.
 
 No factual blocker remains. The dates, scores, goal order/timings, false-nine account, appearance/goal totals, nine UCL goals, team honours including Olympic gold, both photos, official 2–6 video and other listed sources pass. No exact media asset is duplicated across audited seasons.
+
+## Unpublished 2009–10 draft
+
+The ledger contains **43 VERIFIED, 5 QUALIFIED, 0 UNRESOLVED and 2 REMOVE** decisions. Verdict: **HOLD**.
+
+Required corrections:
+
+1. Eto'o did not open the 2006 Paris final; Sol Campbell did. Change “goals had opened the finals in Rome and Paris” to “had scored in the finals…” or “had opened Barça's scoring…”.
+2. Under the date rule, move the 2010 `FIFA Ballon d’Or`, 2009–10 `European Golden Shoe` and 2009–10 `Pichichi Trophy` to 2010–11 because they were presented after that season began. The other current 2009–10 team/individual allocations pass.
+
+The transfers, chronology, dates, scores, goal minutes/order/sequences, tactical descriptions, 47/53 total, 34 Liga goals, eight UCL goals, 99 points/record comparisons, both photos, official UEFA video and listed sources otherwise pass.
