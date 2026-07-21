@@ -310,20 +310,20 @@ export const seasonStories = {
     ],
     photos: [
       {
-        after: 0,
-        src: "https://digitalhub.fifa.com/m/217ca57d54071a53/webimage-n1ucxbwwuocbxjwxnfxe-jpg.png",
-        alt: "Lionel Messi challenges for the ball during Argentina's 2005 Under-20 World Cup semi-final against Brazil",
-        caption: "From prospect to protagonist — Messi against Brazil in the U-20 World Cup semi-final, Utrecht, 28 June 2005.",
-        credit: "FIFA archive",
-        href: "https://inside.fifa.com/tournaments/mens/u20worldcup/netherlands2005/news/world-cup-at-home-argentina-brazil-u20-world-cup-messi-3071371",
-      },
-      {
         after: 1,
         src: "https://www.fcbarcelona.com/fcbarcelona/photo/2020/03/16/934e9d7f-d89c-484d-833b-810d47b43787/WhatsApp-Image-2020-03-16-at-15.11.33.jpeg",
         alt: "Lionel Messi carries the ball against Juventus in the 2005 Joan Gamper Trophy",
         caption: "The night Capello asked about him — Messi faces Juventus in the Joan Gamper Trophy, Camp Nou, 24 August 2005.",
         credit: "FC Barcelona archive",
         href: "https://www.fcbarcelona.com/en/football/first-team/noticias/1645854/revive-el-barca-juventus-del-2005/featured",
+      },
+      {
+        after: 6,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2018/06/15/801d2bf4-4673-46c1-a279-48d0b94159f0/axsOeYXF.jpg",
+        alt: "Lionel Messi carries the ball for Barcelona against Chelsea at Stamford Bridge",
+        caption: "Europe takes notice — Messi drives at Chelsea beneath the Stamford Bridge lights, 22 February 2006.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/news/728288/lionel-messis-exhibition-at-stamford-bridge-in-2006",
       },
     ],
     videos: [
