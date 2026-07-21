@@ -199,7 +199,7 @@ blockquote {
   border-color: #00a7e714;
 }
 .career-grid {
-  grid-template-columns: 380px minmax(0, 1fr);
+  grid-template-columns: minmax(320px, 380px) minmax(0, 1fr);
 }
 .timeline {
   max-height: 700px;
@@ -303,6 +303,48 @@ blockquote {
 }
 .hero-club { display: flex; align-items: center; gap: 9px; }
 .hero-club img { width: 26px; height: 26px; object-fit: contain; filter: drop-shadow(0 3px 5px #0007); }
+.chapter {
+  min-width: 0;
+  container-type: inline-size;
+}
+.hero-copy,
+.chapter-body,
+.numbers,
+.numbers > div,
+.honours-ledger,
+.honour-group {
+  min-width: 0;
+}
+.hero h2,
+.hero-club,
+.lead,
+.numbers span,
+.honour-item > span {
+  overflow-wrap: anywhere;
+}
+.numbers {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.numbers > div {
+  padding-right: 10px;
+}
+.numbers b {
+  font-size: clamp(22px, 6cqw, 28px);
+}
+.numbers span {
+  font-size: clamp(8px, 2.2cqw, 10px);
+  letter-spacing: clamp(0.35px, 0.25cqw, 1px);
+}
+.honours-ledger {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+@container (max-width: 430px) {
+  .hero { height: 260px; }
+  .hero h2 { font-size: clamp(30px, 12cqw, 46px); }
+  .chapter-body { padding: 22px; }
+  .lead { font-size: 16px; }
+  .honours-ledger { grid-template-columns: minmax(0, 1fr); }
+}
 @media (max-width: 600px) {
   .season {
     min-height: 92px;
@@ -326,6 +368,10 @@ blockquote {
   .career-grid { grid-template-columns: minmax(0, 1fr); }
   .timeline { max-height: 360px; }
 }
+@media (min-width: 901px) and (max-width: 1250px) {
+  main { padding-inline: 28px; }
+  .career-grid { grid-template-columns: 300px minmax(0, 1fr); }
+}
 .hero {
   background: linear-gradient(135deg, #004d98, #a50044);
 }
@@ -344,7 +390,7 @@ blockquote {
 }
 .honours-ledger {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
   margin-top: 20px;
 }
@@ -446,6 +492,11 @@ blockquote {
 }
 @media (max-width: 650px) {
   .honours-ledger {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@container (max-width: 430px) {
+  .honours-ledger {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
