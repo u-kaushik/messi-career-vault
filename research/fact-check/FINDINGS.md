@@ -45,3 +45,14 @@ Resolved in the latest copy:
 3. The evidence link is correctly attributed to Europa Press.
 
 No factual blocker remains. Injury precision: UEFA's contemporaneous 15 December report diagnoses a **tear of the left biceps femoris** and says about four weeks; the draft's “strained the muscle in his left thigh” and “four to five weeks” are broadly true but less exact, so remain `QUALIFIED`, not erroneous. For 4 March, UEFA confirms another torn muscle in the left thigh during a sprint and six weeks out, but does not establish that the exact same structure re-tore; “same left thigh” is supported, while “same tear” is best read as shorthand. The six-goal UCL total, CAS account, 40 appearances/16 goals, Old Trafford sequence, Rijkaard/Guardiola transition, Olympic match sequence, 89,102 final attendance, 58th-minute final pass, number-10 dates and all three draft media items pass.
+
+## Unpublished 2008–09 draft
+
+The ledger contains **37 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 2 REMOVE** decisions. Verdict: **HOLD**.
+
+Required corrections:
+
+1. Chelsea buildup: UEFA/video support Essien's failed clearance reaching Messi, not the asserted “Eto'o helped it towards Messi.” Remove the claimed Eto'o touch.
+2. Honour allocation: under the repo's date-based “season in which won” rule, `Ballon d’Or`, `FIFA World Player`, `UEFA Club Forward`, and `La Liga Best Player` were received after 2009–10 began and belong in 2009–10. Keep `UCL Top Scorer` in 2008–09.
+
+The dates, scores, goal order/timings, false-nine account, appearance/goal totals, nine UCL goals, team honours including Olympic gold, both photos, official 2–6 video and other listed sources pass. No exact media asset is duplicated across audited seasons.
