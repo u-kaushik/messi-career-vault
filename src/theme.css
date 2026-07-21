@@ -828,7 +828,22 @@ main {
 .archive-link span { min-width: 0; }
 .archive-link small { display: block; margin-bottom: 4px; color: #718197; font: 700 8px Manrope; letter-spacing: .7px; text-transform: uppercase; }
 .archive-link b { display: block; overflow: hidden; color: #e3e8ef; font: 700 12px/1.25 Manrope; text-overflow: ellipsis; white-space: nowrap; }
-.article-link { background: linear-gradient(120deg, #102b4a, #25142c); }
+.article-link {
+  min-height: 148px;
+  grid-template-columns: minmax(0, 1fr) 18px;
+  align-items: end;
+  padding: 18px 19px;
+  background-position: center 28%;
+  background-size: cover;
+  text-shadow: 0 2px 12px #020712, 0 1px 2px #020712;
+}
+.article-link:hover { background-color: transparent; background-position: center 31%; }
+.archive-article-content small { display: flex; align-items: center; gap: 6px; color: #52ddff; }
+.archive-article-content small svg { width: 14px; height: 14px; }
+.archive-link .archive-article-content b { margin-top: 7px; color: #fff; font-size: 18px; letter-spacing: -.3px; }
+.archive-article-content p { max-width: 440px; display: -webkit-box; overflow: hidden; margin: 7px 0 12px; color: #d2d9e3; font: 500 10px/1.45 Manrope; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.archive-article-content em { color: #52ddff; font: 800 8px Manrope; font-style: normal; letter-spacing: 1.2px; }
+.article-link > svg:last-child { align-self: center; color: #52ddff; }
 .archive-empty { grid-column: 1/-1; margin: 0; padding: 16px; color: #66758c; font-size: 11px; }
 .articles-page { max-width: 1120px; margin: 0 auto; }
 .articles-heading { margin-bottom: 25px; }
@@ -858,4 +873,5 @@ main {
 @media (max-width: 650px) {
   .archive-links { grid-template-columns: minmax(0, 1fr); }
   .article-volume-cover { min-height: 250px; }
+  .article-link { min-height: 160px; }
 }

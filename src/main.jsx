@@ -467,7 +467,7 @@ function SeasonArchive({ season, setModal }) {
   return <section className="season-archive">
     <div className="season-archive-head"><div><span>SEASON ARCHIVE</span><h3>Everything from {season.season}</h3></div><small>{total} {total === 1 ? "piece" : "pieces"}</small></div>
     <div className="archive-links">
-      {story && <a className="archive-link article-link" href={articlePath(season.season, story)}><Newspaper /><span><small>ARTICLE · {readingMinutes(story)} MIN</small><b>{story.title}</b></span><ChevronRight /></a>}
+      {story && <a className="archive-link article-link" href={articlePath(season.season, story)} style={{ backgroundImage: `linear-gradient(90deg,rgba(4,12,27,.94),rgba(4,12,27,.63) 70%,rgba(4,12,27,.82)),url(${story.photos?.[0]?.src || ""})` }}><span className="archive-article-content"><small><Newspaper /> LONG READ · {season.season} · {readingMinutes(story)} MIN</small><b>{story.title}</b><p>{story.dek}</p><em>READ THE CHAPTER</em></span><ChevronRight /></a>}
       {groups.flatMap(([label, items, kind]) => items.map((item) => {
         const href = kind === "interview" ? `https://www.youtube.com/watch?v=${item.videoId}` : item.url;
         const content = <>{item.poster || item.cover ? <img src={item.poster || item.cover} alt="" /> : kind === "screen" ? <Clapperboard /> : kind === "interview" ? <Mic2 /> : kind === "podcast" ? <Headphones /> : <BookOpen />}<span><small>{label} · {item.year}</small><b>{item.title}</b></span><ChevronRight /></>;
