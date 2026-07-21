@@ -49,6 +49,17 @@ Confidence is `HIGH`, `MEDIUM` or `LOW`; it measures evidence strength, not edit
 - Assists are methodology-dependent unless an official competition record defines them; always name the provider/counting rule.
 - Goal minutes follow the official match report. Describe `90+1` as stoppage time, not simply the 90th minute where precision matters.
 
+## Publication and Reader delivery gate
+
+A chapter is not fully delivered until all of the following pass:
+
+1. Build the standalone article and deploy it to `messi-career-vault.ukaushik37.workers.dev`.
+2. Verify the clean public URL returns the chapter-specific HTML title rather than the application fallback.
+3. Save that permanent URL to Readwise Reader as a separate article in `new`, authored by `The Messi Archive`, with `messi-archive`, `football` and season tags.
+4. Query the created Reader document and confirm its title, source URL, category, location, non-zero word count and parsed HTML body.
+5. Repair a failed URL scrape by resubmitting the deployed standalone HTML with `should_clean_html: true`; verify again. Do not create a second document.
+6. Record Reader delivery only after verification. The access token remains outside the repository and publication bundle.
+
 ## Ledger template
 
 | ID | Surface | Published claim | Status | Confidence | Evidence / conflict | Source |
