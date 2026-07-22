@@ -134,3 +134,11 @@ Resolved in the latest copy:
 4. The Granada photo now credits `Miguel Ruiz / FC Barcelona`, matching embedded XMP.
 5. The Celta passage attributes the intended recipient directly to Neymar's later statement.
 The transfers, Mateo timing, injury/renal-colic details, five-calendar-year versus four-season trophy distinction, 180 goals, Ballon d'Or date/order, indirect penalty action, 39-match record, 500th senior club-plus-country goal, 24–0 finish, MSN 131, Messi 41/49, honour allocation, image, official FC Barcelona video, URL health, firewall and duplication all pass. The remaining qualifications are tactical/interpretive framing and the chapter's deliberately compressed “eleven days” April phrasing.
+
+## Unpublished 2016–17 draft
+
+The final ledger contains **58 VERIFIED, 7 QUALIFIED, 2 UNRESOLVED and 0 INCORRECT/REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
+
+The current working copy already contains the audit corrections: Luis Enrique's running total is **eight trophies**, Messi's Celtic line is a home hat-trick plus **two** away goals, and the disambiguated `2016–17 European Golden Shoe` and `2016–17 Pichichi Trophy` sit in 2017–18 under the presentation-date rule. No factual blocker remains.
+
+The transfers, Super Cup, Alavés rotation, injury/return sequence, autumn results, ten UCL group goals, free-kicks/Anoeta, PSG and Juventus ties, Luis Enrique announcement, Clásico chronology and 500th official Barça goal, table, Copa final, Neymar's final competitive appearance, individual/team totals and team honours pass. Full inspection confirms the official FC Barcelona 4:56 remontada video and no exact-ID duplication. Both full-resolution photos match their events and captions; their hosted JPEGs contain no creator metadata and the landing pages disclose no photographer, so the precise photographer identities remain unresolved while `FC Barcelona archive` is retained as publisher/archive attribution. The editorial firewall passes.
