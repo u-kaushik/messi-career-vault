@@ -145,11 +145,11 @@ The transfers, Super Cup, Alavés rotation, injury/return sequence, autumn resul
 
 ## Unpublished 2017–18 draft
 
-The initial ledger contains **63 VERIFIED, 8 QUALIFIED, 2 UNRESOLVED and 2 INCORRECT/REMOVE** decisions. Verdict: **HOLD**.
+The final ledger contains **65 VERIFIED, 8 QUALIFIED, 2 UNRESOLVED and 0 INCORRECT/REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
 
-Two corrections are required:
+Resolved in the corrected working copy:
 
-1. The October Atlético sentence is false: the match finished **1–1**, and the equaliser was Sergi Roberto cross → Luis Suárez header. Messi did not create a winner.
-2. Under the presentation-date rule, the generic `La Liga Best Player` presently in 2017–18 must be labelled `2016–17 La Liga Best Player`. The `2017–18 Pichichi Trophy`, `2017–18 La Liga Best Player` and `2017–18 European Golden Shoe` belong in 2018–19 (presented November/December 2018).
+1. The October Atlético passage now correctly states that Barcelona drew **1–1** and no longer gives Messi a nonexistent winning contribution.
+2. The 2016–17 La Liga award is explicitly labelled in 2017–18. The `2017–18 Pichichi Trophy`, `2017–18 La Liga Best Player` and `2017–18 European Golden Shoe` are correctly allocated to 2018–19 under the presentation-date rule. The adjacent generic entries belong to the following award cycle, so this creates no duplication.
 
 Neymar's €222m release, Dembélé fee/injury, Super Cup/Betis context, 4–4–2 framing, seven-win start, Messi opening/UCL/Ecuador records, Bernabéu sequence/table, January injuries, free-kicks/600th goal, both Chelsea legs, Roma elimination, Copa/title/Levante chronology, 43-game split, 45/54 statistics, team honours, URL health, editorial firewall and exact media-duplication check otherwise pass. Full-resolution photo identities pass, but both exact photographers remain unresolved because the hosted JPEGs have stripped creator metadata and the pages provide no byline. Full inspection confirms the 5:18 TNT Sports Football Chelsea highlights and a clear, event-specific thumbnail.
