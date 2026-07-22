@@ -443,6 +443,9 @@ const articlePath = (season, story) =>
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/(^-|-$)/g, "")}/`;
+const storyEntries = seasons
+  .map(({ season }) => [season, seasonStories[season]])
+  .filter(([, story]) => story);
 
 function LongRead({ story, season }) {
   if (!story) return null;
@@ -472,7 +475,7 @@ function LongRead({ story, season }) {
 function Articles() {
   return <section className="articles-page">
     <div className="articles-heading"><span>{Object.keys(seasonStories).length} PUBLISHED</span><h2>A career, told properly.</h2><p>Original, researched and chronological long-form football writing.</p></div>
-    {Object.entries(seasonStories).map(([season, story]) => <div className="article-volume" key={season}>
+    {storyEntries.map(([season, story]) => <div className="article-volume" key={season}>
       <a className="article-volume-cover" href={articlePath(season, story)} style={{ backgroundImage: `linear-gradient(90deg,rgba(3,10,23,.9) 0%,rgba(3,10,23,.66) 54%,rgba(3,10,23,.78) 100%),linear-gradient(0deg,rgba(3,10,23,.8),transparent 55%),url(${story.photos?.[0]?.src || ""})` }} aria-label={`Read ${story.title}`}>
         <span>{season}</span><small>{readingMinutes(story)} MIN READ</small><h3>{story.title}</h3><p>{story.dek}</p>
         <b className="article-open">READ THE CHAPTER <ChevronRight /></b>

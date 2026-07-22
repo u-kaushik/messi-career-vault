@@ -215,3 +215,11 @@ The final ledger contains **56 VERIFIED, 6 QUALIFIED, 0 UNRESOLVED and 0 REMOVE*
 The current prose already gives PSG's league return correctly as ten days after the World Cup final, and `2023 Ballon d’Or` is correctly placed in the 2023 ledger under the presentation-date rule. Finalissima and every Qatar result, scorer/order, timing and shootout sequence pass; so do the PSG results and statistics, Saudi-trip disciplinary wording, all other honour allocations, the 496-goal qualified record wording, both full-resolution Commons assets/credits/licenses, the official 2:07 FIFA video, thumbnail, duplication and editorial firewall.
 
 The corrected source list passes: both BBC reports, Reuters/Boursorama and Guardian/Reuters return HTTP 200, accurately match their labels and support their assigned claims. No blocker remains.
+
+## Unpublished 2023 draft
+
+The final ledger contains **57 VERIFIED, 7 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual, source and media grounds**.
+
+Resolved in the current working copy: the corrected Inter Miami signing slug returns HTTP 200 and supports the transaction details; the stadium alt/caption now accurately describe supporters gathering rather than filling the pre-match ground.
+
+The medical sentence now precisely attributes the preliminary fatigue/old-scar explanation to Martino. The Yedlin shared trophy lift and 54th-minute Cruz Azul substitution pass. Match chronology, 14/11/8 club totals, Argentina/Ecuador details, presentation-dated Ballon d'Or allocation, remaining honours, official MLS video and Commons credit/license otherwise pass. The Leagues Cup/MLS image is event-accurate and publisher-hosted, but discloses neither photographer nor reusable license.
