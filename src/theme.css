@@ -853,8 +853,16 @@ main {
   background-position: center 28%;
   background-size: cover;
   text-shadow: 0 2px 12px #020712, 0 1px 2px #020712;
+  transition:
+    background-position 850ms cubic-bezier(.22, 1, .36, 1),
+    border-color 280ms ease,
+    box-shadow 280ms ease;
 }
-.article-link:hover { background-color: transparent; background-position: center 31%; }
+.article-link:hover {
+  background-color: transparent;
+  background-position: center 30%;
+  box-shadow: inset 0 0 0 1px #52ddff12;
+}
 .archive-article-content small { display: flex; align-items: center; gap: 6px; color: #52ddff; }
 .archive-article-content small svg { width: 14px; height: 14px; }
 .archive-link .archive-article-content b { margin-top: 7px; color: #fff; font-size: 18px; letter-spacing: -.3px; }
@@ -891,4 +899,7 @@ main {
   .archive-links { grid-template-columns: minmax(0, 1fr); }
   .article-volume-cover { min-height: 250px; }
   .article-link { min-height: 160px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .article-link { transition: border-color 160ms ease; }
 }
