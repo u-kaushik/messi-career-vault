@@ -970,6 +970,65 @@ export const seasonStories = {
       },
     ],
   },
+  "2017–18": {
+    title: "The flaw in the fortress",
+    dek: "A domestic double, 43 league games unbeaten and Messi at the centre of a more guarded Barcelona — until one night in Rome exposed what the walls had concealed.",
+    paragraphs: [
+      "Neymar’s departure did not feel like an ordinary transfer. On 3 August 2017, his representatives paid Barcelona €222 million to release him from his contract and Paris Saint-Germain removed one point of the attacking triangle around which the previous three seasons had been organised. The fee was a world record; the absence was harder to price. Ernesto Valverde arrived from Athletic Club as a thoughtful, understated coach and inherited a squad still bruised by Luis Enrique’s ending. Ousmane Dembélé came for an initial €105 million, Paulinho arrived from Guangzhou Evergrande, and Gerard Deulofeu returned. None could simply occupy Neymar’s old place. Barcelona would have to alter its balance, and Lionel Messi would have to become even more of the team’s centre.",
+      "The beginning offered no comfort. Real Madrid won both legs of the Spanish Super Cup, 3–1 at the Camp Nou and 2–0 at the Bernabéu. Cristiano Ronaldo scored in Barcelona, held up his shirt in answer to Messi’s gesture from the spring, and was then sent off; Marco Asensio scored spectacularly in both matches. The European champions appeared younger, deeper and more settled. Barcelona looked like a club caught between the shock of one departure and the hope that its familiar names could preserve the old order. Four days after the second leg, La Liga began against Real Betis beneath the shadow of the terrorist attacks in Barcelona and Cambrils. The team wore black armbands and shirts bearing the city’s name. A 2–0 victory could not make the weekend ordinary, but football resumed.",
+      "Valverde rebuilt from caution. The familiar 4–3–3 often became a 4–4–2, with Luis Suárez ahead of Messi and the wider midfielders protecting the full-backs. Andrés Iniesta could move infield from the left; Ivan Rakitić and Sergio Busquets gave the centre weight; Jordi Alba, freed from sharing his corridor with Neymar, surged into the vacant space. Messi was listed as a forward and played as the team’s governing intelligence, dropping towards midfield, turning between lines and arriving where the finish waited. The arrangement was less exuberant than the trident at its peak. It was also difficult to disturb. Barcelona won their first seven league matches.",
+      "The new season was already asking for improvisation. Dembélé tore a hamstring tendon at Getafe in September and required surgery, removing the obvious replacement for Neymar until January. Paulinho, greeted with scepticism, supplied runs and goals from midfield. Messi carried the attack with twelve league goals in the opening eight games, including four against Eibar. Against Juventus in Europe he scored twice, his first goals past Gianluigi Buffon. In October he travelled to Quito with Argentina’s World Cup place in danger, conceded inside the opening minute against Ecuador and answered with a hat-trick that took his country to Russia. Four days later he was back in Spain as Barcelona preserved their unbeaten start with a 1–1 draw at Atlético Madrid’s new stadium. The distances were immense; his influence appeared portable.",
+      "By Christmas, Valverde’s restraint had become authority. Barcelona went to the Bernabéu on 23 December and won 3–0. Madrid attacked fiercely before the interval, but Suárez finished a sweeping move after it. Dani Carvajal handled on the line and was sent off; Messi converted the penalty. In stoppage time he lost his right boot in a challenge, continued the attack in one sock and crossed for Aleix Vidal to score the third. It was an incidental piece of comedy attached to a serious result. Barcelona entered the winter break fourteen points above Madrid and nine clear of Atlético. A team presented in August as diminished had made itself the most reliable in Spain.",
+      "January brought Philippe Coutinho from Liverpool for another enormous fee, though he was ineligible for the Champions League. Dembélé returned and was injured again. The team kept accumulating points while Messi supplied escape routes. At Anoeta, Barcelona trailed Real Sociedad 2–0 before winning 4–2, Messi completing the comeback with a free-kick struck from distance. Against Alavés, another free-kick provided a late winner. Atlético arrived at the Camp Nou in March with the possibility of reducing the lead to two points; Messi curled yet another over the wall for the only goal. It was his 600th senior goal for club and country. The margins were narrow, the advantage vast.",
+      "Europe initially seemed to confirm the design. At Stamford Bridge, Chelsea struck the woodwork twice before Willian gave them the lead. Barcelona had possessed the ball without opening the defence until Iniesta intercepted Andreas Christensen’s loose pass, carried it into the area and found Messi arriving behind him. The finish in the 75th minute was Messi’s first goal against Chelsea in his ninth appearance against them, and it secured a 1–1 draw. In the return, played four days after the birth of his third son, Ciro, he scored through Thibaut Courtois’s legs after 127 seconds, created Dembélé’s first Barcelona goal and then passed through Courtois again. The 3–0 victory took Barcelona through 4–1 on aggregate. Messi’s second was his 100th Champions League goal, reached in 123 matches.",
+      "The quarter-final draw offered Roma. Barcelona won the first leg 4–1 at the Camp Nou, but the score carried an unease that the result invited people to dismiss. Daniele De Rossi and Kostas Manolas scored own goals; Gerard Piqué added a third; Edin Džeko’s away goal preceded Suárez’s late fourth. Roma had created chances and pressed with courage. Barcelona possessed a three-goal advantage and the experience to manage it. The season had trained them to trust the fortress: a team unbeaten in the league, conceding little, accustomed to finding a goal whenever a match became awkward.",
+      "On 10 April at the Stadio Olimpico, the fortress failed all at once. Džeko controlled a long pass and scored after six minutes. Roma pushed their wing-backs high, attacked Barcelona’s full-backs and prevented the visitors from settling into their usual exits. Shortly before the hour, Piqué pulled down Džeko and De Rossi converted the penalty. One more goal would eliminate Barcelona on away goals. Valverde waited until the 81st minute to make his first change. A minute later Manolas ran across the near post and glanced in Cengiz Ünder’s corner. Roma won 3–0; the tie finished 4–4; Barcelona were out.",
+      "There was no useful way to reduce Rome to bad luck. Messi took five shots and kept trying to move towards the ball, but Barcelona were passive, stretched and strangely unable to change the rhythm. The caution that had protected an ageing midfield across the league became paralysis when the match demanded release. A European season ended in the quarter-finals for the third consecutive year. More painfully, the 4–1 first leg had made elimination appear almost impossible. The previous spring Barcelona had authored the competition’s great comeback. Now they stood inside somebody else’s.",
+      "Eleven days later came the Copa del Rey final against Sevilla at the Wanda Metropolitano, and Barcelona produced perhaps their finest football of the season. Suárez scored after Jasper Cillessen’s long pass and Coutinho’s cross. Alba back-heeled the ball into Messi’s path for the second; Messi released Suárez for the third. After half-time he slid Iniesta through, and the captain moved around David Soria to score his final Barcelona goal. Coutinho’s penalty completed a 5–0 victory. Messi and Iniesta embraced when the fourth went in, two players who had shared the first team for fourteen years understanding that the number of remaining matches could now be counted on one hand.",
+      "Iniesta announced his departure six days later. Two days after that, Barcelona went to Riazor and secured the league. Coutinho scored first, Messi added another, and Deportivo recovered from 2–0 down before Messi completed a late hat-trick for a 4–2 victory. The title was Barcelona’s twenty-fifth and the club’s eighth domestic double. Valverde’s team had recovered from the Super Cup humiliation and Neymar’s exit by becoming relentlessly difficult to beat. They would finish with 93 points, fourteen above Atlético and seventeen above Real Madrid, scoring 99 league goals and conceding 29.",
+      "An unbeaten league season remained possible until the penultimate match. Messi was rested at Levante, where Emmanuel Boateng scored three, Enis Bardhi two and the champions found themselves 5–1 down before Philippe Coutinho’s hat-trick helped pull the score back to 5–4. The defeat ended a league-record run of 43 matches without loss, seven from the previous campaign and 36 from this one. It did not diminish the title, but it disturbed the symmetry. Barcelona had lost only once in La Liga and once in the Champions League all season. Both defeats had arrived late, away from home, and with enough force to change the emotional colour of everything around them.",
+      "Messi ended the club campaign with 45 goals in 54 appearances: 34 in La Liga, six in Europe, four in the Copa and one in the Super Cup. Thirty-four league goals brought a fifth Pichichi and, eventually, a fifth European Golden Shoe. He also led La Liga with twelve assists under the competition’s accounting. The totals described a player carrying more creative responsibility without surrendering his place as Spain’s leading scorer. Neymar’s departure had removed width and a devastating companion; Messi responded by making the space behind Suárez his own country.",
+      "The final league match against Real Sociedad belonged to Iniesta. He and Messi started together one last time at the Camp Nou. In the 82nd minute, Iniesta walked off and embraced the teammate with whom he had shared thirty-two trophies; after the stadium emptied, he returned alone to sit barefoot on the grass. Barcelona had won a double, built a record run and navigated a year that began in institutional shock. It was an achievement of intelligence and endurance. Rome remained lodged inside it because the defeat revealed the flaw in the protection: this team could preserve its strength across ten months, but when control vanished in Europe it no longer knew how to recover it. Messi had made the fortress imposing. The seasons ahead would ask him, with increasing cruelty, to hold up the walls as well.",
+    ],
+    sources: [
+      ["FC Barcelona: Neymar’s €222m departure", "https://www.fcbarcelona.com/en/news/748497/fc-barcelona-communique-on-neymar-jr"],
+      ["FC Barcelona: the 3–0 Clásico at the Bernabéu", "https://www.fcbarcelona.com/en/news/728126/real-madrid-0-barca-3-messi-christmas"],
+      ["UEFA: Messi reaches 100 Champions League goals", "https://www.uefa.com/uefachampionsleague/news/0243-0e9887256cd3-2472b229e2a4-1000--messi-scores-100th-champions-league-goal-for-barcelona/"],
+      ["UEFA: Barcelona defeat Chelsea", "https://www.uefa.com/uefachampionsleague/news/0243-0e9cbf9dde67-9ee5c9801c45-1000--messi-inspires-barcelona-through-to-quarter-finals/"],
+      ["UEFA: Roma eliminate Barcelona", "https://www.uefa.com/uefachampionsleague/news/0244-0e9cca96247f-6f619a17c764-1000--roma-stun-barcelona-to-reach-semi-finals/"],
+      ["FC Barcelona: the 2018 Copa del Rey final", "https://www.fcbarcelona.com/en/news/704062/copa-del-rey-final-highlights-sevilla-v-fc-barcelona"],
+      ["FC Barcelona: the league title at Deportivo", "https://www.fcbarcelona.com/en/news/703962/deportivo-2-4-fc-barcelona-liga-champions"],
+      ["FC Barcelona: the 43-match unbeaten league run", "https://www.fcbarcelona.com/en/football/first-team/news/1666935/stat-of-the-day--43-games-without-defeat"],
+    ],
+    photos: [
+      {
+        after: 4,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2018/06/13/65d9e147-cf1f-4cfc-b19a-44a976d956a5/rtZgsuHd.jpg",
+        alt: "Lionel Messi celebrates after scoring for Barcelona against Real Madrid at the Santiago Bernabéu",
+        caption: "One boot, three goals, fourteen points clear — Messi celebrates another December victory at the Bernabéu.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/news/728126/real-madrid-0-barca-3-messi-christmas",
+      },
+      {
+        after: 10,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2018/06/06/36adaa3a-c13e-4d38-a841-5e39cb154d2d/EinrZtsR.jpg",
+        alt: "Andrés Iniesta carries the ball during his final Copa del Rey final for Barcelona against Sevilla",
+        caption: "The captain’s last final — Iniesta leads Barcelona’s 5–0 performance against Sevilla, 21 April 2018.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/football/first-team/news/704103",
+      },
+    ],
+    videos: [
+      {
+        after: 6,
+        youtubeId: "xwAwuUfwDxs",
+        title: "Messi reaches 100 in Europe against Chelsea",
+        caption: "Two goals through Courtois’s legs and the pass for Dembélé in Barcelona’s commanding second leg.",
+        credit: "TNT Sports Football",
+        href: "https://www.youtube.com/watch?v=xwAwuUfwDxs",
+      },
+    ],
+  },
 };
 
 const filmCatalog = [
@@ -1525,7 +1584,7 @@ export const honourLedger = {
     individual: [
       ["2016–17 European Golden Shoe", "boot"],
       ["2016–17 Pichichi Trophy", "pichichi"],
-      ["La Liga Best Player", "star"],
+      ["2016–17 La Liga Best Player", "star"],
     ],
   },
   "2018–19": {
@@ -1534,6 +1593,9 @@ export const honourLedger = {
       ["Spanish Super Cup", "supercup"],
     ],
     individual: [
+      ["2017–18 European Golden Shoe", "boot"],
+      ["2017–18 Pichichi Trophy", "pichichi"],
+      ["2017–18 La Liga Best Player", "star"],
       ["Ballon d’Or", "ball"],
       ["The Best FIFA Men’s Player", "star"],
       ["European Golden Shoe", "boot"],
