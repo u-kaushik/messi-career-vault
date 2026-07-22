@@ -153,3 +153,16 @@ Resolved in the corrected working copy:
 2. The 2016–17 La Liga award is explicitly labelled in 2017–18. The `2017–18 Pichichi Trophy`, `2017–18 La Liga Best Player` and `2017–18 European Golden Shoe` are correctly allocated to 2018–19 under the presentation-date rule. The adjacent generic entries belong to the following award cycle, so this creates no duplication.
 
 Neymar's €222m release, Dembélé fee/injury, Super Cup/Betis context, 4–4–2 framing, seven-win start, Messi opening/UCL/Ecuador records, Bernabéu sequence/table, January injuries, free-kicks/600th goal, both Chelsea legs, Roma elimination, Copa/title/Levante chronology, 43-game split, 45/54 statistics, team honours, URL health, editorial firewall and exact media-duplication check otherwise pass. Full-resolution photo identities pass, but both exact photographers remain unresolved because the hosted JPEGs have stripped creator metadata and the pages provide no byline. Full inspection confirms the 5:18 TNT Sports Football Chelsea highlights and a clear, event-specific thumbnail.
+
+## Unpublished 2018–19 draft
+
+The initial ledger contains **62 VERIFIED, 8 QUALIFIED, 2 UNRESOLVED and 8 INCORRECT/REMOVE** decisions. Verdict: **HOLD**.
+
+Required corrections:
+
+1. In the 4–0 Espanyol win, Messi scored twice; Suárez and Dembélé scored once each.
+2. Dembélé—not Jordi Alba—crossed for Suárez's first goal in the 3–0 Copa semi-final second leg.
+3. In the Copa final, Messi's post strike and his goal were separate moves. His later goal followed Jaume's save from Lenglet's header.
+4. Under the presentation-date rule, only `UCL Top Scorer` of the generic 2018–19 individual entries remains. Move and disambiguate under 2019–20: `2019 Ballon d’Or`, `2019 The Best FIFA Men’s Player`, `2018–19 European Golden Shoe`, `2018–19 Pichichi Trophy`, and `2018–19 UEFA Forward of the Season`.
+
+The Gamper paraphrase, captaincy/Super Cup, signings, arm fracture, Clásico, Betis ovation, standings/title, Lyon/United/Liverpool ties, 51/50 competition split, source URLs, photo identities, official 89-second UEFA Anfield video, thumbnail contrast, duplication and editorial firewall otherwise pass. Exact photographers for both club-hosted JPEGs remain unresolved because creator metadata/bylines are unavailable.
