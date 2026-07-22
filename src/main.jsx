@@ -495,17 +495,16 @@ function SeasonArchive({ season, setModal }) {
     ["Books", books.filter((item) => Number(item.year) === year), "book"],
   ].filter(([, items]) => items.length);
   const total = (story ? 1 : 0) + groups.reduce((sum, [, items]) => sum + items.length, 0);
+  const renderArchiveItem = (label, item, kind) => {
+    const href = kind === "interview" ? `https://www.youtube.com/watch?v=${item.videoId}` : item.url;
+    const content = <>{item.poster || item.cover ? <img src={item.poster || item.cover} alt="" /> : kind === "screen" ? <Clapperboard /> : kind === "interview" ? <Mic2 /> : kind === "podcast" ? <Headphones /> : <BookOpen />}<span><small>{label} · {item.year}</small><b>{item.title}</b></span><ChevronRight /></>;
+    return kind === "screen" ? <button className="archive-link" key={item.id} onClick={() => setModal(item)}>{content}</button> : <a className="archive-link" key={item.id} href={href} target="_blank" rel="noreferrer">{content}</a>;
+  };
   return <section className="season-archive">
     <div className="season-archive-head"><div><span>SEASON ARCHIVE</span><h3>Everything from {season.season}</h3></div><small>{total} {total === 1 ? "piece" : "pieces"}</small></div>
-    <div className="archive-links">
-      {story && <a className="archive-link article-link" href={articlePath(season.season, story)} style={{ backgroundImage: `linear-gradient(90deg,rgba(4,12,27,.94),rgba(4,12,27,.63) 70%,rgba(4,12,27,.82)),url(${story.photos?.[0]?.src || ""})` }}><span className="archive-article-content"><small><Newspaper /> LONG READ · {season.season} · {readingMinutes(story)} MIN</small><b>{story.title}</b><p>{story.dek}</p><em>READ THE CHAPTER</em></span><ChevronRight /></a>}
-      {groups.flatMap(([label, items, kind]) => items.map((item) => {
-        const href = kind === "interview" ? `https://www.youtube.com/watch?v=${item.videoId}` : item.url;
-        const content = <>{item.poster || item.cover ? <img src={item.poster || item.cover} alt="" /> : kind === "screen" ? <Clapperboard /> : kind === "interview" ? <Mic2 /> : kind === "podcast" ? <Headphones /> : <BookOpen />}<span><small>{label} · {item.year}</small><b>{item.title}</b></span><ChevronRight /></>;
-        return kind === "screen" ? <button className="archive-link" key={item.id} onClick={() => setModal(item)}>{content}</button> : <a className="archive-link" key={item.id} href={href} target="_blank" rel="noreferrer">{content}</a>;
-      }))}
-      {!total && <p className="archive-empty">Nothing published for this season yet—the archive will grow as each chapter is researched.</p>}
-    </div>
+    {story && <section className="archive-shelf long-read"><h4>Long read</h4><div className="archive-links"><a className="archive-link article-link" href={articlePath(season.season, story)} style={{ backgroundImage: `linear-gradient(90deg,rgba(4,12,27,.94),rgba(4,12,27,.63) 70%,rgba(4,12,27,.82)),url(${story.photos?.[0]?.src || ""})` }}><span className="archive-article-content"><small><Newspaper /> LONG READ · {season.season} · {readingMinutes(story)} MIN</small><b>{story.title}</b><p>{story.dek}</p><em>READ THE CHAPTER</em></span><ChevronRight /></a></div></section>}
+    {groups.map(([label, items, kind]) => <section className={`archive-shelf ${kind}`} key={kind}><h4>{label}</h4><div className="archive-links">{items.map((item) => renderArchiveItem(label, item, kind))}</div></section>)}
+    {!total && <p className="archive-empty">Nothing published for this season yet—the archive will grow as each chapter is researched.</p>}
   </section>;
 }
 
