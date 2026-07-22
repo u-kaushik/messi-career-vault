@@ -193,3 +193,17 @@ Resolved in the current working copy:
 2. The unsupported Eibar-shirt reference is removed from the final-picture list.
 
 The two proactive corrections also pass: the Pelé comparison explicitly uses recognised official goals and the official single-club scoring convention; the 1 June 2022 Finalissima and its Player of the Match award are allocated to 2022–23 under the summer-international rule. Core chronology, 38/47 and 30/35 totals, final 672/778 counts, Copa title, other honour placements, both photos and the official 5:37 video pass. All chapter URLs returned HTTP 200; the video is public, embeddable, unrestricted and non-duplicative. No blocker remains.
+
+## Unpublished 2021–22 draft
+
+The final ledger contains **47 VERIFIED, 11 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual and media grounds**.
+
+Resolved in the current working copy:
+
+1. November now correctly identifies Leipzig in the Champions League and Bordeaux in Ligue 1, with left-hamstring discomfort and knee pain after a contusion.
+2. Madrid’s first equaliser now correctly states that Donnarumma dallied, Benzema blocked the clearance, the ball spun to Vinícius and he returned it to Benzema.
+3. All five retired PSG source URLs now have accurately labelled UEFA/BBC replacements; each returns HTTP 200.
+
+Non-blocking precision: PSG’s contemporary source itself said `over 200 countries by 52 broadcasters`; `markets and territories` is technically cleaner but optional.
+
+The Copa América chronology/awards, PSG signing timeline, Reims debut, City goal, Ballon d’Or, Madrid timings, title, 11/14/34 totals, Ligue 1 provider/scorer claims and all honour allocations otherwise pass. Both Commons photos have correct Bigmatbasket/CC BY-SA 4.0 metadata. The official PSG video is public, embeddable, unrestricted, 1:33 and visually accurate; its thumbnail and duplication checks pass.
