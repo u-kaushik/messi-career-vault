@@ -239,3 +239,11 @@ The final ledger contains **68 VERIFIED, 6 QUALIFIED, 0 UNRESOLVED and 0 REMOVE*
 Resolved in the current working copy: the inaccurate `record attack` label is removed; Segovia's equaliser is correctly in the tenth minute of stoppage time; the injury uses the club's `minor muscle injury in his right leg`; and the sequence now correctly records two missed matches, the LA Galaxy return, Tigres absence and Orlando semifinal appearance.
 
 The remaining competition chronology, match scores/minutes, five-game multi-goal streak, Argentina passage, 29/19/28 regular-season line, playoff records, 43/31/49 all-competition totals, retirements, extension and honours pass. Both images are event-accurate and publisher-provenanced but lack disclosed photographer/licence metadata. The current official MLS `R8wa-1BYggw` replacement is public, embeddable, unrestricted, 1:42, event-accurate, cleanly thumbnailed and non-duplicative; its final-two-minutes caption passes.
+
+## Unpublished 2026 season-to-date draft
+
+The final ledger contains **56 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual, source and media grounds**.
+
+The live scoring language now passes throughout: the dek calls Messi's lead brief, the Austria passage says Mbappé passed him before tournament end, and the reflection gives the correct Klose–Messi–Mbappé sequence. Club chronology/statistics, every World Cup match sequence and record, Silver Ball/Silver Boot allocation, all URLs, the Nu Stadium image and the official FIFA 1:57 final video otherwise pass.
+
+The corrected second-photo metadata now stays within what the pixels establish: Messi watches during the Spain final, while the caption identifies only the final and the end of Argentina's title defence. It no longer claims that this particular frame depicts the independently documented post-match supporter turn. No blocker remains.
