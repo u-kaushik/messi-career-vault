@@ -474,11 +474,12 @@ main {
   margin: 32px auto 36px;
 }
 .season-essay figure img {
-  width: 100%;
-  max-height: 620px;
+  width: auto;
+  max-width: 100%;
+  max-height: min(760px, 82vh);
+  margin-inline: auto;
   display: block;
-  object-fit: cover;
-  object-position: center 22%;
+  object-fit: contain;
   border-radius: 10px;
   background: #07101d;
 }
