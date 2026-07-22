@@ -99,3 +99,14 @@ Resolved in the latest copy:
 3. The disambiguated `2012–13 European Golden Shoe`, `2012–13 Pichichi Trophy` and `2012–13 La Liga Best Player` are allocated to 2013–14 under the presentation-date rule.
 
 The transfers/returns, opening results, Super Cup, 55/57 start, Betis/Müller/91-goal arithmetic, illness-treatment sequence otherwise, Ballon d'Or, domestic defeats, Milan comeback, 19-opponent run, PSG/Bayern ties, title clinch, Messi 46/32, team 100/32/115/15 records, source URLs, photos, Prime Video Sport film, duplication and editorial-firewall check otherwise pass.
+
+## Unpublished 2013–14 draft
+
+The final ledger contains **53 VERIFIED, 5 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
+
+Resolved in the latest copy:
+
+1. The interval between Messi's 8 January Getafe return and 11 January Atlético start is correctly stated as **three days**.
+2. The explicitly labelled `2014 World Cup Golden Ball` is allocated to 2014–15 under the summer-international rule.
+
+No factual blocker remains. Dates, results, scorer/order/buildup details, all three injury episodes, Getafe return, Bernabéu penalties and official Clásico record, Atlético/Copa/title chronology, Tito Vilanova's death and Villarreal dedication, Messi's 41/46 split, the complete World Cup sequence, source URLs and editorial firewall pass. The 316-game possession sequence is supported by contemporary reporting but remains provider/methodology-dependent. Full-resolution inspection and original JPEG XMP verify the Bernabéu image's `Miguel Ruiz / FC Barcelona` credit. The Golden Ball photo identity/caption pass; `FC Barcelona` is publisher attribution rather than a verified photographer credit. The official LALIGA full-match video identity was confirmed through uploader/title/duration and targeted event/final-score frames. No exact media asset is duplicated across audited seasons.
