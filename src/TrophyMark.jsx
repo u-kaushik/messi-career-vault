@@ -28,24 +28,7 @@ function Shape({ type }) {
       );
     case "world":
       return (
-        <>
-          <path
-            fill={gold}
-            stroke="#936300"
-            d="M27 5c-5 2-8 7-6 12-5 3-5 10 0 13l5 3-3 16h18l-3-16 5-4c5-5 1-12-3-13 1-7-7-14-13-11Z"
-          />
-          <path
-            fill="none"
-            stroke="#fff2a0"
-            strokeWidth="1.4"
-            d="M23 11c7-5 15 1 16 8-6-2-10 2-9 7M21 22c5-1 9 2 10 7M28 34l7 14"
-          />
-          <path fill="#947000" d="M21 49h22l3 9H18z" />
-          <path
-            fill="#47a65a"
-            d="M23 42c4 1 6 2 9 5-4-1-7 0-10-2zM40 40c-4 2-6 4-7 7 4-1 7-2 9-5z"
-          />
-        </>
+        <image href="/trophies/fifa-world-cup.svg" x="5" y="2" width="54" height="58" />
       );
     case "league":
       return (
