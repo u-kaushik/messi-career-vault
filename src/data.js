@@ -740,6 +740,66 @@ export const seasonStories = {
       },
     ],
   },
+  "2013–14": {
+    title: "The year of almost",
+    dek: "A new coach, a body asking unfamiliar questions, one immortal night in Madrid and a World Cup final close enough to touch — the season in which every road seemed to stop one step short.",
+    paragraphs: [
+      "Barcelona entered the summer as champions with one hundred points and no certainty at all. Tito Vilanova’s illness had shadowed the title run, and on 19 July the club announced that further treatment meant he could not continue as coach. Gerardo Martino arrived from Newell’s Old Boys with the season less than a month away. Neymar came from Santos carrying the noise of a superstar; Thiago Alcântara left for Bayern Munich, David Villa joined Atlético Madrid and Éric Abidal departed after a farewell that felt larger than football. The squad had won the league by fifteen points, yet the summer did not feel like a victory parade. It felt like a house being asked to receive guests while the family was still absorbing bad news.",
+      "Martino’s beginning was astonishingly smooth. Levante were beaten 7–0 on the opening league weekend, Messi scoring twice, and Barcelona went twenty matches without defeat under their new coach. The Spanish Super Cup brought an early warning of the opponent that would define the year. Villa scored for Atlético at the Vicente Calderón; Neymar, introduced from the bench, headed his first Barcelona goal to make it 1–1. The return at the Camp Nou finished goalless, Messi striking a late penalty against the crossbar, and Barça took the trophy on away goals. It was the season’s first honour and, though nobody knew it in August, its last.",
+      "The early victories contained a debate about inheritance. At Rayo Vallecano in September, Barcelona won 4–0 but finished with less possession than their opponent, ending a sequence of 316 competitive matches in which they had held most of the ball. To some, this was sensible adaptation: a side with Neymar, Pedro, Alexis Sánchez and Messi could travel forward more directly. To others, it looked like the first loosening of an identity built over decades. Martino had not come to vandalise the old game. He was trying to give an ageing, heavily used team another way to breathe. Yet at Barcelona, style is never merely a means. Every tactical adjustment becomes a referendum on memory.",
+      "Messi’s body kept interrupting the argument. A bruised thigh in the first Super Cup leg cost him a week. A small tear in his right thigh at Almería on 28 September kept him out for three. Then, away to Betis on 10 November, he stopped after nineteen minutes with a torn left hamstring. It was his third injury of the campaign, the most serious, and the club expected him to miss six to eight weeks. He returned to Argentina for part of the rehabilitation. The recurring sight was new: Messi not gliding away from contact but walking from the field, glancing down at the machinery that had made his impossible consistency seem natural.",
+      "Barcelona continued without him. Neymar scored a hat-trick against Celtic and twice against Villarreal; Pedro struck three at Getafe after the team fell two behind. But the first defeats arrived at Ajax and Athletic Club, and the fluency became intermittent. Messi returned against Getafe in the Copa del Rey on 8 January, entering for the final half-hour and scoring twice. The second was an announcement: he collected the ball near halfway, accelerated between retreating defenders, rounded the goalkeeper and finished from an angle. Two months of stillness had not removed the old geometry. Three days later he started at Atlético, where a scoreless draw offered another view of the title race. Diego Simeone’s side were no longer charming intruders. They were built to remain.",
+      "Europe briefly restored a sense of command. Manchester City, newly rich and freely scoring, met Barcelona for the first time in the Champions League. At the Etihad in February, Messi ran onto Iniesta’s pass and Martín Demichelis brought him down at the edge of the area. The defender was sent off; Messi converted the penalty, and Dani Alves added a late second. At the Camp Nou, Messi lifted the return leg’s opening goal over Joe Hart before Alves sealed a 2–1 win and a 4–1 aggregate passage. Barcelona had reached a seventh successive quarter-final. The performance in Manchester, controlled and adult, suggested that Martino’s version might yet find its own great European night.",
+      "Its great night came in the league instead. On 23 March Barcelona went to the Bernabéu four points behind Real Madrid and with the title beginning to recede. Iniesta scored first from Messi’s pass. Karim Benzema replied twice. Messi equalised before half-time, squeezing a shot through a crowded penalty area after a ricochet with Neymar. Cristiano Ronaldo restored Madrid’s lead from a penalty awarded for a foul that began outside the box. Then Messi slipped Neymar through, Sergio Ramos was dismissed and Messi levelled from the spot. With six minutes left, Iniesta was caught between Xabi Alonso and Dani Carvajal; Messi took the ball again and drove the winning penalty beyond Diego López. Barcelona had won 4–3. His hat-trick made him the leading scorer in Clásico history. On a night of seven goals, three penalties and a red card, he was still the calmest person in the stadium.",
+      "The victory reopened the championship, but Atlético closed every other path. In the first leg of the Champions League quarter-final, Diego Ribas sent a ferocious shot beyond José Manuel Pinto before Iniesta threaded Neymar through for a 1–1 draw. Eight days later at the Calderón, Koke scored after five minutes and Atlético struck the woodwork three times in the opening twenty. Barcelona never found the equaliser. Their run of six consecutive Champions League semi-finals ended against a side that denied space with collective conviction. Messi was not absent, but he seemed surrounded by the season itself: bodies close, routes closing, the decisive fraction always elsewhere.",
+      "A week later Real Madrid waited in the Copa del Rey final at Mestalla. Ángel Di María scored early, Marc Bartra headed Barcelona level, and with five minutes remaining Gareth Bale pushed the ball past Bartra on the touchline, ran beyond him off the pitch and returned to finish between Pinto’s legs. Madrid won 2–1. Nine days later Tito Vilanova died at forty-five. The arguments about possession, tactics and trophies fell quiet. Players who had worked beside him, learned from him and worried for him were asked to play on through grief. Barcelona beat Villarreal 3–2 after falling two behind, the winner scored by Messi, and dedicated the victory to their former coach. Some matches are carried not by momentum but by obligation.",
+      "La Liga offered one final, improbable reprieve. Atlético arrived at the Camp Nou on 17 May needing a draw to become champions; Barcelona needed to win. Alexis struck a marvellous half-volley into the roof of Thibaut Courtois’s net, but Diego Godín headed Atlético level after the interval. Messi put the ball in the net from Dani Alves’s cross, only for the flag to rise. The match ended 1–1. Atlético celebrated a title won in Barcelona’s home, and the Camp Nou responded with an ovation for the worthiness of the champions. Martino announced his departure soon afterwards. Barcelona’s campaign ended with the Super Cup, 87 league points, a Copa final and a Champions League quarter-final: a set of near misses that felt, after the abundance of the previous years, like emptiness.",
+      "Messi’s club totals were still those of almost any other player’s masterpiece: 41 goals in 46 appearances, including 28 in 31 league matches and eight in seven Champions League games. Yet his season was discussed through what had gone missing — rhythm, pressing, trophies, the unbroken physical certainty of earlier years. He had also become a father, carried injuries through a changing team and watched the coach who had helped shape his football die young. Statistics could describe his production. They could not measure the emotional weather through which it was produced.",
+      "Then came Brazil. Alejandro Sabella gave Argentina a narrow structure and Messi the freedom to decide its matches. He scored against Bosnia and Herzegovina after exchanging passes with Gonzalo Higuaín, bent a stoppage-time winner beyond Iran and struck twice against Nigeria. In the round of 16, Switzerland resisted until the 118th minute, when Messi drew defenders and released Ángel Di María for the only goal. Higuaín beat Belgium in the quarter-final. Against the Netherlands, 120 cautious minutes ended without a goal; Messi converted Argentina’s first penalty and Sergio Romero saved two. For the first time since 1990, Argentina were in the World Cup final. Messi, so often accused at home of belonging more fully to Barcelona, had carried the national shirt to the Maracanã.",
+      "Germany waited there on 13 July. Higuaín dragged an early chance wide and later finished from an offside position; Messi ran beyond the German defence after half-time and sent his shot across Manuel Neuer and just beyond the far post. The final tightened into extra time. In the 113th minute André Schürrle crossed from the left, Mario Götze controlled the ball on his chest and volleyed past Romero. Argentina had seven minutes to recover a World Cup and could not. Messi received the tournament’s Golden Ball beneath the stadium lights, then walked past the trophy he wanted. The photograph is difficult because the achievement and the loss occupy the same face.",
+      "This was not a failed year so much as a year governed by the narrowest distances. A penalty off the crossbar still brought a Super Cup. A flag at the Camp Nou stood between Barcelona and a final-day lead. One goal separated the Copa finalists, the Champions League quarter-finalists and the nations at the Maracanã. Messi reached the greatest match in football and left with its award for the best player, but not its cup. At twenty-seven, after seasons in which he had made inevitability look like a personal quality, he learned the other truth of the game: you can be close enough to see your reflection in the silver and still go home without touching it.",
+    ],
+    sources: [
+      ["FC Barcelona: 2013–14 annual report", "https://www.fcbarcelona.com/fcbarcelona/document/2025/05/22/f5d30534-bafc-492c-993d-c855433fc62e/MEM_CLUB_2013_14_ENG_compressed.pdf"],
+      ["FC Barcelona: Gerardo Martino’s season", "https://www.fcbarcelona.com/en/news/648484/gerardo-tata-martino-2013-14"],
+      ["FC Barcelona: the 2013 Spanish Super Cup", "https://www.fcbarcelona.com/en/football/first-team/news/1136355/fc-barcelona--atletico-madrid-superchampions"],
+      ["FC Barcelona: Messi’s November hamstring injury", "https://www.fcbarcelona.com/en/news/1133230/messi-out-for-between-and-weeks"],
+      ["FC Barcelona: Messi returns against Getafe", "https://www.fcbarcelona.com/en/news/1130105/messi-returns-after-a-two-month-hiatus-and-scores-a-brace"],
+      ["UEFA: Barcelona eliminate Manchester City", "https://www.uefa.com/uefachampionsleague/news/0213-0ea1504323af-661a24bab6b0-1000--barcelona-complete-city-success/"],
+      ["FC Barcelona: the 4–3 Bernabéu Clásico", "https://www.fcbarcelona.com/en/news/1127110/brilliant-barca-win-bernabeu-thriller-3-4"],
+      ["UEFA: Atlético eliminate Barcelona", "https://www.uefa.com/uefachampionsleague/news/0214-0e8a0b0bb0ef-8da56a3cd7d7-1000--koke-takes-atletico-through-at-barcelona-s-expense/"],
+      ["FIFA: Messi’s 2014 Golden Ball", "https://www.fifa.com/en/tournaments/mens/worldcup/articles/messi-golden-ball-record"],
+      ["FIFA: Germany v Argentina final highlights", "https://www.plus.fifa.com/en/content/argentina-v-germany-final-2014-fifa-world-cup-extended-highlights/32152d39-22cb-4eaa-bb8d-32ed15b4fd35"],
+    ],
+    photos: [
+      {
+        after: 6,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2019/03/27/178639ad-a964-40cb-8993-6c076f88979c/fKNsyOwi.jpg",
+        alt: "Lionel Messi kisses the Barcelona shirt after scoring at the Santiago Bernabéu",
+        caption: "The old certainty, recovered in Madrid — Messi completes a hat-trick in the 4–3 Clásico, 23 March 2014.",
+        credit: "Miguel Ruiz / FC Barcelona",
+        href: "https://www.fcbarcelona.com/en/news/1127110/brilliant-barca-win-bernabeu-thriller-3-4",
+      },
+      {
+        after: 12,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2019/03/26/2affa8b9-3c74-4a47-b9d6-672b5f47fc58/CqIlEXlx.jpg",
+        alt: "Lionel Messi holds the Golden Ball beside Manuel Neuer after the 2014 World Cup final",
+        caption: "The prize that could not console him — Messi receives the World Cup Golden Ball after defeat at the Maracanã, 13 July 2014.",
+        credit: "FC Barcelona",
+        href: "https://www.fcbarcelona.com/en/news/1122436/leo-messi-wins-the-golden-ball-of-the-2014-world-cup",
+      },
+    ],
+    videos: [
+      {
+        after: 6,
+        youtubeId: "6j1Oj5N7kwE",
+        title: "Real Madrid 3–4 Barcelona — the full match",
+        caption: "The complete Bernabéu epic: Iniesta’s opener, Messi’s hat-trick and a title race brought back to life.",
+        credit: "LALIGA",
+        href: "https://www.youtube.com/watch?v=6j1Oj5N7kwE",
+      },
+    ],
+  },
 };
 
 const filmCatalog = [
@@ -1253,7 +1313,6 @@ export const honourLedger = {
       ["2012–13 European Golden Shoe", "boot"],
       ["2012–13 Pichichi Trophy", "pichichi"],
       ["2012–13 La Liga Best Player", "star"],
-      ["World Cup Golden Ball", "goldball"],
     ],
   },
   "2014–15": {
@@ -1263,6 +1322,7 @@ export const honourLedger = {
       ["UEFA Champions League", "ucl"],
     ],
     individual: [
+      ["2014 World Cup Golden Ball", "goldball"],
       ["Ballon d’Or", "ball"],
       ["UEFA Best Player in Europe", "star"],
       ["UCL Top Scorer", "boot"],
