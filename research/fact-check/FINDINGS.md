@@ -166,3 +166,11 @@ Resolved in the corrected working copy:
 4. `UCL Top Scorer` remains in 2018–19. The other five awards are explicitly labelled and allocated to 2019–20 under the presentation-date rule, without duplicating the following award cycle.
 
 The Gamper paraphrase, captaincy/Super Cup, signings, arm fracture, Clásico, Betis ovation, standings/title, Lyon/United/Liverpool ties, 51/50 competition split, source URLs, photo identities, official 89-second UEFA Anfield video, thumbnail contrast, duplication and editorial firewall otherwise pass. Exact photographers for both club-hosted JPEGs remain unresolved because creator metadata/bylines are unavailable.
+
+## Published-video remediation — 22 July 2026
+
+The current inventory contains **15/15 public, externally embeddable videos at or below twelve minutes**; all fifteen also currently report `age_limit=0`. All `href` values match their `youtubeId`, and no exact video ID or substantially duplicative thumbnail/chapter-photo pairing was found.
+
+The seven replacements contain **5 VERIFIED, 1 QUALIFIED and 1 INCORRECT** media decisions. The 2012–13 FC Barcelona upload is the correct Milan comeback and its caption is accurate, but the thumbnail/footage visibly retains Arabic-broadcast and third-party fan watermarks, making it a weaker visual-quality choice. The 2018–19 Liverpool replacement runs **3:04**, so its inherited “Ninety seconds” caption is incorrect and must be synchronized.
+
+The pre-deploy script genuinely blocks resolution/unavailability, `availability != public`, `playable_in_embed != True` and runtime over 720 seconds, and it is first in the `deploy` command's `&&` chain. It does not query or test `age_limit`, despite PROTOCOL.md explicitly making age restriction blocking. Verdict: **HOLD** until the 2018–19 caption is corrected and the promised age-restriction gate is implemented.
