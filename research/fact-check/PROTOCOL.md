@@ -34,6 +34,16 @@ Confidence is `HIGH`, `MEDIUM` or `LOW`; it measures evidence strength, not edit
 7. Resolve every URL and list repeated exact media URLs. A source URL reused as its media `href` is not a duplicated asset.
 8. Record issues in the season ledger and summarize only consequential findings. Corrections happen in a separate editorial pass.
 
+## Video selection and availability gate
+
+1. Every embedded chapter video must be public, playable inside an external embed and rechecked immediately before deployment.
+2. Prefer official competition, club or established broadcaster uploads. Use an independent upload only when no reliable first-party version exists and its provenance is clear.
+3. Prefer a focused two-to-eight-minute excerpt. The hard ceiling is twelve minutes; exceed it only when the full-length work is itself the editorial subject and record the exception in the ledger.
+4. A sub-two-minute clip is acceptable when it cleanly captures the exact goal or passage being discussed.
+5. Inspect the current thumbnail and opening frames. Reject clickbait text, misleading players or imagery, poor contrast, and an image that substantially duplicates an adjacent article photograph.
+6. The caption must state what the reader is about to watch without overstating the clip’s coverage.
+7. Run `npm run videos:check` before every deployment. Any unavailable, private, age-restricted, non-embeddable or overlong result blocks publication.
+
 ## Editorial firewall
 
 - Evidence belongs in the ledger and source notes, not in the narrative voice. Avoid constructions such as “UEFA states”, “records show”, “the photograph proves” or “the footage shows” when the underlying event can be narrated directly.

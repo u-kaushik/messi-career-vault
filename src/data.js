@@ -555,11 +555,11 @@ export const seasonStories = {
     videos: [
       {
         after: 7,
-        youtubeId: "5m8OS0BydgI",
+        youtubeId: "-kWIh_9sVT8",
         title: "Messi scores four against Arsenal",
         caption: "Four finishes, four registers: the night Messi carried a European quarter-final by himself.",
-        credit: "UEFA",
-        href: "https://www.youtube.com/watch?v=5m8OS0BydgI",
+        credit: "TNT Sports Football",
+        href: "https://www.youtube.com/watch?v=-kWIh_9sVT8",
       },
     ],
   },
@@ -614,11 +614,11 @@ export const seasonStories = {
     videos: [
       {
         after: 8,
-        youtubeId: "PX-jLdvoO1s",
+        youtubeId: "-nj-Y9tJ_Qc",
         title: "Messi’s Bernabéu magic",
         caption: "The short touch from Busquets, the sudden acceleration and a semi-final decided in eleven seconds.",
-        credit: "UEFA",
-        href: "https://www.youtube.com/watch?v=PX-jLdvoO1s",
+        credit: "CBS Sports Golazo",
+        href: "https://www.youtube.com/watch?v=-nj-Y9tJ_Qc",
       },
     ],
   },
@@ -673,11 +673,11 @@ export const seasonStories = {
     videos: [
       {
         after: 5,
-        youtubeId: "_qEJSIdeuDU",
+        youtubeId: "L0OifOdSdjw",
         title: "Messi scores five against Leverkusen",
-        caption: "Left foot, right foot, two lobs and five goals: UEFA’s film of a record European night.",
-        credit: "UEFA",
-        href: "https://www.youtube.com/watch?v=_qEJSIdeuDU",
+        caption: "Left foot, right foot, two lobs and five goals: the full sequence from a record European night.",
+        credit: "TNT Sports Football",
+        href: "https://www.youtube.com/watch?v=L0OifOdSdjw",
       },
     ],
   },
@@ -732,11 +732,11 @@ export const seasonStories = {
     videos: [
       {
         after: 6,
-        youtubeId: "k2muVhlj-DE",
+        youtubeId: "LDM3KITy-TI",
         title: "Barcelona’s comeback against Milan",
-        caption: "Two early Messi goals turn fear into momentum on one of the Camp Nou’s great European nights.",
-        credit: "Prime Video Sport",
-        href: "https://www.youtube.com/watch?v=k2muVhlj-DE",
+        caption: "Five focused minutes in which two early Messi goals turn fear into momentum on one of the Camp Nou’s great European nights.",
+        credit: "FC Barcelona",
+        href: "https://www.youtube.com/watch?v=LDM3KITy-TI",
       },
     ],
   },
@@ -792,11 +792,11 @@ export const seasonStories = {
     videos: [
       {
         after: 6,
-        youtubeId: "6j1Oj5N7kwE",
-        title: "Real Madrid 3–4 Barcelona — the full match",
-        caption: "The complete Bernabéu epic: Iniesta’s opener, Messi’s hat-trick and a title race brought back to life.",
+        youtubeId: "ku9vBsRYBZE",
+        title: "Real Madrid 3–4 Barcelona",
+        caption: "Seven concise minutes from the Bernabéu epic: Iniesta’s opener, Messi’s hat-trick and a title race brought back to life.",
         credit: "LALIGA",
-        href: "https://www.youtube.com/watch?v=6j1Oj5N7kwE",
+        href: "https://www.youtube.com/watch?v=ku9vBsRYBZE",
       },
     ],
   },
@@ -852,11 +852,11 @@ export const seasonStories = {
     videos: [
       {
         after: 8,
-        youtubeId: "tbKMBuR-pxs",
+        youtubeId: "nHAjktNg6fo",
         title: "Messi’s impossible finish against Bayern",
         caption: "One shift of balance, one fallen defender and the delicate finish that gave Barcelona command of the semi-final.",
-        credit: "UEFA",
-        href: "https://www.youtube.com/watch?v=tbKMBuR-pxs",
+        credit: "CBS Sports Golazo",
+        href: "https://www.youtube.com/watch?v=nHAjktNg6fo",
       },
     ],
   },
@@ -1081,11 +1081,11 @@ export const seasonStories = {
     videos: [
       {
         after: 12,
-        youtubeId: "27GHT7nAF8A",
+        youtubeId: "buoMlAshKXQ",
         title: "Liverpool overturn Barcelona at Anfield",
-        caption: "Ninety seconds of the night the promise broke: Origi, Wijnaldum and the corner taken before Barcelona was ready.",
-        credit: "UEFA",
-        href: "https://www.youtube.com/watch?v=27GHT7nAF8A",
+        caption: "Three minutes from the night the promise broke: Origi, Wijnaldum and the corner taken before Barcelona was ready.",
+        credit: "Liverpool FC",
+        href: "https://www.youtube.com/watch?v=buoMlAshKXQ",
       },
     ],
   },

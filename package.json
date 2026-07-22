@@ -8,7 +8,8 @@
     "build": "vite build && node scripts/generate-articles.mjs",
     "preview": "vite preview",
     "start": "npm run dev",
-    "deploy": "npm run build && wrangler deploy && node scripts/sync-readwise.mjs",
+    "deploy": "npm run videos:check && npm run build && wrangler deploy && node scripts/sync-readwise.mjs",
+    "videos:check": "node scripts/check-videos.mjs",
     "reader:sync": "node scripts/sync-readwise.mjs",
     "db:apply": "wrangler d1 execute messi-career-vault --remote --file=./schema.sql"
   },
