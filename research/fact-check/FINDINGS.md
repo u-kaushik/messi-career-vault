@@ -174,3 +174,11 @@ The current inventory contains **15/15 public, externally embeddable videos at o
 The seven replacements contain **6 VERIFIED, 1 QUALIFIED and 0 INCORRECT** media decisions. The 2012–13 FC Barcelona upload is the correct Milan comeback and its caption is accurate, but the thumbnail/footage visibly retains Arabic-broadcast and third-party fan watermarks, making it a weaker visual-quality choice. That accepted qualification is non-blocking because the clip is accurate, official-channel-hosted, public, embeddable and substantially shorter than the replaced edit. The 2018–19 Liverpool replacement's corrected “Three minutes” caption now matches its **3:04** runtime.
 
 The pre-deploy script genuinely blocks resolution/unavailability, `availability != public`, `playable_in_embed != True`, runtime over 720 seconds and parsed `age_limit > 0`; it is first in the `deploy` command's `&&` chain. Verdict: **PUBLISH**.
+
+## Unpublished 2019–20 draft
+
+The final ledger contains **57 VERIFIED, 3 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual and media grounds**.
+
+Resolved in the current working copy: Prague now has the correct 17-day interval and opening-goal role; the Bernabéu defeat is anchored eight days after Eibar; both assist surfaces identify Barcelona’s 21-assist accounting; Coutinho has one assist plus two goals; the replacement Bayern action image matches its alt/caption; `2019–20 Pichichi Trophy` is allocated to 2020–21; and the Laureus/assist-leader labels now state their year, shared status and counting convention.
+
+The remaining non-blocking qualifications concern tactical/interpretive framing and the unresolved exact Mallorca photographer. The documented 20/21 assist-count conflict is now properly attributed in prose. All chapter URLs resolve. The Pickx Sports 6:14 video is public, embeddable, unrestricted, correctly identified and not duplicated; sampled frames and thumbnail pass.
