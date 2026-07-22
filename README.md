@@ -36,6 +36,15 @@ npm run db:apply
 npm run deploy
 ```
 
+## Readwise Reader delivery
+
+Every deployment finishes by idempotently syncing new or changed long reads to Reader. Set `READWISE_TOKEN` in the shell or store it in macOS Keychain under service `messi-archive-readwise-token`; the token is never committed. Verified delivery receipts live in the ignored `.reader-sync.json` file.
+
+```bash
+npm run reader:sync
+npm run reader:sync -- --season=2016–17
+```
+
 ## Notes
 
 Streaming availability varies by country. IMDb ratings are snapshots and can change. Poster artwork is loaded from third-party metadata endpoints and is not bundled in this repository.

@@ -3,3 +3,7 @@ dist/
 data/progress.json
 .DS_Store
 *.log
+.wrangler/
+.reader-sync.json
+.env
+.env.*
