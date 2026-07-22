@@ -231,3 +231,11 @@ The final ledger contains **70 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 0 REMOVE*
 Resolved in the current working copy: three early league absences; Messi supplied Martínez for Canada's second goal; the ambiguous numeric summer-absence sample was removed; Atlanta's gap is 34 points; the post-return run is 13 goals in 12 club-and-country matches; the video caption says `Seven minutes`; and the league absence is `nearly half`.
 
 The Ecuador Panenka, 65th-minute non-contact collapse, 105-day MLS interval, Columbus/Decision Day sequences, 20/16/19 league line, 23/19 all-competition line, playoff sequence/Avilés incident, honours and all URLs pass. Optional precision remains to add the official 66th-minute substitution. Both photos are correctly identified and publisher-provenanced, but neither discloses a photographer or reusable license. The official MLS 7:25 video is public, embeddable, unrestricted, accurate, visually clean and non-duplicative.
+
+## Unpublished 2025 draft
+
+The final ledger contains **68 VERIFIED, 6 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual, source and media grounds**.
+
+Resolved in the current working copy: the inaccurate `record attack` label is removed; Segovia's equaliser is correctly in the tenth minute of stoppage time; the injury uses the club's `minor muscle injury in his right leg`; and the sequence now correctly records two missed matches, the LA Galaxy return, Tigres absence and Orlando semifinal appearance.
+
+The remaining competition chronology, match scores/minutes, five-game multi-goal streak, Argentina passage, 29/19/28 regular-season line, playoff records, 43/31/49 all-competition totals, retirements, extension and honours pass. Both images are event-accurate and publisher-provenanced but lack disclosed photographer/licence metadata. The current official MLS `R8wa-1BYggw` replacement is public, embeddable, unrestricted, 1:42, event-accurate, cleanly thumbnailed and non-duplicative; its final-two-minutes caption passes.
