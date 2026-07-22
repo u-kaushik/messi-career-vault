@@ -912,6 +912,64 @@ export const seasonStories = {
       },
     ],
   },
+  "2016–17": {
+    title: "The shirt held high",
+    dek: "Fifty-four goals, a European miracle and the last kick of a Clásico — a season when Messi kept producing immortal moments as Barcelona’s control began to loosen.",
+    paragraphs: [
+      "Barcelona began the autumn of 2016 with two certainties and one question. The first certainty was the front three: Lionel Messi, Luis Suárez and Neymar had scored 131 goals in the previous campaign and still appeared capable of turning any match into a private exchange of favours. The second was that Luis Enrique’s football, whatever its fluctuations, had delivered eight trophies in two seasons. The question lay behind them. Xavi had gone a year earlier, Andrés Iniesta was thirty-two, and the midfield that once governed every important match no longer imposed itself as naturally. André Gomes, Denis Suárez, Lucas Digne, Samuel Umtiti, Jasper Cillessen and Paco Alcácer arrived, but renewal came as depth rather than a new organising idea. Barcelona could still reach extraordinary heights. The space between those heights was becoming harder to cross.",
+      "The Spanish Super Cup offered a confident opening. Sevilla were beaten 2–0 away and 3–0 at the Camp Nou, Messi scoring the final goal of the tie after Arda Turan’s two in the second leg. A 6–2 league victory over Real Betis followed. Then newly promoted Alavés came to Barcelona and won 2–1 against a heavily rotated side. Messi and Suárez began on the bench, entered in the second half and could not retrieve the match. It was only September, too early to attach meaning to a single defeat, but the pattern would recur: rotation disrupted the team more than expected; possession accumulated without command; an opponent that survived the first pressure found the pitch opening ahead of it.",
+      "Messi’s own start was interrupted at home to Atlético Madrid on 21 September. He tore a muscle in his right groin and left early in the second half, beginning an absence of roughly three weeks. Barcelona won at Sporting and in Mönchengladbach without him, then conceded three first-half goals at Celta Vigo and lost 4–3. His return against Deportivo La Coruña was immediate and almost comic: sent on after fifty-five minutes, he scored three minutes later. Four days afterwards Manchester City came to the Camp Nou and Messi completed a Champions League hat-trick in a 4–0 win. The performance suggested that the old authority remained intact. At the Etihad a fortnight later, however, City pressed through Barcelona’s midfield and recovered from Messi’s opener to win 3–1. The two meetings, taken together, revealed a team whose ceiling and floor had begun moving apart.",
+      "Autumn became a search for continuity. Málaga held Barcelona scoreless at the Camp Nou. Real Sociedad dominated a 1–1 draw at Anoeta so thoroughly that even the point felt borrowed. Real Madrid then arrived in December and escaped with another draw when Sergio Ramos headed in at the end. Barcelona remained within reach of the champions-to-be, but the football increasingly depended upon the forwards making something from a structure that had not first made the game safe. Messi still did so with astonishing regularity. He scored a hat-trick against Celtic at home and twice more in Glasgow, ended the Champions League group stage with ten goals, and kept finding the small interior spaces that the team itself was less able to preserve.",
+      "The new year brought both resistance and invention. Athletic Club won the first leg of a furious Copa del Rey tie 2–1 at San Mamés before Barcelona recovered 3–1 at home, Messi bending in the decisive free-kick. Three days earlier at Villarreal, another late free-kick had rescued a league point. Set pieces were becoming a separate branch of his authority: the wall arranged itself, the goalkeeper cheated towards one side, and still the ball found the upper corner. Real Sociedad were finally beaten away in the Copa quarter-final, ending a decade without a Barcelona victory at Anoeta, and Atlético were removed in a tense semi-final. The cup offered a clear road. Europe was about to remove the ground beneath them.",
+      "Paris Saint-Germain beat Barcelona 4–0 at the Parc des Princes on 14 February. Ángel Di María scored twice, Julian Draxler once and Edinson Cavani once; Unai Emery’s side pressed, ran and passed through the visitors with an ease that made the score feel descriptive rather than freakish. Messi was crowded away from the match. Busquets was isolated, Iniesta overwhelmed, the defensive line repeatedly exposed. This was not merely a bad night for a great team. It felt like a glimpse of the future arriving early, a younger and more athletic opponent making Barcelona’s old assurances look ceremonial. No club had ever overturned a four-goal first-leg deficit in the European Cup. The tie appeared finished.",
+      "On 1 March, after Barcelona beat Sporting Gijón 6–1, Luis Enrique announced that he would leave at the end of the season. He spoke of the need to rest; three years of managing Barcelona had consumed him. A week later came Paris and the attempt at the impossible. Suárez headed in before three minutes had passed. Iniesta forced Layvin Kurzawa’s own goal before half-time, and Messi’s penalty early in the second half made it 3–0. Then Cavani scored. Barcelona now required three more, and with two minutes of normal time remaining they still required all three.",
+      "Neymar took the night. His free-kick in the 88th minute rose and dipped beyond Kevin Trapp. In stoppage time he scored a penalty after Marquinhos impeded Suárez. Marc-André ter Stegen joined the final attack; the ball returned to Neymar on the left, and his clipped pass dropped behind the defence. Sergi Roberto stretched out a boot and sent it into the roof of the net in the 95th minute. Barcelona had won 6–1, 6–5 on aggregate. Messi climbed the advertising hoardings and roared towards the crowd while arms reached for him from below, an image that travelled around the world even though the decisive football had belonged to Neymar and Roberto. The night was genuine, astonishing and emotionally complete. It also disguised nothing for long.",
+      "Four days later Barcelona lost 2–1 at Deportivo La Coruña. In April Juventus supplied the harder correction. Paulo Dybala scored twice in Turin and Giorgio Chiellini headed another; Barcelona lost the quarter-final first leg 3–0. There was no second miracle. Juventus defended the Camp Nou with intelligence and calm, drew 0–0 and advanced. Messi kept receiving the ball against a bank of bodies, searching for the one action that might disturb their order, but this time the match did not bend. Barcelona had conceded seven goals across their two Champions League away legs in the knockout rounds and scored none. The remontada remained glorious. Europe’s verdict on the season was more severe.",
+      "The league might still be saved, but only through Madrid. Barcelona went to the Bernabéu on 23 April without the suspended Neymar and needing victory. Casemiro scored first. Messi, his mouth bloodied after an earlier collision with Marcelo, equalised by slipping between Luka Modrić and Dani Carvajal before finishing beyond Keylor Navas. Ivan Rakitić drove Barcelona ahead; James Rodríguez levelled with five minutes remaining despite Sergio Ramos’s red card. At 2–2, the title was moving away. In the 92nd minute Sergi Roberto carried the ball out of his own half, André Gomes found Jordi Alba, and Alba cut it back towards the edge of the area. Messi arrived and swept the last kick of the match into the bottom corner.",
+      "It was his 500th official goal for Barcelona. He ran towards the corner, removed his shirt and held its back towards the Bernabéu crowd: MESSI, 10, offered not as clothing but as a statement. The gesture lasted only seconds and became one of football’s permanent images. There was anger in it, and pride, and the cool theatrical instinct of a man usually reluctant to perform outside the action itself. Barcelona had won 3–2 and drawn level on points. For one night the season belonged entirely to him. Yet Madrid still held a match in hand, won their remaining fixtures and finished on 93 points, three above Barcelona. The photograph outlived the title race it could not quite reverse.",
+      "There was one last competition and one last match for Luis Enrique. Alavés met Barcelona at the Vicente Calderón in the Copa del Rey final on 27 May. Messi exchanged passes with Neymar and curled the opener into the far corner from the edge of the area. Theo Hernández equalised with a magnificent free-kick. Before half-time Neymar restored the lead, then Messi moved through a thicket of white shirts and slid Paco Alcácer in for the third. Barcelona won 3–1 and lifted the cup for a third consecutive year, the first Spanish side to do so since the 1950s. The trophy was real consolation, but the family photograph afterwards already contained farewells: Luis Enrique was leaving, and Neymar would never again play a competitive match for Barcelona.",
+      "Messi finished with 54 goals in 52 club appearances, including 37 in La Liga and 11 in the Champions League. The league total brought a fourth Pichichi and his fourth European Golden Shoe. Suárez scored 37 in all competitions and Neymar 20; the front three still produced 111 between them. Their brilliance had not disappeared. What changed was the burden placed upon it. Barcelona scored 171 goals across the season, yet too many decisive matches became rescue operations. Messi could rescue more than anybody in the history of the game. Even he could not make rescue a stable system.",
+      "The season is remembered through celebration: the human avalanche after Sergi Roberto’s sixth, the shirt lifted towards the white stands, the Copa raised beneath the Calderón lights. Look more closely and it is also a season of endings. Luis Enrique’s cycle closed. Neymar’s partnership with Messi and Suárez ended just as its friendship seemed most secure. The European away defeats exposed a loss of control that no summer signing had repaired. Messi, approaching thirty, responded not by receding but by becoming more concentrated: scorer, playmaker, free-kick specialist and emotional reference. Barcelona had spent years building matches in which his genius supplied the final advantage. Now his genius was increasingly being asked to supply the whole argument. The shirt held high at the Bernabéu said that he could. The final table quietly said what it would cost.",
+    ],
+    sources: [
+      ["FC Barcelona: 2016–17 annual report", "https://media-public.fcbarcelona.com/20157/48858950/773360/1.0/773360.pdf"],
+      ["FC Barcelona: Messi’s September groin injury", "https://www.fcbarcelona.com/en/football/first-team/news/830100/leo-messi-out-for-three-weeks"],
+      ["FC Barcelona: the 2016–17 scoring totals", "https://www.fcbarcelona.com/en/news/1669774/stat-of-the-day-116-the-goals-that-barca-scored-in-the-201617-league-season/amp"],
+      ["UEFA: Barcelona’s 6–1 comeback against Paris", "https://www.uefa.com/uefachampionsleague/news/0237-0e966c1b69f6-14f87a701fd9-1000--barcelona-make-history-with-stunning-comeback/"],
+      ["FC Barcelona: Champions League campaign statistics", "https://www.fcbarcelona.com/en/news/769587/barcas-2016-17-uefa-champions-league-campaign-by-the-numbers"],
+      ["FC Barcelona: Messi reaches 500 official club goals", "https://www.fcbarcelona.com/en/football/first-team/news/769527/leo-messi-reaches-500-goals-for-fc-barcelona"],
+      ["FC Barcelona: the 3–2 Clásico at the Bernabéu", "https://www.fcbarcelona.com/en/football/first-team/noticias/769849/real-madrid-fc-barcelona-sant-messi-glorioso-2-3"],
+      ["FC Barcelona: 2017 Copa del Rey final", "https://www.fcbarcelona.com/en/football/first-team/news/763899/match-report-fc-barcelona-3-1-alaves-copa-kings"],
+    ],
+    photos: [
+      {
+        after: 10,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2018/06/27/b2859075-c669-4884-a2b9-0287be0b4810/YyqjYBon.jpg",
+        alt: "Lionel Messi celebrates his stoppage-time winner against Real Madrid at the Santiago Bernabéu",
+        caption: "Five hundred in the last second — Messi turns the title race at the Bernabéu, 23 April 2017.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/football/first-team/news/769527/leo-messi-reaches-500-goals-for-fc-barcelona",
+      },
+      {
+        after: 11,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2018/06/28/0bf83e5f-ea07-4c94-ac8d-55bb2cf5f5ee/dVBwsWgu.jpg",
+        alt: "Barcelona players, staff and their families gather around the Copa del Rey trophy after defeating Alavés",
+        caption: "The closing family portrait — Luis Enrique’s Barcelona lift a third consecutive Copa del Rey, 27 May 2017.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/football/first-team/news/763899/match-report-fc-barcelona-3-1-alaves-copa-kings",
+      },
+    ],
+    videos: [
+      {
+        after: 7,
+        youtubeId: "h4m68r8kWAc",
+        title: "Barcelona 6–1 Paris Saint-Germain",
+        caption: "The full five-minute arc of the comeback, from Suárez’s early header to Sergi Roberto’s final touch.",
+        credit: "FC Barcelona",
+        href: "https://www.youtube.com/watch?v=h4m68r8kWAc",
+      },
+    ],
+  },
 };
 
 const filmCatalog = [
@@ -1457,10 +1515,7 @@ export const honourLedger = {
       ["Copa del Rey", "copa"],
       ["Spanish Super Cup", "supercup"],
     ],
-    individual: [
-      ["European Golden Shoe", "boot"],
-      ["Pichichi Trophy", "pichichi"],
-    ],
+    individual: [],
   },
   "2017–18": {
     team: [
@@ -1468,8 +1523,8 @@ export const honourLedger = {
       ["Copa del Rey", "copa"],
     ],
     individual: [
-      ["European Golden Shoe", "boot"],
-      ["Pichichi Trophy", "pichichi"],
+      ["2016–17 European Golden Shoe", "boot"],
+      ["2016–17 Pichichi Trophy", "pichichi"],
       ["La Liga Best Player", "star"],
     ],
   },
