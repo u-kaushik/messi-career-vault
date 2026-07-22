@@ -31,12 +31,38 @@ if (!token) {
 }
 
 async function request(path, options = {}) {
-  const response = await fetch(`${API}${path}`, {
-    ...options,
-    headers: { Authorization: `Token ${token}`, "Content-Type": "application/json", ...options.headers },
-  });
-  if (!response.ok) throw new Error(`Reader ${options.method || "GET"} ${path} failed: ${response.status} ${await response.text()}`);
-  return response.status === 204 ? null : response.json();
+  for (let attempt = 0; attempt < 6; attempt += 1) {
+    const response = await fetch(`${API}${path}`, {
+      ...options,
+      headers: { Authorization: `Token ${token}`, "Content-Type": "application/json", ...options.headers },
+    });
+    if (response.status === 429 && attempt < 5) {
+      const retryAfter = Math.max(1, Number(response.headers.get("retry-after")) || 10);
+      await new Promise((resolve) => setTimeout(resolve, retryAfter * 1000));
+      continue;
+    }
+    if (!response.ok) throw new Error(`Reader ${options.method || "GET"} ${path} failed: ${response.status} ${await response.text()}`);
+    return response.status === 204 ? null : response.json();
+  }
+}
+
+function documentIsReady(document, story) {
+  const wordCount = Number(document?.word_count ?? document?.wordCount ?? 0);
+  const parsedBody = document?.html_content ?? document?.htmlContent ?? "";
+  return Boolean(document && document.title?.includes(story.title) &&
+    document.author === "The Messi Archive" && document.category === "article" &&
+    ["new", "later", "shortlist"].includes(document.location) && wordCount > 0 && parsedBody.length > 200);
+}
+
+async function waitForParsedDocument(id, story) {
+  let document;
+  for (let attempt = 0; attempt < 20; attempt += 1) {
+    const listed = await request(`/list/?id=${encodeURIComponent(id)}&withHtmlContent=true&limit=1`);
+    document = listed.results?.[0];
+    if (documentIsReady(document, story)) return document;
+    await new Promise((resolve) => setTimeout(resolve, 1500));
+  }
+  return document;
 }
 
 let receipts = { documents: {} };
@@ -70,13 +96,10 @@ for (const [season, story] of entries) {
     }),
   });
 
-  const listed = await request(`/list/?id=${encodeURIComponent(saved.id)}&withHtmlContent=true&limit=1`);
-  const document = listed.results?.[0];
+  const document = await waitForParsedDocument(saved.id, story);
   const wordCount = Number(document?.word_count ?? document?.wordCount ?? 0);
   const parsedBody = document?.html_content ?? document?.htmlContent ?? "";
-  const verified = Boolean(document && document.title?.includes(story.title) &&
-    document.author === "The Messi Archive" && document.category === "article" &&
-    ["new", "later", "shortlist"].includes(document.location) && wordCount > 0 && parsedBody.length > 200);
+  const verified = documentIsReady(document, story);
   if (!verified) throw new Error(`Reader verification failed for ${season}: ${JSON.stringify({
     id: saved.id, title: document?.title, author: document?.author, category: document?.category,
     location: document?.location, wordCount, htmlLength: parsedBody.length,
