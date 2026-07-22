@@ -65,6 +65,20 @@ async function waitForParsedDocument(id, story) {
   return document;
 }
 
+async function waitForDeployedArticle(canonical, story) {
+  let status = 0;
+  for (let attempt = 0; attempt < 15; attempt += 1) {
+    const response = await fetch(canonical);
+    status = response.status;
+    if (response.ok) {
+      const html = await response.text();
+      if (html.includes(`<title>${story.title}`)) return html;
+    }
+    await new Promise((resolve) => setTimeout(resolve, 2000));
+  }
+  throw new Error(`Canonical URL did not expose chapter HTML after deployment: ${canonical} (last HTTP ${status})`);
+}
+
 let receipts = { documents: {} };
 try { receipts = JSON.parse(await readFile(RECEIPTS, "utf8")); } catch {}
 
@@ -80,10 +94,7 @@ for (const [season, story] of entries) {
     continue;
   }
 
-  const articleResponse = await fetch(canonical);
-  if (!articleResponse.ok) throw new Error(`Cannot sync undeployed article ${canonical}: HTTP ${articleResponse.status}`);
-  const html = await articleResponse.text();
-  if (!html.includes(`<title>${story.title}`)) throw new Error(`Canonical URL returned fallback HTML: ${canonical}`);
+  const html = await waitForDeployedArticle(canonical, story);
 
   const saved = await request("/save/", {
     method: "POST",

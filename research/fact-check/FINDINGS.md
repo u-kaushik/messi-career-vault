@@ -182,3 +182,14 @@ The final ledger contains **57 VERIFIED, 3 QUALIFIED, 0 UNRESOLVED and 0 REMOVE*
 Resolved in the current working copy: Prague now has the correct 17-day interval and opening-goal role; the Bernabéu defeat is anchored eight days after Eibar; both assist surfaces identify Barcelona’s 21-assist accounting; Coutinho has one assist plus two goals; the replacement Bayern action image matches its alt/caption; `2019–20 Pichichi Trophy` is allocated to 2020–21; and the Laureus/assist-leader labels now state their year, shared status and counting convention.
 
 The remaining non-blocking qualifications concern tactical/interpretive framing and the unresolved exact Mallorca photographer. The documented 20/21 assist-count conflict is now properly attributed in prose. All chapter URLs resolve. The Pickx Sports 6:14 video is public, embeddable, unrestricted, correctly identified and not duplicated; sampled frames and thumbnail pass.
+
+## Unpublished 2020–21 draft
+
+The final ledger contains **56 VERIFIED, 6 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual and media grounds**.
+
+Resolved in the current working copy:
+
+1. The 13-point Atlético gap is now precisely anchored before Barça played on 31 January, with the misleading games-in-hand qualifier removed.
+2. The unsupported Eibar-shirt reference is removed from the final-picture list.
+
+The two proactive corrections also pass: the Pelé comparison explicitly uses recognised official goals and the official single-club scoring convention; the 1 June 2022 Finalissima and its Player of the Match award are allocated to 2022–23 under the summer-international rule. Core chronology, 38/47 and 30/35 totals, final 672/778 counts, Copa title, other honour placements, both photos and the official 5:37 video pass. All chapter URLs returned HTTP 200; the video is public, embeddable, unrestricted and non-duplicative. No blocker remains.

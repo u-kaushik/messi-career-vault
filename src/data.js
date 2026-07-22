@@ -1149,6 +1149,68 @@ export const seasonStories = {
       },
     ],
   },
+  "2020–21": {
+    title: "The last picture",
+    dek: "A transfer request withdrawn, a team learning to grow young around him, one final cup and the Barcelona farewell that arrived after everybody had gone home.",
+    paragraphs: [
+      "Lionel Messi began his final Barcelona season by staying against his will. On 25 August 2020, eleven days after Bayern Munich had put eight past his team in Lisbon, he informed the club that he wished to leave. Barcelona disputed his right to go without a fee and pointed to a €700 million release clause. Messi would not take the institution of his life to court. In early September he announced that he would remain for the final year of his contract, but the distinction mattered: this was not reconciliation, merely refusal to turn love into litigation. For the first time since he was thirteen, his presence at Barcelona felt temporary.",
+      "Ronald Koeman inherited that fracture and a squad being dismantled in public. Luis Suárez was told he could leave and joined Atlético Madrid, where his goals would help win the league. Ivan Rakitić, Arturo Vidal and Nélson Semedo also departed. Their replacements were less a new imperial guard than an invitation to begin again: Pedri arrived at seventeen, Sergiño Dest at nineteen, while Ronald Araújo, Óscar Mingueza and Ilaix Moriba emerged from within. Ansu Fati had already announced himself. Messi, thirty-three and exhausted by the politics above him, found himself captain of a side suddenly young enough to need his example more than his rescue.",
+      "The first weeks carried deceptive brightness. Ansu scored twice in a 4–0 opening win over Villarreal, Messi converting a penalty, and Barcelona won 3–0 at Celta despite playing the second half with ten men. Then the old instability returned. They drew with Sevilla, lost at Getafe, were beaten 3–1 by Real Madrid at the Camp Nou and took only two points from four league matches. Ansu’s serious knee injury against Betis in November removed the season’s most natural source of speed. Koeman’s 4–2–3–1 often left Messi searching for connections between unfamiliar pieces, while Griezmann and Philippe Coutinho occupied similar interior spaces. Barcelona could still produce attacks. They could not yet produce conviction.",
+      "The club itself seemed to be dissolving around the football. Josep Maria Bartomeu and his board resigned on 27 October rather than face a vote of no confidence, leaving an interim administration to manage an institution in financial and sporting crisis. Matches remained behind closed doors. The Camp Nou seats, patterned into blocks of blue and red, supplied colour but not witness. Messi scored his 643rd official Barcelona goal against Valencia on 19 December, drawing level with Pelé’s recognised official total for Santos. Three days later at Valladolid, Pedri back-heeled Frenkie de Jong’s pass into his path and Messi finished across Jordi Masip. Goal 644 made him the leading official scorer for a single club, reached in a pink shirt, in a near-empty stadium, during the strangest and loneliest season of his career.",
+      "The beauty of the move mattered as much as the number. Pedri was eighteen and appeared to understand Messi’s thought before the ball arrived, not after it. Their connection gave the season a tenderness it badly needed. Messi had spent years being asked to preserve an ageing team; now the young players offered something in return. Pedri received under pressure and played forward without ceremony. Araújo defended with pace and appetite. Mingueza carried the nerve of a footballer grateful for the emergency that had opened the door. De Jong began to travel through midfield rather than simply arrange it. Barcelona were not restored, but they were becoming watchable in a different tense.",
+      "The new year was punishing and oddly formative. Messi missed the Spanish Super Cup semi-final through injury, returned for the final against Athletic Club and was sent off in extra time for striking Asier Villalibre as Barcelona lost 3–2. It was his first red card in 754 competitive appearances for the club, an eruption at the end of a match that had repeatedly escaped them. A fortnight later he curled a free-kick past the same opponent for his 650th Barcelona goal. The season kept offering these violent changes of weather: frustration, record, setback, recovery. Koeman’s team was learning to survive them.",
+      "The Copa del Rey became the place where survival turned into belief. Barcelona needed extra time to beat third-tier Cornellà, then came from behind at Rayo Vallecano through Messi and De Jong. At Granada in the quarter-final, they were 2–0 down with two minutes of normal time remaining. Griezmann scored from an impossible angle, Jordi Alba headed an equaliser in stoppage time, and Barcelona won 5–3 after extra time. The semi-final seemed lost when Sevilla took a 2–0 first-leg lead. In the return, Ousmane Dembélé struck early, Gerard Piqué headed in at 94 minutes and Martin Braithwaite completed the comeback in extra time. This was not the serenity of the great Barcelona sides. It was younger, messier and, for a while, deeply alive.",
+      "Europe remained less forgiving. Paris Saint-Germain came to the Camp Nou in February and won 4–1, Kylian Mbappé scoring three. In the return Messi drove a shot from distance beyond Keylor Navas, then had a penalty saved before half-time. Barcelona played with courage and created enough to trouble the tie, but a 1–1 draw could not repair the first leg. For the first time since 2007 they failed to reach the Champions League quarter-finals. The manner was less humiliating than Lisbon; the message was no kinder. The continent had moved beyond them, and one strong half in Paris could not close the distance.",
+      "At home, however, a title race reappeared. Barcelona had fallen thirteen points behind Atlético Madrid before playing on 31 January, but Messi entered 2021 in a rush of goals. He scored twice at Granada, twice at Athletic, two more against Alavés and Elche, then finished a 2–0 win at Sevilla. The league run gathered speed around Koeman’s switch to three centre-backs. On 15 March Messi matched Xavi’s club appearance record and scored twice against Huesca. Six days later he played his 768th Barcelona match at Real Sociedad, moving clear, and scored two more in a 6–1 victory. The record belonged to longevity; the performance belonged entirely to the present.",
+      "By then Joan Laporta had returned as president, elected on 7 March with the future of Messi among the defining questions of his campaign. There was optimism in the reunion. Laporta had presided over Messi’s ascent from prodigy to the centre of the best team in the world; perhaps an old relationship could furnish a new beginning. On the pitch, Barcelona arrived in April with two trophies still possible. A 2–1 Clásico defeat in rain at the Alfredo Di Stéfano slowed the league pursuit, but one week later came the Copa del Rey final against Athletic at La Cartuja.",
+      "The first half was scoreless only because Unai Simón resisted an assault. After the interval the dam broke. De Jong crossed for Griezmann on sixty minutes, then headed in Jordi Alba’s delivery three minutes later. The third goal was the season’s purest expression of renewal: Messi carried the ball from inside his own half, exchanged passes with De Jong, stepped between two defenders and rolled his finish into the corner. Four minutes later he swept in Alba’s cut-back. Barcelona won 4–0. Messi lifted the Copa del Rey for the first time as club captain, his seventh and his thirty-fifth major trophy for Barcelona.",
+      "There is a photograph from the celebrations in which Messi sits cross-legged on the dressing-room floor with the cup beside him. One by one, younger teammates came to have their picture taken with the captain and the trophy. They understood the occasion even if nobody yet knew its finality. Pedri, Araújo, Mingueza and De Jong were holding the first medal of a possible future; Messi was holding the last of his Barcelona life. For one night the distance between those eras disappeared. The side had not won because he dragged it there alone. It had played with width, movement and joy, and he had completed the football rather than compensated for its absence.",
+      "The league offered one last, cruel opening. Atlético’s lead had narrowed and victory over Granada on 29 April would have put Barcelona top. Messi scored first, but Granada came back to win 2–1 at the Camp Nou. Barcelona beat Valencia, drew 0–0 with Atlético, then surrendered a 2–0 lead at Levante in a 3–3 draw. Against Celta on 16 May, Messi headed in Sergio Busquets’s cross before Santi Mina scored twice and ended their title hopes. Koeman rested him for the final game at Eibar. Nobody in the empty stadium understood that the header against Celta was his 672nd and last Barcelona goal, or that he had just completed appearance number 778.",
+      "He finished the club season with 38 goals in 47 matches, including 30 in 35 league games. An eighth Pichichi extended his record and made it five in succession. Barcelona finished third, seven points behind Atlético, but the numbers alone cannot decide whether the season was recovery or ending. The team had grown younger and won a cup; it had also lost both Clásicos, fallen early in Europe and failed when the league moved within reach. Messi had found pleasure beside Pedri and De Jong. He had not found certainty about what came next.",
+      "His contract expired on 30 June while he was with Argentina at the Copa América. For several weeks he was no longer technically a Barcelona player, though both sides continued to work towards a new agreement. In July he finally won the senior international title that had evaded him, and returned from Brazil prepared to stay. Then, on 5 August, Barcelona announced that the contract could not be registered under La Liga’s financial rules. Three days later Messi entered the Auditori 1899 in a dark suit, stood before his family and teammates, and began to cry before he could properly begin speaking.",
+      "A farewell ought to contain a final walk around the pitch, the stadium full, the noise rising as seventeen years pass before everyone at once. Messi received none of that. His last goal came in defeat before empty seats; his last trophy was lifted in Seville without supporters; his goodbye was delivered from a lectern. The final Barcelona season therefore survives as a collection of pictures whose meaning arrived late: Pedri’s back-heel at Valladolid, the young players queuing beside the cup, the header against Celta. He had begun the year trapped by a contract and ended it willing to renew, only for the institution to discover that willingness was no longer enough. The last picture was not a footballer walking away. It was a footballer who had expected to stay, learning in public that home could no longer hold him.",
+    ],
+    sources: [
+      ["FC Barcelona: Messi’s commitment after the summer dispute", "https://www.fcbarcelona.com/en/news/1848633/messi-all-barca-fans-have-to-come-together"],
+      ["FC Barcelona: Messi passes Pelé’s single-club mark", "https://www.fcbarcelona.com/en/news/1941432/leo-messi-surpasses-pele-as-highest-goalscorer-ever-for-a-single-club"],
+      ["FC Barcelona: the Copa del Rey final", "https://www.fcbarcelona.com/en/news/2108496/copa-del-rey-champions/amp"],
+      ["FC Barcelona: Messi’s club appearance record", "https://www.fcbarcelona.com/en/news/2071426/from-cesar-to-leo-messi"],
+      ["FC Barcelona: Laporta elected president", "https://www.fcbarcelona.com/en/club/news/2059811/joan-laporta-nou-president-del-fc-barcelona"],
+      ["FC Barcelona: 38 goals in 47 club matches", "https://www.fcbarcelona.com/en/football/first-team/news/2188872/leo-messi-60-games-and-46-goals-in-202021-season/featured"],
+      ["FC Barcelona: Messi’s final club match", "https://www.fcbarcelona.com/en/matches/61321/fc-barcelona-celta-de-vigo-la-liga-2020-2021-1d45-48cb-9e7b-4ba211302b4b"],
+      ["FC Barcelona: the reasons for Messi’s departure", "https://www.fcbarcelona.com/en/news/2208073/joan-laporta-explains-the-reasons-for-leo-messis-departure"],
+      ["FC Barcelona: Messi’s farewell", "https://www.fcbarcelona.com/en/football/first-team/news/2210282/leo-messi-i-feel-so-sad-to-be-leaving-the-club-i-love"],
+      ["FC Barcelona: 2020–21 annual report", "https://www.fcbarcelona.com/fcbarcelona/document/2023/04/20/e755a73c-eb88-474e-b575-97080ce7b260/Memoria-2020-21_ENG.pdf"],
+    ],
+    photos: [
+      {
+        after: 4,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2020/12/22/87c73593-bb62-40f6-a98a-a8fe0eb23959/2020-12-22-VALLADOLID-BARCELONA-29-min.JPG",
+        alt: "Lionel Messi embraces Clément Lenglet as Barcelona players celebrate against Real Valladolid",
+        caption: "Beyond Pelé — teammates gather around Messi after his 644th Barcelona goal, at Valladolid on 22 December 2020.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/football/first-team/news/1950649/0-3/featured",
+      },
+      {
+        after: 11,
+        src: "https://www.fcbarcelona.com/photo-resources/2021/04/17/b9f1f09f-b956-4501-b025-ecd3c82f4043/mini__GPF0146.jpg?width=1600&height=1000",
+        alt: "Lionel Messi and his Barcelona teammates embrace during the 2021 Copa del Rey final",
+        caption: "One team, one last time — Barcelona celebrate on the way to Messi’s 35th and final trophy for the club.",
+        credit: "FC Barcelona archive",
+        href: "https://www.fcbarcelona.com/en/photos/2108444/the-best-photos-from-the-copa-del-rey-final",
+      },
+    ],
+    videos: [
+      {
+        after: 12,
+        youtubeId: "zYpUs22wAL4",
+        title: "Athletic Club 0–4 Barcelona — Copa del Rey final",
+        caption: "Five minutes from the last trophy: De Jong’s complete final and two Messi goals as the young team finds its finest night.",
+        credit: "FC Barcelona",
+        href: "https://www.youtube.com/watch?v=zYpUs22wAL4",
+      },
+    ],
+  },
 };
 
 const filmCatalog = [
@@ -1732,27 +1794,26 @@ export const honourLedger = {
     ],
   },
   "2020–21": {
-    team: [
-      ["Copa del Rey", "copa"],
-      ["Copa América", "copa"],
-    ],
+    team: [["Copa del Rey", "copa"]],
     individual: [
-      ["Ballon d’Or", "ball"],
-      ["Copa América Golden Ball", "goldball"],
-      ["Copa América Golden Boot", "boot"],
       ["2019–20 Pichichi Trophy", "pichichi"],
-      ["Pichichi Trophy", "pichichi"],
     ],
   },
   "2021–22": {
     team: [
       ["Ligue 1", "league"],
-      ["Finalissima", "copa"],
+      ["Copa América", "copa"],
     ],
-    individual: [["Finalissima Player of the Match", "star"]],
+    individual: [
+      ["2021 Ballon d’Or", "ball"],
+      ["2021 Copa América Golden Ball", "goldball"],
+      ["2021 Copa América Golden Boot", "boot"],
+      ["2020–21 Pichichi Trophy", "pichichi"],
+    ],
   },
   "2022–23": {
     team: [
+      ["Finalissima", "copa"],
       ["FIFA World Cup", "world"],
       ["Ligue 1", "league"],
       ["Trophée des Champions", "supercup"],
@@ -1761,6 +1822,7 @@ export const honourLedger = {
       ["Ballon d’Or", "ball"],
       ["The Best FIFA Men’s Player", "star"],
       ["World Cup Golden Ball", "goldball"],
+      ["Finalissima Player of the Match", "star"],
       ["Laureus Sportsman of the Year", "star"],
     ],
   },
