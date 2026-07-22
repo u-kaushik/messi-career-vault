@@ -800,6 +800,66 @@ export const seasonStories = {
       },
     ],
   },
+  "2014–15": {
+    title: "The right side of history",
+    dek: "A bruised club, a combustible new front three and the tactical adjustment that turned uncertainty into beauty — until Messi, Neymar and Suárez carried Barcelona all the way to Berlin.",
+    paragraphs: [
+      "The World Cup ended with Lionel Messi walking past the trophy at the Maracanã; the new club season began by asking him to walk into another reconstruction. Luis Enrique returned to Barcelona as coach, a former captain with the hard stare and physical appetite of someone who believed comfort was the enemy of renewal. Ivan Rakitić arrived from Sevilla, Claudio Bravo from Real Sociedad, Marc-André ter Stegen from Borussia Mönchengladbach and Jérémy Mathieu from Valencia. Xavi, persuaded to stay for one final year, would no longer be the weekly centre of the side. Cesc Fàbregas and Alexis Sánchez left. Most dramatically, Luis Suárez came from Liverpool while serving a four-month ban for biting Giorgio Chiellini at the World Cup. Barcelona had purchased the best centre-forward in England and could not use him in a competitive match until late October.",
+      "Luis Enrique began by rotating relentlessly. Messi scored twice against Elche on the opening weekend, the first after turning through a space that appeared too crowded to contain a turn. Barça did not concede in their first eight league matches; Bravo passed Pedro María Artola’s club record for an unbeaten start to a season. Neymar, healthier and more settled, scored often. The football was not yet fluent, but the team had acquired speed around its old intelligence. Messi was still nominally central, dropping towards midfield to collect the ball, while Munir El Haddadi, Pedro and Sandro Ramírez filled the places around him and the suspended Suárez trained beyond the match-day light.",
+      "Suárez’s official debut came at the Bernabéu on 25 October. He created Neymar’s early goal, but Cristiano Ronaldo equalised from the penalty spot before Pepe and Karim Benzema carried Madrid to a 3–1 win. A week later Celta Vigo won 1–0 at the Camp Nou. The new Barcelona seemed caught between eras: less controlling than Guardiola’s side, less settled than Vilanova’s champions, its famous midfield ageing while its new attack remained an idea. Yet Messi continued to rearrange history. Against Sevilla on 22 November he scored a hat-trick and passed Telmo Zarra’s long-standing record of 251 league goals. Three nights later in Nicosia, another hat-trick against APOEL took him beyond Raúl as the Champions League’s leading scorer. Two monumental records fell within four days, and the season still felt vaguely dissatisfied.",
+      "The dissatisfaction broke open at Anoeta on 4 January. Real Sociedad led through Jordi Alba’s second-minute own goal. Messi and Neymar had started on the bench after returning later than several teammates from the winter break; both entered at half-time, neither could rescue the match. Barcelona lost 1–0 and surrendered the chance to move top after Madrid had been beaten earlier that day. Sporting director Andoni Zubizarreta was dismissed the following morning, and Carles Puyol left his assistant role. Messi missed an open training session with gastroenteritis as stories of a confrontation with Luis Enrique filled the city. The city did not need certainty to feel the danger: six months into a new reign, Barcelona looked capable of turning its tension inward.",
+      "A week later Atlético Madrid came to the Camp Nou. They were champions, they had denied Barcelona in three competitions the previous season, and defeat would have deepened every fracture. Instead the three forwards scored together for the first time. Messi drove a low cross through the area for Neymar to finish, slipped Suárez in for the second and, after Mario Mandžukić’s penalty, scored the third himself. Barcelona won 3–1. The celebration held more than relief. Messi embraced Suárez; Neymar arrived shouting behind them. What had been presented as a collection of celebrity attackers suddenly looked like a partnership willing to work for one another.",
+      "The arrangement that liberated them was simple enough to draw and difficult enough to defend. Suárez occupied the centre-backs, running in front of them and behind them, making the middle a place of permanent argument. Neymar attacked from the left, combining with Andrés Iniesta and Jordi Alba before accelerating towards goal. Messi moved back towards the right, the position from which his senior life had begun, but he returned with a decade of central knowledge. He could stay wide and isolate a full-back, drift inside to conduct, or exchange places with Suárez while Dani Alves surged outside. The move did not diminish him. It gave him a larger field from which to choose the match.",
+      "Barcelona gathered velocity. Atlético were beaten twice more before January ended, home and away in a fevered Copa del Rey quarter-final. At San Mamés, Barça won 5–2 with all three forwards involved in the avalanche. Suárez, initially impatient in front of goal, found his rhythm: two at Manchester City in the Champions League round of 16, then two more at Paris Saint-Germain in the quarter-final, the second after nutmegging David Luiz and curling beyond Salvatore Sirigu. Messi did not need to score every decisive goal. That was the new luxury. His movement created the weather in which Neymar and Suárez could become devastating.",
+      "There were still tests of nerve. Málaga won at the Camp Nou in February. Real Madrid arrived in March with the chance to reclaim control of the league and played the better football for long spells. Mathieu headed Barcelona ahead from Messi’s free-kick, Ronaldo equalised, and Madrid pressed until the interval. Then, in the 56th minute, Dani Alves sent a long pass over the defence. Suárez cushioned it with his right foot and finished with his left before Pepe could close him. Barcelona won 2–1 and opened a four-point lead. The goal belonged to the new centre-forward, but the victory revealed the team’s broader change: this Barcelona could survive without monopolising the match, then strike through a single direct line.",
+      "The Champions League semi-final returned Pep Guardiola to the Camp Nou with Bayern Munich. For seventy-six minutes the first leg was played at an almost frightening level, both teams pressing, recovering and refusing the smallest error. Then Alves stole the ball from Juan Bernat and gave it to Messi, who drove a low shot past Manuel Neuer at the near post. Three minutes later Rakitić found him on the right. Messi approached Jérôme Boateng, shifted left and watched the defender lose his footing; Neuer advanced, and the finish rose delicately over him. In added time Messi released Neymar for a third. A contest balanced on precision had become 3–0 in thirteen minutes. This was not merely the old pupil defeating the old teacher. It was Messi demonstrating that Barcelona’s new football could be as exact in transition as the old football had been in possession.",
+      "Bayern won the return 3–2 in Munich, but Neymar’s two first-half goals carried Barcelona safely to Berlin. Before Europe’s final came the domestic title. On 17 May, Barça returned to the Vicente Calderón, where Atlético had so often closed the road. Messi exchanged passes with Pedro in a compressed penalty area and steered the ball into the far corner with his left foot. The 1–0 victory secured La Liga with a match to spare. A year earlier Atlético had celebrated the championship at the Camp Nou. Now Barcelona completed the circle in Madrid, winning the title on the ground of the team that had taught them how thin the margins could be.",
+      "The Copa del Rey final was staged at the Camp Nou against Athletic Club on 30 May. Twenty minutes in, Messi received the ball near halfway on the right touchline. Three defenders converged. He slipped between the first two, resisted a third challenge, cut into the penalty area and drove the ball inside Iago Herrerín’s near post. It was a goal that seemed to reject the usual order of football: the touchline offered no room, the defenders had the angles, and still the move ended where Messi intended. Neymar added a second, Iñaki Williams replied after Messi had scored again, and Barcelona won 3–1. The double was complete. One match remained.",
+      "Berlin’s Olympiastadion held two teams pursuing a treble. Barcelona scored after four minutes, Neymar finding Iniesta, Iniesta releasing Rakitić. Juventus absorbed the early pressure and equalised through Álvaro Morata ten minutes after half-time. For a while the final became anxious and open. Then Messi moved infield and struck from distance. Gianluigi Buffon parried; Suárez reached the rebound first and drove it into the roof of the net. Neymar scored on the final counterattack, the last touch of the match, and Barcelona won 3–1. Xavi came from the bench for his 767th and final appearance, then lifted the European Cup. The captain who embodied the age of possession departed at the summit of a team that had learned to marry possession with something faster and more vertical.",
+      "Messi finished with 58 goals in 57 club appearances: 43 in La Liga, ten in the Champions League and five in the Copa del Rey. Neymar scored 39 and Suárez 25, giving the front three 122 in all competitions. Their numbers were extraordinary; their compatibility was the deeper achievement. There was no visible struggle for territory or status. Messi supplied, Suárez sacrificed, Neymar accelerated, and each appeared delighted by the brilliance of the others. Around them, Rakitić ran to preserve balance, Busquets controlled the spaces they left, Iniesta connected the halves, and a defence that had been doubted in August carried the team through Europe.",
+      "Nine years after his first Champions League final and six after Barcelona’s first treble, Messi stood in Berlin with another European Cup. The route had not been orderly. It passed through a World Cup hangover, a banned striker, autumn defeats, January rumours and a coach whose authority appeared briefly endangered. That disorder is what makes the ending glow. The finest teams are not always born from serenity. Sometimes they discover themselves when the season threatens to come apart, when one player changes sides, three forwards begin to trust one another and an old style accepts a new speed. Barcelona did not recover the past in 2014–15. They made something worthy of standing beside it.",
+    ],
+    sources: [
+      ["FC Barcelona: 2014–15 annual report", "https://media4.fcbarcelona.com/media/asset_publics/resources/000/199/375/original/MEMORIA_CLUB_14_15_ENGLISH.v1448467342.pdf"],
+      ["FC Barcelona: Luis Suárez’s arrival and debut", "https://www.fcbarcelona.com/en/football/first-team/players/4138/luis-suarez"],
+      ["FC Barcelona: Messi’s Liga and European scoring records", "https://media2.fcbarcelona.com/media/asset_publics/resources/000/199/373/original/MEMORIA_CLUB_14_15_CATALA.v1448467263.pdf"],
+      ["FC Barcelona: the Anoeta defeat", "https://www.fcbarcelona.com/en/football/first-team/noticies/1104189/facts-and-figures-from-anoeta"],
+      ["FC Barcelona: Barcelona 3–1 Atlético Madrid", "https://www.fcbarcelona.com/en/news/1104084/fc-barcelona-v-atletico-madrid-3-1-three-headed-monster-strikes-again"],
+      ["UEFA: Barcelona’s route to Berlin", "https://www.uefa.com/uefachampionsleague/news/0221-0e9b62f80aba-d48e12825eba-1000--how-barcelona-reached-the-final/"],
+      ["UEFA: Messi’s two goals against Bayern", "https://www.uefa.com/uefachampionsleague/news/0221-0e909116af7b-fe3ef95b6374-1000--messi-double-puts-barca-in-control-against-bayern/"],
+      ["UEFA: the 2015 Copa del Rey final", "https://www.uefa.com/uefachampionsleague/news/0221-0e9b6608eceb-014765a94ecf-1000--barcelona-lift-cup-as-finalists-switch-focus/"],
+      ["UEFA: Barcelona defeat Juventus in Berlin", "https://www.uefa.com/uefachampionsleague/news/0252-0cd2c6a4864d-8c8d00efd1bd-1000--barcelona-see-off-juventus-/"],
+      ["UEFA: 2015 final facts and figures", "https://www.uefa.com/uefachampionsleague/news/0253-0d8010f2fd94-325085b39367-1000--uefa-champions-league-final-facts-and-figures/"],
+    ],
+    photos: [
+      {
+        after: 4,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2019/03/13/740ba3ed-5141-4637-80ca-1dee3f54827b/wJLuTbgn.jpg",
+        alt: "Lionel Messi embraces Luis Suárez as Neymar joins the celebration against Atlético Madrid",
+        caption: "The night the front three became a partnership — Messi, Suárez and Neymar all score against Atlético, 11 January 2015.",
+        credit: "Victor Salgado / FC Barcelona",
+        href: "https://www.fcbarcelona.com/en/news/1104084/fc-barcelona-v-atletico-madrid-3-1-three-headed-monster-strikes-again",
+      },
+      {
+        after: 11,
+        src: "https://www.fcbarcelona.com/fcbarcelona/photo/2025/06/03/63273f89-017a-429a-95d7-678579ae693c/2015-06-06Barcelona-JuventusMiguel_1_pic_2015-06-06barcelona-juventus203.jpg",
+        alt: "Barcelona players celebrate with the European Cup after defeating Juventus in Berlin",
+        caption: "Three trophies, one recovered season — Barcelona complete the treble in Berlin, 6 June 2015.",
+        credit: "Miguel Ruiz / FC Barcelona",
+        href: "https://www.fcbarcelona.com/en/news/4277675/10-years-since-fifth-champions-league-win",
+      },
+    ],
+    videos: [
+      {
+        after: 8,
+        youtubeId: "tbKMBuR-pxs",
+        title: "Messi’s impossible finish against Bayern",
+        caption: "One shift of balance, one fallen defender and the delicate finish that gave Barcelona command of the semi-final.",
+        credit: "UEFA",
+        href: "https://www.youtube.com/watch?v=tbKMBuR-pxs",
+      },
+    ],
+  },
 };
 
 const filmCatalog = [
@@ -1323,10 +1383,7 @@ export const honourLedger = {
     ],
     individual: [
       ["2014 World Cup Golden Ball", "goldball"],
-      ["Ballon d’Or", "ball"],
-      ["UEFA Best Player in Europe", "star"],
       ["UCL Top Scorer", "boot"],
-      ["La Liga Best Player", "star"],
     ],
   },
   "2015–16": {
@@ -1336,7 +1393,12 @@ export const honourLedger = {
       ["UEFA Super Cup", "supercup"],
       ["FIFA Club World Cup", "clubworld"],
     ],
-    individual: [["FIFA Club World Cup Final MVP", "star"]],
+    individual: [
+      ["2015 Ballon d’Or", "ball"],
+      ["2014–15 UEFA Best Player in Europe", "star"],
+      ["2014–15 La Liga Best Player", "star"],
+      ["FIFA Club World Cup Final MVP", "star"],
+    ],
   },
   "2016–17": {
     team: [
