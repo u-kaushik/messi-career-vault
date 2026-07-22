@@ -121,3 +121,14 @@ Resolved in the latest copy:
 2. The Anoeta paragraph now reads naturally without the evidence-ledger phrase “reported detail,” satisfying the editorial firewall.
 
 The live copy also corrected the Atlético chronology, changed the two scoring records to “fell within four days,” and moved the presentation-dated `2015 Ballon d’Or`, `2014–15 UEFA Best Player in Europe` and `2014–15 La Liga Best Player` to 2015–16. `2014 World Cup Golden Ball` and the shared `UCL Top Scorer` correctly remain in 2014–15. Transfers, Suárez ban/debut, Bravo's streak, record dates/totals (subject to the documented Zarra recount), Anoeta events, knockout actions, Clásico, Bayern, title/Copa/Berlin sequence, Xavi 767, Messi 58/57, MSN 122, both photos, official UEFA clip, URL health and duplication otherwise pass.
+
+## Unpublished 2015–16 draft
+
+The initial ledger contains **59 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 3 INCORRECT** decisions. Verdict: **HOLD**.
+
+Required corrections:
+
+1. Tbilisi: Messi's free-kick hit the wall, **Beto parried the follow-up once**, and Pedro scored the rebound; Beto did not save twice in that scramble.
+2. During Messi's knee-injury absence, Neymar and Suárez scored **twenty goals in nine games**. The draft's “twenty of Barcelona's twenty-three” denominator is unsupported.
+3. Replace `FIFA Club World Cup Final MVP` with `2015 FIFA Club World Cup Silver Ball`; FIFA lists Suárez Gold, Messi Silver and Iniesta Bronze.
+The transfers, Mateo timing, injury/renal-colic details, five-calendar-year versus four-season trophy distinction, 180 goals, Ballon d'Or date/order, indirect penalty action, 39-match record, 500th senior club-plus-country goal, 24–0 finish, MSN 131, Messi 41/49, team-honour allocation, image identity, official FC Barcelona video, URL health, firewall and duplication otherwise pass. The Granada image's original JPEG XMP identifies Miguel Ruiz as creator/rights holder, so `Miguel Ruiz / FC Barcelona` is a more precise credit than archive-only attribution. Neymar's statement supports that the rehearsed penalty was meant for him; direct testimony wording would be stronger than “apparently.” Both are recommended, non-blocking refinements.
