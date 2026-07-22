@@ -48,7 +48,7 @@ No factual blocker remains. Injury precision: UEFA's contemporaneous 15 December
 
 ## Unpublished 2008–09 draft
 
-The final ledger contains **39 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
+The final ledger contains **40 VERIFIED, 3 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
 
 Resolved in the latest copy:
 
@@ -59,7 +59,7 @@ No factual blocker remains. The dates, scores, goal order/timings, false-nine ac
 
 ## Unpublished 2009–10 draft
 
-The final ledger contains **45 VERIFIED, 5 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
+The final ledger contains **46 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
 
 Resolved in the latest copy:
 
@@ -70,7 +70,7 @@ No factual blocker remains. The transfers, chronology, dates, scores, goal minut
 
 ## Unpublished 2010–11 draft
 
-The final ledger contains **48 VERIFIED, 7 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
+The final ledger contains **49 VERIFIED, 6 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
 
 Resolved in the latest copy: `UEFA Best Player in Europe` and the 2010–11 `La Liga Best Player` award are allocated to 2011–12. They were presented on 25 August and 1 December 2011, after 2011–12 began, so this placement follows the date-based rule.
 
@@ -78,7 +78,7 @@ The post-World Cup/transfers context, Super Cup, league and 5–0 Clásico detai
 
 ## Unpublished 2011–12 draft
 
-The final ledger contains **52 VERIFIED, 5 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
+The final ledger contains **53 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
 
 Resolved in the latest copy:
 
@@ -247,3 +247,7 @@ The final ledger contains **56 VERIFIED, 4 QUALIFIED, 0 UNRESOLVED and 0 REMOVE*
 The live scoring language now passes throughout: the dek calls Messi's lead brief, the Austria passage says Mbappé passed him before tournament end, and the reflection gives the correct Klose–Messi–Mbappé sequence. Club chronology/statistics, every World Cup match sequence and record, Silver Ball/Silver Boot allocation, all URLs, the Nu Stadium image and the official FIFA 1:57 final video otherwise pass.
 
 The corrected second-photo metadata now stays within what the pixels establish: Messi watches during the Spain final, while the caption identifies only the final and the end of Argentina's title defence. It no longer claims that this particular frame depicts the independently documented post-match supporter turn. No blocker remains.
+
+## Archive-link maintenance — 22 July 2026
+
+**6/6 PASS; no required correction.** The official FC Barcelona replacements for 2008–09 Madrid 2–6, 2009–10 Madrid 0–2, the 2010 Super Cup hat-trick, the 2010 Barça 5–0 Madrid match and the 2012 Copa final all return HTTP 200, match their publication labels and support the claims assigned to them. Match pages expose the relevant score/scorers/minutes; the retrospective and highlights pages identify the correct fixtures and actions, with the existing annual-report/video evidence retaining finer table or buildup detail. The obsolete `players.fcbarcelona.com` dependency is removed from these five publication source slots. The sixth replacement, the official French Ligue 1 assist-history page, also returns HTTP 200 and explicitly lists Messi as the 2022/23 winner with 16 assists, supporting its publication label and assigned claim.
