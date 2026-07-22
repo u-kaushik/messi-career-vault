@@ -754,6 +754,10 @@ main {
 .trophy-mark.goldball {
   color: #f4cc45;
 }
+.trophy-mark.silverball {
+  color: #d9e2ec;
+  background: linear-gradient(145deg, #d9e2ec1c, #65758a12);
+}
 .trophy-mark.boot,
 .trophy-mark.pichichi {
   color: #dcae31;

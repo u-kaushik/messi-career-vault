@@ -212,6 +212,19 @@ function Shape({ type }) {
           <path fill="#77551b" d="M20 51h24l4 8H16z" />
         </>
       );
+    case "silverball":
+      return (
+        <>
+          <circle cx="32" cy="22" r="18" fill={silver} stroke="#647182" />
+          <path
+            fill="none"
+            stroke="#f4f8fc"
+            d="M17 18c8-10 22-10 30 0M16 27c10 7 22 8 32-1"
+          />
+          <path fill="#98a5b4" d="M27 40h10l3 11H24z" />
+          <path fill="#596575" d="M20 51h24l4 8H16z" />
+        </>
+      );
     case "boot":
       return (
         <>
