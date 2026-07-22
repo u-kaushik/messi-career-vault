@@ -142,3 +142,14 @@ The final ledger contains **58 VERIFIED, 7 QUALIFIED, 2 UNRESOLVED and 0 INCORRE
 The current working copy already contains the audit corrections: Luis Enrique's running total is **eight trophies**, Messi's Celtic line is a home hat-trick plus **two** away goals, and the disambiguated `2016–17 European Golden Shoe` and `2016–17 Pichichi Trophy` sit in 2017–18 under the presentation-date rule. No factual blocker remains.
 
 The transfers, Super Cup, Alavés rotation, injury/return sequence, autumn results, ten UCL group goals, free-kicks/Anoeta, PSG and Juventus ties, Luis Enrique announcement, Clásico chronology and 500th official Barça goal, table, Copa final, Neymar's final competitive appearance, individual/team totals and team honours pass. Full inspection confirms the official FC Barcelona 4:56 remontada video and no exact-ID duplication. Both full-resolution photos match their events and captions; their hosted JPEGs contain no creator metadata and the landing pages disclose no photographer, so the precise photographer identities remain unresolved while `FC Barcelona archive` is retained as publisher/archive attribution. The editorial firewall passes.
+
+## Unpublished 2017–18 draft
+
+The initial ledger contains **63 VERIFIED, 8 QUALIFIED, 2 UNRESOLVED and 2 INCORRECT/REMOVE** decisions. Verdict: **HOLD**.
+
+Two corrections are required:
+
+1. The October Atlético sentence is false: the match finished **1–1**, and the equaliser was Sergi Roberto cross → Luis Suárez header. Messi did not create a winner.
+2. Under the presentation-date rule, the generic `La Liga Best Player` presently in 2017–18 must be labelled `2016–17 La Liga Best Player`. The `2017–18 Pichichi Trophy`, `2017–18 La Liga Best Player` and `2017–18 European Golden Shoe` belong in 2018–19 (presented November/December 2018).
+
+Neymar's €222m release, Dembélé fee/injury, Super Cup/Betis context, 4–4–2 framing, seven-win start, Messi opening/UCL/Ecuador records, Bernabéu sequence/table, January injuries, free-kicks/600th goal, both Chelsea legs, Roma elimination, Copa/title/Levante chronology, 43-game split, 45/54 statistics, team honours, URL health, editorial firewall and exact media-duplication check otherwise pass. Full-resolution photo identities pass, but both exact photographers remain unresolved because the hosted JPEGs have stripped creator metadata and the pages provide no byline. Full inspection confirms the 5:18 TNT Sports Football Chelsea highlights and a clear, event-specific thumbnail.
