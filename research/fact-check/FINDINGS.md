@@ -207,3 +207,11 @@ Resolved in the current working copy:
 Non-blocking precision: PSG’s contemporary source itself said `over 200 countries by 52 broadcasters`; `markets and territories` is technically cleaner but optional.
 
 The Copa América chronology/awards, PSG signing timeline, Reims debut, City goal, Ballon d’Or, Madrid timings, title, 11/14/34 totals, Ligue 1 provider/scorer claims and all honour allocations otherwise pass. Both Commons photos have correct Bigmatbasket/CC BY-SA 4.0 metadata. The official PSG video is public, embeddable, unrestricted, 1:33 and visually accurate; its thumbnail and duplication checks pass.
+
+## Unpublished 2022–23 draft
+
+The final ledger contains **56 VERIFIED, 6 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual, source and media grounds**.
+
+The current prose already gives PSG's league return correctly as ten days after the World Cup final, and `2023 Ballon d’Or` is correctly placed in the 2023 ledger under the presentation-date rule. Finalissima and every Qatar result, scorer/order, timing and shootout sequence pass; so do the PSG results and statistics, Saudi-trip disciplinary wording, all other honour allocations, the 496-goal qualified record wording, both full-resolution Commons assets/credits/licenses, the official 2:07 FIFA video, thumbnail, duplication and editorial firewall.
+
+The corrected source list passes: both BBC reports, Reuters/Boursorama and Guardian/Reuters return HTTP 200, accurately match their labels and support their assigned claims. No blocker remains.
