@@ -110,3 +110,14 @@ Resolved in the latest copy:
 2. The explicitly labelled `2014 World Cup Golden Ball` is allocated to 2014–15 under the summer-international rule.
 
 No factual blocker remains. Dates, results, scorer/order/buildup details, all three injury episodes, Getafe return, Bernabéu penalties and official Clásico record, Atlético/Copa/title chronology, Tito Vilanova's death and Villarreal dedication, Messi's 41/46 split, the complete World Cup sequence, source URLs and editorial firewall pass. The 316-game possession sequence is supported by contemporary reporting but remains provider/methodology-dependent. Full-resolution inspection and original JPEG XMP verify the Bernabéu image's `Miguel Ruiz / FC Barcelona` credit. The Golden Ball photo identity/caption pass; `FC Barcelona` is publisher attribution rather than a verified photographer credit. The official LALIGA full-match video identity was confirmed through uploader/title/duration and targeted event/final-score frames. No exact media asset is duplicated across audited seasons.
+
+## Unpublished 2014–15 draft
+
+The final ledger contains **55 VERIFIED, 7 QUALIFIED, 0 UNRESOLVED and 0 REMOVE** decisions. Verdict: **PUBLISH on factual grounds**.
+
+Resolved in the latest copy:
+
+1. The Atlético photograph now credits `Victor Salgado / FC Barcelona`, matching the original JPEG creator/rights metadata.
+2. The Anoeta paragraph now reads naturally without the evidence-ledger phrase “reported detail,” satisfying the editorial firewall.
+
+The live copy also corrected the Atlético chronology and moved the presentation-dated `2015 Ballon d’Or`, `2014–15 UEFA Best Player in Europe` and `2014–15 La Liga Best Player` to 2015–16. `2014 World Cup Golden Ball` and the shared `UCL Top Scorer` correctly remain in 2014–15. Transfers, Suárez ban/debut, Bravo's streak, record dates/totals (subject to the documented Zarra recount), Anoeta events, knockout actions, Clásico, Bayern, title/Copa/Berlin sequence, Xavi 767, Messi 58/57, MSN 122, both photos, official UEFA clip, URL health and duplication otherwise pass. “Records fell in four days” uses inclusive calendar counting; “three days” would be maximally precise elapsed-date style, but this is not a publication blocker.
