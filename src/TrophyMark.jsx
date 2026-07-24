@@ -1,3 +1,5 @@
+import { honourVisualForHonour } from "./trophyAssets";
+
 const silver = "url(#silver)",
   gold = "url(#gold)",
   edge = "#59687a";
@@ -28,14 +30,24 @@ function Shape({ type }) {
       );
     case "world":
       return (
-        <image
-          href="/trophies/fifa-world-cup.png"
-          x="0"
-          y="0"
-          width="64"
-          height="64"
-          preserveAspectRatio="xMidYMid meet"
-        />
+        <>
+          <path
+            fill={gold}
+            stroke="#936300"
+            d="M27 5c-5 2-8 7-6 12-5 3-5 10 0 13l5 3-3 16h18l-3-16 5-4c5-5 1-12-3-13 1-7-7-14-13-11Z"
+          />
+          <path
+            fill="none"
+            stroke="#fff2a0"
+            strokeWidth="1.4"
+            d="M23 11c7-5 15 1 16 8-6-2-10 2-9 7M21 22c5-1 9 2 10 7M28 34l7 14"
+          />
+          <path fill="#947000" d="M21 49h22l3 9H18z" />
+          <path
+            fill="#47a65a"
+            d="M23 42c4 1 6 2 9 5-4-1-7 0-10-2zM40 40c-4 2-6 4-7 7 4-1 7-2 9-5z"
+          />
+        </>
       );
     case "league":
       return (
@@ -327,11 +339,14 @@ function Shape({ type }) {
       );
   }
 }
-export default function TrophyMark({ type }) {
-  const label =
-    type === "world"
-      ? "FIFA World Cup Trophy — photo by Djuradj Vujcic, CC BY 2.0"
-      : `${type} trophy`;
+export default function TrophyMark({ type, name }) {
+  const asset = honourVisualForHonour(name);
+  const rotation = asset?.display?.rotation ?? 0;
+  const label = asset?.kind === "recognition"
+    ? `${asset.label} — non-physical recognition`
+    : asset
+    ? `${asset.label} — ${asset.attribution}, ${asset.license}`
+    : `${name || type} trophy`;
 
   return (
     <svg
@@ -341,10 +356,9 @@ export default function TrophyMark({ type }) {
       aria-label={label}
     >
       <title>{label}</title>
-      {type === "world" && (
+      {asset && (
         <metadata>
-          Source: https://commons.wikimedia.org/wiki/File:FIFA_World_Cup_Trophy_photo_by_Djuradj_Vujcic.jpg;
-          licence: https://creativecommons.org/licenses/by/2.0/
+          Source: {asset.source}; {asset.kind === "recognition" ? asset.evidence : `licence: ${asset.licenseUrl}`}
         </metadata>
       )}
       <defs>
@@ -367,7 +381,25 @@ export default function TrophyMark({ type }) {
         </linearGradient>
       </defs>
       <ellipse cx="32" cy="60" rx="20" ry="2" fill="#000" opacity=".25" />
-      <Shape type={type} />
+      {asset?.kind === "recognition" ? (
+        <g className="recognition-mark">
+          <rect x="6" y="6" width="52" height="52" rx="12" fill="#07182d" stroke="#21b9ee" strokeWidth="2" />
+          <path d="M16 44h32" stroke="#a50044" strokeWidth="3" />
+          <text x="32" y="35" textAnchor="middle" fill="#f7f7f4" fontSize={asset.mark.length > 2 ? 12 : 20} fontWeight="800" fontFamily="DM Sans, sans-serif">{asset.mark}</text>
+        </g>
+      ) : asset ? (
+        <image
+          href={asset.src}
+          x="0"
+          y="0"
+          width="64"
+          height="64"
+          preserveAspectRatio="xMidYMid meet"
+          transform={rotation ? `rotate(${rotation} 32 32)` : undefined}
+        />
+      ) : (
+        <Shape type={type} />
+      )}
     </svg>
   );
 }
