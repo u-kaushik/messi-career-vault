@@ -1214,6 +1214,7 @@ export const seasonStories = {
   "2021–22": {
     title: "A stranger wearing thirty",
     dek: "A Maracanã release, a number borrowed from his beginning, one perfect Paris goal and a championship season spent learning how to be new again.",
+    preview: { photo: 1, position: "center 28%", mobilePosition: "center 22%" },
     paragraphs: [
       "The season began with Lionel Messi on his knees. At the final whistle in the Maracanã on 10 July 2021, he folded into the grass and disappeared beneath a jubilant pile of Argentina shirts. Ángel Di María’s first-half goal had beaten Brazil 1–0 and ended his country’s twenty-eight-year wait for a senior title. For Messi, after the lost finals of 2007, 2014, 2015 and 2016, release arrived less as a roar than a collapse. His teammates ran towards him before the cup, as if the night’s first duty was not to celebrate Argentina’s victory but to rescue their captain from all the defeats he had carried there.",
       "He had been the tournament’s central footballer: four goals, five assists, the joint Golden Boot and the award for its best player. Yet the final also revealed the healthier Argentina that Lionel Scaloni had built around him. Rodrigo De Paul supplied the pass, Di María supplied the finish, Emiliano Martínez supplied the nerve and a young, abrasive team supplied the running. Messi missed a late chance to settle the match, but nobody asked him to apologise for it. When the whistle came, Argentina had won for him without making him win alone. That distinction would alter the emotional weather of the rest of his international career.",
@@ -1277,6 +1278,7 @@ export const seasonStories = {
   "2022–23": {
     title: "The cup at the end of everything",
     dek: "Wembley loosened the limbs, Qatar asked every old question again, and one impossible final gave Messi the only answer his career had never found.",
+    preview: { photo: 0, position: "center 22%", mobilePosition: "center 18%" },
     paragraphs: [
       "Before Qatar, before the robe and the lifted cup, there was Wembley. Argentina met Italy in the Finalissima on 1 June 2022 and played as though a knot had come undone. Lionel Messi bullied his way along the byline to make Lautaro Martínez’s opening goal, conducted the match from its centre and supplied Paulo Dybala for the third in stoppage time. Argentina won 3–0. Messi was named player of the match, but the greater prize was the ease around him. A national team once organised around his burden now looked liberated by his presence. They had become companions rather than witnesses.",
       "That evening belongs to this chapter because it came after Paris Saint-Germain’s final club match of the previous season, at the beginning of the long approach to the World Cup. It also announced the physical sharpness that his first year in France had lacked. A full pre-season followed under Christophe Galtier. Messi opened the scoring as Paris beat Nantes 4–0 in the Trophée des Champions on 31 July, then began the league at Clermont with two goals and an assist. The second goal was an overhead finish controlled first on his chest: audacious, almost boyish, and greeted by the home crowd with a standing ovation.",
@@ -1479,6 +1481,7 @@ export const seasonStories = {
   2025: {
     title: "The last night at Chase Stadium",
     dek: "A new coach, a world tournament, three roads that ran out—and the winter run that gave Miami its first MLS Cup on the little ground’s final evening.",
+    preview: { photo: 1, position: "center 43%", mobilePosition: "center 40%" },
     paragraphs: [
       "The best regular season in Major League Soccer history had lasted one play-off round. That was the fact Inter Miami carried into 2025: seventy-four points, a Supporters’ Shield, months spent at the top, and then Atlanta United walking through the door that mattered. Gerardo Martino left for personal reasons. Javier Mascherano arrived with no previous senior club appointment and an unusual inheritance—former Barcelona teammates whose standards he understood, young footballers he had coached with Argentina, and a squad famous enough to make every defeat look like institutional failure. His task was not to make Miami more glamorous. It was to make glamour durable under pressure.",
       "The calendar offered no gentle apprenticeship. Miami would play in MLS, the Concacaf Champions Cup, the expanded Club World Cup, Leagues Cup and, if they qualified, the play-offs. Fifty-eight matches eventually made theirs the busiest year any MLS club had known. Mascherano’s first league night supplied an early sketch of what survival might require. Tomás Avilés was sent off after twenty-three minutes against New York City FC; Miami trailed 2–1 until Messi, already the creator of their first goal, released debutant Telasco Segovia for a delicate equaliser in the tenth minute of stoppage time. The new coach spoke afterwards of a team with soul and life. By December those words would feel less like optimism than diagnosis.",
@@ -1547,6 +1550,7 @@ export const seasonStories = {
   2026: {
     title: "The country stayed to sing",
     dek: "A first goal in Miami’s permanent home, a brief place atop the World Cup scoring list, and another final—lost without losing the love that took twenty years to build.",
+    preview: { photo: 1, position: "center 30%", mobilePosition: "center 24%" },
     asOf: "22 July 2026",
     paragraphs: [
       "The new house was waiting, but first there were chairs to remove. Sergio Busquets and Jordi Alba had retired with the MLS Cup in their hands, leaving behind not only two places in Inter Miami’s team but a way of remembering. Luis Suárez remained; Rodrigo De Paul now belonged to the project rather than its summer emergency; younger legs arrived around them. Messi began 2026 as a champion preparing to move home, the old Barcelona reunion gently dissolving just as the club it had helped accelerate became permanent.",
@@ -2200,6 +2204,7 @@ export const honourLedger = {
     team: [["Copa del Rey", "copa"]],
     individual: [
       ["2019–20 Pichichi Trophy", "pichichi"],
+      ["2020–21 Pichichi Trophy", "pichichi"],
     ],
   },
   "2021–22": {
@@ -2211,7 +2216,6 @@ export const honourLedger = {
       ["2021 Ballon d’Or", "ball"],
       ["2021 Copa América Golden Ball", "goldball"],
       ["2021 Copa América Golden Boot", "boot"],
-      ["2020–21 Pichichi Trophy", "pichichi"],
     ],
   },
   "2022–23": {

@@ -378,7 +378,7 @@ function Honours({ season }) {
         <div className="honour-list">
           {items.map(([name, type]) => (
             <div className="honour-item" key={name}>
-              <TrophyMark type={type} />
+              <TrophyMark type={type} name={name} />
               <span>
                 <small>{kind}</small>
                 {name}
@@ -447,6 +447,24 @@ const storyEntries = seasons
   .map(({ season }) => [season, seasonStories[season]])
   .filter(([, story]) => story);
 
+const storyPreview = (story) => {
+  const preview = story.preview || {};
+  return {
+    src: story.photos?.[preview.photo ?? 0]?.src || "",
+    position: preview.position || "center 35%",
+    mobilePosition: preview.mobilePosition || preview.position || "center 35%",
+  };
+};
+
+const storyPreviewStyle = (story, gradients) => {
+  const preview = storyPreview(story);
+  return {
+    backgroundImage: `${gradients},url(${preview.src})`,
+    "--article-focus": preview.position,
+    "--article-focus-mobile": preview.mobilePosition,
+  };
+};
+
 function LongRead({ story, season }) {
   if (!story) return null;
   return (
@@ -476,7 +494,7 @@ function Articles() {
   return <section className="articles-page">
     <div className="articles-heading"><span>{Object.keys(seasonStories).length} PUBLISHED</span><h2>A career, told properly.</h2><p>Original, researched and chronological long-form football writing.</p></div>
     {storyEntries.map(([season, story]) => <div className="article-volume" key={season}>
-      <a className="article-volume-cover" href={articlePath(season, story)} style={{ backgroundImage: `linear-gradient(90deg,rgba(3,10,23,.9) 0%,rgba(3,10,23,.66) 54%,rgba(3,10,23,.78) 100%),linear-gradient(0deg,rgba(3,10,23,.8),transparent 55%),url(${story.photos?.[0]?.src || ""})` }} aria-label={`Read ${story.title}`}>
+      <a className="article-volume-cover" href={articlePath(season, story)} style={storyPreviewStyle(story, "linear-gradient(90deg,rgba(3,10,23,.9) 0%,rgba(3,10,23,.66) 54%,rgba(3,10,23,.78) 100%),linear-gradient(0deg,rgba(3,10,23,.8),transparent 55%)")} aria-label={`Read ${story.title}`}>
         <span>{season}</span><small>{readingMinutes(story)} MIN READ</small><h3>{story.title}</h3><p>{story.dek}</p>
         <b className="article-open">READ THE CHAPTER <ChevronRight /></b>
       </a>
@@ -488,6 +506,7 @@ function Articles() {
 function SeasonArchive({ season, setModal }) {
   const year = Number(season.season.slice(0, 4));
   const story = seasonStories[season.season];
+  const preview = story ? storyPreview(story) : null;
   const groups = [
     ["Films & series", films.filter((item) => Number(item.year) === year), "screen"],
     ["Interviews", interviews.filter((item) => Number(item.year) === year), "interview"],
@@ -502,7 +521,7 @@ function SeasonArchive({ season, setModal }) {
   };
   return <section className="season-archive">
     <div className="season-archive-head"><div><span>SEASON ARCHIVE</span><h3>Everything from {season.season}</h3></div><small>{total} {total === 1 ? "piece" : "pieces"}</small></div>
-    {story && <section className="archive-shelf long-read"><h4>Long read</h4><div className="archive-links"><a className="archive-link article-link" href={articlePath(season.season, story)} style={{ backgroundImage: `linear-gradient(90deg,rgba(4,12,27,.94),rgba(4,12,27,.63) 70%,rgba(4,12,27,.82)),url(${story.photos?.[0]?.src || ""})` }}><span className="archive-article-content"><small><Newspaper /> LONG READ · {season.season} · {readingMinutes(story)} MIN</small><b>{story.title}</b><p>{story.dek}</p><em>READ THE CHAPTER</em></span><ChevronRight /></a></div></section>}
+    {story && <section className="archive-shelf long-read"><h4>Long read</h4><div className="archive-links"><a className="archive-link article-link" href={articlePath(season.season, story)}><img className="article-preview-image" src={preview.src} alt="" aria-hidden="true" /><span className="archive-article-content"><small><Newspaper /> LONG READ · {season.season} · {readingMinutes(story)} MIN</small><b>{story.title}</b><p>{story.dek}</p><em>READ THE CHAPTER</em></span><ChevronRight /></a></div></section>}
     {groups.map(([label, items, kind]) => <section className={`archive-shelf ${kind}`} key={kind}><h4>{label}</h4><div className="archive-links">{items.map((item) => renderArchiveItem(label, item, kind))}</div></section>)}
     {!total && <p className="archive-empty">Nothing published for this season yet—the archive will grow as each chapter is researched.</p>}
   </section>;
@@ -623,85 +642,6 @@ function Career({ selected, setSelected, seen, setSeen, setModal }) {
             )}
             <SeasonArchive season={selected} setModal={setModal} />
             <Honours season={selected.season} />
-            {seasonStories[selected.season] && (
-              <details className="season-essay" id={`long-read-${selected.season.replace(/[^0-9]/g, "-")}`}>
-                <summary>
-                  <span>
-                    <small>THE LONG READ</small>
-                    <b>{seasonStories[selected.season].title}</b>
-                  </span>
-                  <em>
-                    {Math.max(
-                      1,
-                      Math.ceil(
-                        [
-                          seasonStories[selected.season].dek,
-                          ...seasonStories[selected.season].paragraphs,
-                        ]
-                          .join(" ")
-                          .trim()
-                          .split(/\s+/).length / 220,
-                      ),
-                    )} min read
-                  </em>
-                  <ChevronRight />
-                </summary>
-                <article>
-                  <p className="essay-dek">{seasonStories[selected.season].dek}</p>
-                  {seasonStories[selected.season].paragraphs.map((paragraph, i) => {
-                    const photo = seasonStories[selected.season].photos?.find(
-                      (item) => item.after === i,
-                    );
-                    const video = seasonStories[selected.season].videos?.find(
-                      (item) => item.after === i,
-                    );
-                    return (
-                      <React.Fragment key={i}>
-                        <p>{paragraph}</p>
-                        {photo && (
-                          <figure>
-                            <img src={photo.src} alt={photo.alt} loading="lazy" />
-                            <figcaption>
-                              <span>{photo.caption}</span>
-                              <a href={photo.href} target="_blank" rel="noreferrer">
-                                Photo: {photo.credit} <ExternalLink />
-                              </a>
-                            </figcaption>
-                          </figure>
-                        )}
-                        {video && (
-                          <figure className="essay-video">
-                            <div>
-                              <iframe
-                                src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?rel=0`}
-                                title={video.title}
-                                loading="lazy"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                allowFullScreen
-                              />
-                            </div>
-                            <figcaption>
-                              <span>{video.caption}</span>
-                              <a href={video.href} target="_blank" rel="noreferrer">
-                                Video: {video.credit} <ExternalLink />
-                              </a>
-                            </figcaption>
-                          </figure>
-                        )}
-                      </React.Fragment>
-                    );
-                  })}
-                  <footer>
-                    <span>RESEARCH SOURCES</span>
-                    {seasonStories[selected.season].sources.map(([label, url]) => (
-                      <a key={url} href={url} target="_blank" rel="noreferrer">
-                        {label} <ExternalLink />
-                      </a>
-                    ))}
-                  </footer>
-                </article>
-              </details>
-            )}
             <button
               className={seen[selected.id] ? "complete" : ""}
               onClick={() =>
